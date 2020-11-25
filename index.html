@@ -23,6 +23,8 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/8ee6cf5ee4.js" crossorigin="anonymous"></script>
+
     <!-- FAVICONS -->
     <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicons/apple-icon-60x60.png">
@@ -45,14 +47,48 @@
 
 <body>
 
-    <div class="container">
-        <header class="row">
-            header
+    <div class="">
+        <header class="header container">
+            <div class="header__contenedor d-flex align-items-center">
 
+                <a class="d-flex justify-content-center align-items-center" href="/index.html"><img class="header__logo"
+                        src="./assets/images/Logo RED ES BENEFICIO.png" alt="logo"> </a>
+
+                <input type="checkbox" id="hamb" class="hamb">
+                <label for="hamb" class="hamb__label">
+                    <span class="hamb__button">
+                        <i class="hamb__icon fas fa-bars"></i>
+                    </span>
+                </label>
+
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"> <a class="menu__link" href="index.html"> Inicio </a></li>
+                        <li class="menu__item"> <a class="menu__link" href="nosotros.html"> Nosotros </a></li>
+                        <li class="menu__item"> <a class="menu__link" href="productos.html"> Productos</a>
+                            <ul class="menu__sub-list">
+                                <li class="menu__sub-item"> <a class="menu__sub-link"
+                                        href="productos.html#quagenda">Quagendas</a>
+                                </li>
+                                <li class="menu__sub-item"> <a class="menu__sub-link"
+                                        href="productos.html#cuaderno">Cuadernos</a>
+                                </li>
+                                <li class="menu__sub-item"> <a class="menu__sub-link"
+                                        href="productos.html#bitacora">Bitacoras</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item"> <a class="menu__link" href="blog.html"> Blog </a></li>
+                        <li class="menu__item"> <a class="menu__link" href="contacto.html"> Contacto </a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
+
+
         <main class="">
 
-            hola
+
         </main>
 
 
@@ -60,8 +96,11 @@
     <footer>
 
     </footer>
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- <script src="./js/bootstrap.bundle.min.js"></script> -->
 </body>
 
 </html>

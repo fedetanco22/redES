@@ -133,7 +133,8 @@
     font-weight: 600;
     line-height: 18px;
     letter-spacing: 0.20000000298023224px;
-    // text-align: left;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 @mixin caption {
@@ -145,4 +146,29 @@
     line-height: 18px;
     letter-spacing: 0.4000000059604645px;
     // text-align: left;
+}
+
+
+/* BUTTONS */
+
+@mixin btn-L {
+    height: 48px;
+    width: 336px;
+    border-radius: 20px;
+    @include button;
+}
+
+@mixin btn-rojo {
+    background-color: rgba(254, 65, 63, 1);
+    color: #fff;
+    border: none;
+    @include btn-L;
+
+}
+
+@mixin btn-blanco {
+    background-color: rgba(255, 255, 255, 1);
+    border: 2px solid #FE413F;
+    color: #FE413F;
+    @include btn-L;
 }
