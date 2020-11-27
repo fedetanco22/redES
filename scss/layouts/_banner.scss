@@ -1,0 +1,22 @@
+.banner {
+    &__cont {
+        background-color: rgba(196, 196, 196, 0.2);
+        height: 420px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__texto {
+        width: 254px;
+        height: 293px;
+
+
+
+        &__jerarquia {
+            @include texto-1jerarquia-phone;
+
+        }
+    }
+}

@@ -75,6 +75,8 @@
     font-weight: 600;
     line-height: 26px;
     letter-spacing: 0px;
+    color: rgba(85, 85, 85, 1);
+
     // text-align: left;
 
 }
@@ -99,7 +101,7 @@
     font-weight: 400;
     line-height: 28px;
     letter-spacing: 0.15000000596046448px;
-    // text-align: left;
+    color: rgba(131, 131, 131, 0.8);
 
 }
 
@@ -159,7 +161,7 @@
 }
 
 @mixin btn-rojo {
-    background-color: rgba(254, 65, 63, 1);
+    background-color: $rojo;
     color: #fff;
     border: none;
     @include btn-L;
@@ -168,7 +170,7 @@
 
 @mixin btn-blanco {
     background-color: rgba(255, 255, 255, 1);
-    border: 2px solid #FE413F;
-    color: #FE413F;
+    border: 2px solid $rojo;
+    color: $rojo;
     @include btn-L;
 }
