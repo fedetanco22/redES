@@ -1,6 +1,6 @@
 .section {
     @include flex-col;
-    padding: 55px 0 62.5px 0;
+    padding: 55px 0 39.5px 0;
 
     &__valores {
         @include flex-col;
@@ -21,5 +21,8 @@
         }
     }
 
+}
 
+.section-card {
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), rgba(131, 131, 131, 0.05);
 }
