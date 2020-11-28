@@ -10,4 +10,26 @@
         @include texto-1jerarquia-phone;
         text-align: center;
     }
+
+    &--p {
+        @include body1;
+        text-align: center;
+        padding: 20px;
+        margin-top: 11px;
+    }
+}
+
+.card {
+    &__header {
+        display: flex;
+        align-items: center;
+    }
+
+    &__titulo {
+        @include h6-phone;
+    }
+
+    &__body {
+        @include body2;
+    }
 }
