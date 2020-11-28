@@ -35,10 +35,13 @@
 }
 
 .menu {
+
+
     &__list {
         position: fixed;
         width: 100%;
         left: -100%;
+        top: 0;
         transition: all .5s;
         list-style: none;
         display: flex;
@@ -49,7 +52,7 @@
 
     &__item {
         height: 48px;
-        margin-left: 27px;
+        padding-left: 27px;
         display: flex;
         align-items: center;
 
@@ -57,6 +60,7 @@
             height: 123px;
             display: flex;
             align-items: center;
+            margin-left: 33px;
 
             &--logo {
                 height: 43px;
@@ -71,8 +75,8 @@
 
     }
 
-    &__link:hover {
-        // color: $color-logo;
+    &__item:hover {
+        background-color: rgba(254, 65, 63, 0.31);
         transition: ease-in .1s;
     }
 

@@ -1,0 +1,25 @@
+.section {
+    @include flex-col;
+    padding: 55px 0 62.5px 0;
+
+    &__valores {
+        @include flex-col;
+        margin: 22px 0 0 0;
+    }
+
+    &__txt {
+        @include flex-col;
+        text-align: center;
+
+        &__p {
+            @include body1;
+            margin: 8px 0 0 0;
+
+            &--Strong {
+                @include h6-phone;
+            }
+        }
+    }
+
+
+}

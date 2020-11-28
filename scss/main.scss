@@ -1,9 +1,12 @@
 @import './base/reset';
 @import './base/variables';
+@import './base/general';
 @import './base/mixins';
 
 
+@import './components/titulos';
 @import './components/buttons';
 
 @import './layouts/navbar';
 @import './layouts/banner';
+@import './layouts/sections';

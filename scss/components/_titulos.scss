@@ -1,0 +1,13 @@
+.titulos {
+    @include h3-title-phone;
+
+    &--ppal {
+        text-align: center;
+        margin-bottom: 9px;
+    }
+
+    &--sub {
+        @include texto-1jerarquia-phone;
+        text-align: center;
+    }
+}

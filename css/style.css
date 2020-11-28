@@ -127,8 +127,33 @@ table {
 /* TEXTS */
 /* BACKGROUNDS */
 /* GRADIENTS */
+body {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif; }
+
 /* TITLES */
 /* BUTTONS */
+.titulos {
+  font-family: "Nunito", sans-serif;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.25px;
+  color: #555555; }
+  .titulos--ppal {
+    text-align: center;
+    margin-bottom: 9px; }
+  .titulos--sub {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.15000000596046448px;
+    color: rgba(131, 131, 131, 0.8);
+    text-align: center; }
+
 .btn-rojo {
   background-color: #FE413F;
   color: #fff;
@@ -191,6 +216,7 @@ table {
   position: fixed;
   width: 100%;
   left: -100%;
+  top: 0;
   transition: all .5s;
   list-style: none;
   display: flex;
@@ -200,13 +226,14 @@ table {
 
 .menu__item {
   height: 48px;
-  margin-left: 27px;
+  padding-left: 27px;
   display: flex;
   align-items: center; }
   .menu__item__img {
     height: 123px;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    margin-left: 33px; }
     .menu__item__img--logo {
       height: 43px; }
 
@@ -220,7 +247,8 @@ table {
   letter-spacing: 0px;
   color: #555555; }
 
-.menu__link:hover {
+.menu__item:hover {
+  background-color: rgba(254, 65, 63, 0.31);
   transition: ease-in .1s; }
 
 .menu__sub-list {
@@ -249,3 +277,39 @@ table {
     line-height: 28px;
     letter-spacing: 0.15000000596046448px;
     color: rgba(131, 131, 131, 0.8); }
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 55px 0 62.5px 0; }
+  .section__valores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 22px 0 0 0; }
+  .section__txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+    .section__txt__p {
+      font-family: "Poppins", sans-serif;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0.5px;
+      color: rgba(131, 131, 131, 0.9);
+      margin: 8px 0 0 0; }
+      .section__txt__p--Strong {
+        font-family: "Poppins", sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 26px;
+        letter-spacing: 0px;
+        color: #555555; }
