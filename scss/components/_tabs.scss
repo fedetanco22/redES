@@ -1,14 +1,16 @@
 .tabs {
     @include flex-col;
 
+
     &__container {
         width: 269px;
         height: 52px;
+        color: #555;
         background: #FFFFFF;
         box-shadow: 0px 6px 12px -6px rgba(85, 85, 85, 0.1),
             0px 8px 24px -4px rgba(85, 85, 85, 0.05);
         border-radius: 50px;
-        margin: 11px 0 0 0;
+        margin: 11px 0 36px 0;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -31,4 +33,16 @@
         justify-content: space-around;
 
     }
+}
+
+.tab-0-content-grid,
+.tab-1-content-grid {
+    padding: 30px 20px;
+    width: 292px;
+    height: 762px;
+    background: #FFFFFF;
+    /* sombra 6 */
+    box-shadow: 0px 8px 22px -6px rgba(85, 85, 85, 0.12),
+        0px 14px 64px -4px rgba(85, 85, 85, 0.12);
+    border-radius: 20px;
 }

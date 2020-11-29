@@ -132,18 +132,6 @@
 
 }
 
-@mixin button {
-    //styleName: button;
-    font-family: $nunito;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 18px;
-    letter-spacing: 0.20000000298023224px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
 @mixin caption {
     //styleName: caption;
     font-family: $poppins;
@@ -157,27 +145,43 @@
 
 
 /* BUTTONS */
+@mixin button {
+    //styleName: button;
+    font-family: $nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+    text-transform: uppercase;
+}
 
-@mixin btn-L {
+@mixin btn-large {
     height: 48px;
     width: 336px;
     border-radius: 20px;
     @include button;
 }
 
+@mixin btn-small {
+    height: 40px;
+    width: 180px;
+    border-radius: 20px;
+    @include button;
+    font-size: 14px;
+}
+
 @mixin btn-rojo {
     background-color: $rojo;
     color: #fff;
     border: none;
-    @include btn-L;
-
 }
 
 @mixin btn-blanco {
     background-color: rgba(255, 255, 255, 1);
     border: 2px solid $rojo;
     color: $rojo;
-    @include btn-L;
 }
 
 @mixin flex-col {
@@ -185,5 +189,4 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }

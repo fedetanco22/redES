@@ -1,7 +1,9 @@
 .btn-rojo {
-    @include btn-rojo
+    @include btn-rojo;
+    @include btn-small;
 }
 
 .btn-blanco {
-    @include btn-blanco
+    @include btn-blanco;
+    @include btn-small;
 }

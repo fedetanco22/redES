@@ -3,9 +3,9 @@
     width: 100%;
     border-radius: 100px; //Puede no ir
 
-    // &__container {
-    //     @include flex-col;
-    // }
+    &__container {
+        @include flex-col;
+    }
 
     &__valores {
         @include flex-col;
@@ -31,5 +31,4 @@
 .section-card {
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
         rgba(131, 131, 131, 0.05);
-
 }
