@@ -1,0 +1,34 @@
+.tabs {
+    @include flex-col;
+
+    &__container {
+        width: 269px;
+        height: 52px;
+        background: #FFFFFF;
+        box-shadow: 0px 6px 12px -6px rgba(85, 85, 85, 0.1),
+            0px 8px 24px -4px rgba(85, 85, 85, 0.05);
+        border-radius: 50px;
+        margin: 11px 0 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__item {
+        @include subtitle;
+    }
+
+    &__item--active {
+        width: 141px;
+        height: 44px;
+        color: #fff;
+        background: linear-gradient(220.55deg, #FFE66C -67.63%, #FE413F 101.49%),
+            #FE413F;
+        box-shadow: inset 0px -1px 0px #EAEAEA;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+}

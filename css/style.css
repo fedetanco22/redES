@@ -235,6 +235,48 @@ body {
     margin: 0 15px 0 0; }
     .card__imagen--img {
       width: 42px; }
+  .card__beneficios {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0px;
+    color: #555555;
+    text-align: center; }
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .tabs__container {
+    width: 269px;
+    height: 52px;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 12px -6px rgba(85, 85, 85, 0.1), 0px 8px 24px -4px rgba(85, 85, 85, 0.05);
+    border-radius: 50px;
+    margin: 11px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+  .tabs__item {
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.15000000596046448px; }
+  .tabs__item--active {
+    width: 141px;
+    height: 44px;
+    color: #fff;
+    background: linear-gradient(220.55deg, #FFE66C -67.63%, #FE413F 101.49%), #FE413F;
+    box-shadow: inset 0px -1px 0px #EAEAEA;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
 
 .header {
   text-align: left;
@@ -329,11 +371,9 @@ body {
     color: rgba(131, 131, 131, 0.8); }
 
 .section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 55px 0 39.5px 0; }
+  padding: 55px 0 39.5px 0;
+  width: 100%;
+  border-radius: 100px; }
   .section__valores {
     display: flex;
     flex-direction: column;
