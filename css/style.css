@@ -269,9 +269,10 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 22px;
-    letter-spacing: 0.15000000596046448px; }
-  .tabs__item--active {
-    width: 141px;
+    letter-spacing: 0.15000000596046448px;
+    cursor: pointer; }
+  .tabs__item--border {
+    width: 130px;
     height: 44px;
     color: #fff;
     background: linear-gradient(220.55deg, #FFE66C -67.63%, #FE413F 101.49%), #FE413F;
@@ -281,13 +282,68 @@ body {
     align-items: center;
     justify-content: space-around; }
 
-.tab-0-content-grid,
-.tab-1-content-grid {
-  padding: 30px 20px;
+#tab-1-content,
+#tab-2-content {
+  display: none;
+  opacity: 0; }
+
+.show {
+  display: block !important;
+  opacity: 1 !important;
+  transition: all 1000 ease-in; }
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px; }
+  .tab__img {
+    text-align: center; }
+  .tab__content {
+    margin: 19px 0; }
+    .tab__content--sub {
+      margin-bottom: 19px; }
+    .tab__content__titulo {
+      font-family: "Nunito", sans-serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 22px;
+      letter-spacing: 0.15000000596046448px;
+      color: #FE413F;
+      margin-bottom: 19px;
+      text-align: center; }
+    .tab__content__txt {
+      font-family: "Poppins", sans-serif;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0.5px;
+      color: rgba(131, 131, 131, 0.9);
+      color: #555;
+      text-align: center; }
+    .tab__content__items {
+      display: flex;
+      font-family: "Poppins", sans-serif;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 21px;
+      letter-spacing: 0.25px;
+      color: rgba(131, 131, 131, 0.9);
+      margin-bottom: 20px; }
+      .tab__content__items--p {
+        margin-left: 12px; }
+  .tab__btn__container {
+    margin-bottom: 19px;
+    text-align: center; }
+
+.tab-1-content-grid,
+.tab-2-content-grid {
   width: 292px;
-  height: 762px;
+  height: auto;
   background: #FFFFFF;
-  /* sombra 6 */
   box-shadow: 0px 8px 22px -6px rgba(85, 85, 85, 0.12), 0px 14px 64px -4px rgba(85, 85, 85, 0.12);
   border-radius: 20px; }
 
@@ -389,8 +445,7 @@ body {
 
 .section {
   padding: 55px 0 39.5px 0;
-  width: 100%;
-  border-radius: 100px; }
+  width: 100%; }
   .section__container {
     display: flex;
     flex-direction: column;
@@ -428,3 +483,9 @@ body {
 
 .section-card {
   background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), rgba(131, 131, 131, 0.05); }
+
+.section-tabs {
+  padding: 0 0 39.5px 0; }
+
+.section-plan {
+  padding: 55px 0 0 0; }
