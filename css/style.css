@@ -122,6 +122,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+a {
+  text-decoration: none;
+  color: inherit; }
+
 /* COLORS */
 /* FONTS */
 /* TEXTS */
@@ -165,6 +169,13 @@ body {
     padding: 20px;
     margin-top: 11px; }
 
+.comercios {
+  padding: 0 5px 0 5px; }
+  .comercios--p {
+    color: #555;
+    padding: 0 20px 20px 20px;
+    margin-top: 0; }
+
 .btn-rojo {
   background-color: #FE413F;
   color: #fff;
@@ -185,7 +196,7 @@ body {
 .btn-blanco {
   background-color: white;
   border: 2px solid #FE413F;
-  color: #FE413F;
+  color: rgba(131, 131, 131, 0.9);
   height: 40px;
   width: 180px;
   border-radius: 20px;
@@ -485,7 +496,10 @@ body {
   background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), rgba(131, 131, 131, 0.05); }
 
 .section-tabs {
-  padding: 0 0 39.5px 0; }
+  padding: 0 0 0 0; }
 
 .section-plan {
-  padding: 55px 0 0 0; }
+  padding: 0 0 0 0; }
+
+.section-comercios {
+  padding: 57px 0 0 0; }
