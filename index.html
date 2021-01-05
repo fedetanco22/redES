@@ -56,7 +56,7 @@
 
 <body>
 
-    <div class="">
+    <div class="contenedor-general">
         <header class="header container">
             <div class="header__contenedor d-flex align-items-center">
 
@@ -333,27 +333,24 @@
                         <p class="titulos--p comercios--p">Rubros que integran nuestra red de comercios.
                         </p>
                     </div>
-
                     <section class="container">
                         <div class="carousel ">
                             <div class="carousel__contenedor">
                                 <button aria-label="Anterior" class="carousel__anterior">
                                     <i class="fas fa-chevron-left carousel__anterior--chevron"></i>
                                 </button>
-
                                 <div class="carousel__lista">
                                     <div class="carousel__elemento">
                                         <article class="card__comercios">
                                             <div class="card__comercios__imagen">
-                                                <img class="card__comercios__img"
-                                                    src="./assets/images/iconos/checkroom-1.svg" alt="checkroom-1">
+                                                <img class="carousel__img" src="./assets/images/iconos/checkroom-1.svg"
+                                                    alt="checkroom-1">
                                             </div>
                                             <div class="card__comercios__header">
                                                 <h6 class="card__comercios__titulo">Indumentaria y Accesorios</h6>
                                                 <p class="card__comercios__body">Boutique, zapatos, carteras.
                                                 </p>
                                             </div>
-
                                         </article>
                                     </div>
                                     <div class="carousel__elemento">
@@ -369,7 +366,6 @@
                                                     diseñador.
                                                 </p>
                                             </div>
-
                                         </article>
                                     </div>
                                     <div class="carousel__elemento">
@@ -384,7 +380,6 @@
                                                 <p class="card__comercios__body">Peluquería, manicuría, depilación,etc.
                                                 </p>
                                             </div>
-
                                         </article>
                                     </div>
                                     <div class="carousel__elemento">
@@ -400,7 +395,6 @@
                                                     diseñador.
                                                 </p>
                                             </div>
-
                                         </article>
                                     </div>
                                     <div class="carousel__elemento">
@@ -415,7 +409,6 @@
                                                 <p class="card__comercios__body">Resto, bar, tapeo, café.
                                                 </p>
                                             </div>
-
                                         </article>
                                     </div>
                                     <div class="carousel__elemento">
@@ -429,7 +422,6 @@
                                                 <p class="card__comercios__body">Muebles y deco.
                                                 </p>
                                             </div>
-
                                         </article>
                                     </div>
                                     <div class="carousel__elemento">
@@ -444,7 +436,6 @@
                                                 <p class="card__comercios__body">Entretenimiento, teatro, conciertos.
                                                 </p>
                                             </div>
-
                                         </article>
                                     </div>
                                     <div class="carousel__elemento">
@@ -459,7 +450,6 @@
                                                 <p class="card__comercios__body">Celulares, laptop, tabletas.
                                                 </p>
                                             </div>
-
                                         </article>
                                     </div>
                                     <div class="carousel__elemento">
@@ -474,7 +464,6 @@
                                                 <p class="card__comercios__body">Hotel, hostería, agencia, etc.
                                                 </p>
                                             </div>
-
                                         </article>
                                     </div>
                                     <div class="carousel__elemento">
@@ -488,7 +477,6 @@
                                                 <p class="card__comercios__body">Veterinaria, pet shop.
                                                 </p>
                                             </div>
-
                                         </article>
                                     </div>
                                     <div class="carousel__elemento">
@@ -503,7 +491,6 @@
                                                 <p class="card__comercios__body">Gimnasio, equipamiento deportivo.
                                                 </p>
                                             </div>
-
                                         </article>
                                     </div>
                                     <div class="carousel__elemento">
@@ -518,7 +505,6 @@
                                                 </h6>
                                                 <p class="card__comercios__body">Vinotecas, librerías, jugueterías, etc.
                                             </div>
-
                                         </article>
                                     </div>
                                 </div>
@@ -543,48 +529,55 @@
                 </div>
                 <section class="container">
                     <div class="carousel ">
-
                         <div class="carousel__contenedor">
-                            <button aria-label="Anterior" class="carousel__anterior">
-                                <i class="fas fa-chevron-left carousel__anterior--chevron"></i>
-                            </button>
 
-                            <div class="carousel__lista">
+                            <div class="carousel__lista--clientes">
                                 <div class="carousel__elemento">
-                                    <img src="" alt="">
+                                    <img class="cliente__img" src="./assets/clientes/cliente1.png" alt="cliente1">
+                                </div>
+                                <div class="carousel__elemento">
+                                    <img class="cliente__img" src="./assets/clientes/cliente2.png" alt="cliente2">
+                                </div>
+                                <div class="carousel__elemento">
+                                    <img class="cliente__img" src="./assets/clientes/cliente3.png" alt="cliente3">
                                 </div>
                             </div>
-                            <div class="carousel__lista">
-                                <div class="carousel__elemento">
-                                    <img src="" alt="">
-                                </div>
-                            </div>
-                            <div class="carousel__lista">
-                                <div class="carousel__elemento">
-                                    <img src="" alt="">
-                                </div>
-                            </div>
-                            <button aria-label="Siguiente" class="carousel__siguiente">
-                                <i class="fas fa-chevron-right carousel__anterior--chevron"></i>
-                            </button>
+
                         </div>
                     </div>
                 </section>
                 <!-- FIN NUESTROS CLIENTES -->
 
+                <!-- CONTACTO -->
+                <section class="section section-contacto">
+                    <div class="container section__container">
+                        <div class="titulos ">
+                            <h3 class="titulos--ppal titulos--contacto">Contacto</h3>
+                        </div>
+                        <p class="titulos--p">Si quieres formar parte de Red ES Beneficio, o pedir más información,
+                            déjanos
+                            tus datos y nos contactaremos a la brevedad.
+                        </p>
+                    </div>
+                    <form class="formulario" action="submit" method="post">
+                        <input class="formulario__input" type="text" name="user_name" id=""
+                            placeholder="Nombre y Apellido:">
+                        <input class="formulario__input" type="email" name="user_email" id="" placeholder="Mail:">
+                        <input class="formulario__input formulario__input__text" type="text" name="user_message" id=""
+                            placeholder="Mail:">
+                        <button type="submit">Enviar</button>
+                    </form>
 
+
+
+                    <!-- FIN CONTACTO -->
+        </main>
+
+
+        <footer>
+
+        </footer>
     </div>
-
-    <!-- <div role="tablist" class="carousel__indicadores"></div> -->
-
-
-    </main>
-
-
-    </div>
-    <footer>
-
-    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
         integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
         crossorigin="anonymous"></script>
