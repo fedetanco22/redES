@@ -210,7 +210,7 @@ body {
   text-transform: uppercase;
   font-size: 14px; }
 
-.card {
+.card, .card__comercios {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -226,7 +226,7 @@ body {
     justify-content: flex-start;
     height: 42px;
     margin-bottom: 15px; }
-  .card__titulo {
+  .card__titulo, .card__comercios__titulo {
     font-family: "Poppins", sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -244,6 +244,14 @@ body {
     line-height: 21px;
     letter-spacing: 0.25px;
     color: rgba(131, 131, 131, 0.9); }
+    .card__body--comercios {
+      font-family: "Poppins", sans-serif;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0.5px;
+      color: rgba(131, 131, 131, 0.9); }
   .card__imagen {
     margin: 0 15px 0 0; }
     .card__imagen--img {
@@ -257,6 +265,75 @@ body {
     letter-spacing: 0px;
     color: #555555;
     text-align: center; }
+  .card__comercios {
+    justify-content: flex-start;
+    padding: 25px 30px 20px;
+    width: 254px;
+    height: 243px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    /* sombra 5 */
+    box-shadow: 0px 8px 18px -6px rgba(85, 85, 85, 0.12), 0px 12px 42px -4px rgba(85, 85, 85, 0.12);
+    border-radius: 20px;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 20px 0px; }
+    .card__comercios__titulo {
+      margin-top: 26.67px; }
+    .card__comercios__body {
+      font-family: "Poppins", sans-serif;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0.5px;
+      color: rgba(131, 131, 131, 0.9);
+      margin-top: 20px; }
+
+.carousel {
+  margin: 50px 0;
+  width: 100%; }
+  .carousel__contenedor {
+    position: relative;
+    margin: 20px 20px; }
+  .carousel__elemento {
+    display: flex;
+    align-items: center;
+    width: 15px; }
+  .carousel__indicadores .glider-dot {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #333;
+    opacity: .2;
+    border-radius: 0; }
+    .carousel__indicadores .glider-dot:hover {
+      opacity: .5; }
+    .carousel__indicadores .glider-dot.active {
+      opacity: .5; }
+  .carousel__siguiente, .carousel__anterior {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 20px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: #000;
+    opacity: 20%;
+    border: white; }
+  .carousel__siguiente:hover, .carousel__anterior:hover {
+    opacity: 100%; }
+  .carousel__anterior {
+    left: -30px; }
+  .carousel__siguiente {
+    right: -30px; }
 
 .tabs {
   display: flex;

@@ -30,6 +30,10 @@
 
     &__body {
         @include body2;
+
+        &--comercios {
+            @include body1;
+        }
     }
 
     &__imagen {
@@ -44,5 +48,102 @@
         @include h6-phone;
         text-align: center;
         // margin-top: 21px;
+    }
+
+    &__comercios {
+        @extend .card;
+        justify-content: flex-start;
+        padding: 25px 30px 20px;
+        // position: static;
+        width: 254px;
+        height: 243px;
+        left: 0px;
+        top: 0px;
+        background: #FFFFFF;
+        /* sombra 5 */
+        box-shadow: 0px 8px 18px -6px rgba(85, 85, 85, 0.12),
+            0px 12px 42px -4px rgba(85, 85, 85, 0.12);
+        border-radius: 20px;
+
+        /* Inside Auto Layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 20px 0px;
+
+        &__titulo {
+            @extend .card__titulo;
+            margin-top: 26.67px;
+        }
+
+        &__body {
+            @include body1;
+            margin-top: 20px;
+        }
+
+    }
+}
+
+.carousel {
+    margin: 50px 0;
+    width: 100%;
+
+    &__contenedor {
+        position: relative;
+        margin: 20px 20px;
+    }
+
+    &__elemento {
+        display: flex;
+        align-items: center;
+        width: 15px;
+    }
+
+    &__indicadores .glider-dot {
+        display: block;
+        width: 30px;
+        height: 4px;
+        background: #333;
+        opacity: .2;
+        border-radius: 0;
+
+        &:hover {
+            opacity: .5;
+        }
+
+        &.active {
+            opacity: .5;
+        }
+    }
+
+    &__siguiente,
+    &__anterior {
+        position: absolute;
+        display: block;
+        width: 30px;
+        height: 30px;
+        border: none;
+        top: calc(50% - 20px);
+        cursor: pointer;
+        line-height: 30px;
+        text-align: center;
+        background: none;
+        color: #000;
+        opacity: 20%;
+        border: white;
+    }
+
+    &__siguiente:hover,
+    &__anterior:hover {
+        opacity: 100%;
+
+    }
+
+    &__anterior {
+        left: -30px;
+    }
+
+    &__siguiente {
+        right: -30px;
     }
 }
