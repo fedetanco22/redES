@@ -559,18 +559,21 @@
                             tus datos y nos contactaremos a la brevedad.
                         </p>
                     </div>
-                    <form class="formulario" action="submit" method="post">
-                        <input class="formulario__input" type="text" name="user_name" id=""
-                            placeholder="Nombre y Apellido:">
-                        <input class="formulario__input" type="email" name="user_email" id="" placeholder="Mail:">
-                        <input class="formulario__input formulario__input__text" type="text" name="user_message" id=""
-                            placeholder="Mail:">
-                        <button type="submit">Enviar</button>
+                    <form class="formulario" action="enviarMensaje" method="post">
+                        <input class="formulario__input" type="text" name="user_name" id="user_name"
+                            placeholder="Nombre y Apellido:"></input>
+
+                        <input type="email" class="formulario__input" name="user_email" id="user_email"
+                            placeholder="Mail:"></input>
+                        <textarea class="formulario__input formulario__input__text" type="text" name="user_message"
+                            id="user_message" placeholder="Mail:"></textarea>
+
+                        <input class="btn-rojo btn-rojo--large " type="submit" value="Enviar"></input>
                     </form>
 
+                </section>
 
-
-                    <!-- FIN CONTACTO -->
+                <!-- FIN CONTACTO -->
         </main>
 
 

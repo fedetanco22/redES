@@ -1,6 +1,11 @@
 .btn-rojo {
     @include btn-rojo;
     @include btn-small;
+
+    &--large {
+        width: 250px;
+
+    }
 }
 
 .btn-blanco {

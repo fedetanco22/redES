@@ -10,8 +10,8 @@
     &__input {
         @include body2;
         height: 48px;
-        width: 240px;
-        border: 1px solid #838383;
+        width: 255px;
+        border: none;
         padding: 13px 16px;
         background: #FFFFFF;
         box-shadow: 0px 4px 6px -4px rgba(85, 85, 85, 0.12),
@@ -21,8 +21,8 @@
 
         &__text {
             height: 152px;
-
-
         }
+
+
     }
 }
