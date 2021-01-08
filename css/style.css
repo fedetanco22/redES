@@ -137,7 +137,7 @@ body {
 
 /* TITLES */
 /* BUTTONS */
-.titulos {
+.titulos, .titulos--ppal-rojo {
   font-family: "Nunito", sans-serif;
   font-size: 34px;
   font-style: normal;
@@ -145,10 +145,12 @@ body {
   line-height: 40px;
   letter-spacing: 0.25px;
   color: #555555; }
-  .titulos--ppal {
+  .titulos--ppal, .titulos--ppal-rojo {
     text-align: center;
     margin-bottom: 9px; }
-  .titulos--sub {
+    .titulos--ppal-rojo {
+      color: #FE413F; }
+  .titulos--sub, .titulos__empresas--sub {
     font-family: "Poppins", sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -170,6 +172,10 @@ body {
     margin-top: 11px; }
   .titulos--contacto {
     margin: 0 0 4px 0; }
+  .titulos__empresas--icono {
+    margin: 0 0 24px; }
+  .titulos__empresas--sub {
+    margin: 46px 0; }
 
 .comercios {
   padding: 0 5px 0 5px; }
@@ -574,6 +580,9 @@ body {
   .banner__imagen {
     height: 184px;
     width: 294px; }
+    .banner__imagen--empresa {
+      width: auto;
+      height: auto; }
     .banner__imagen__img {
       width: 100%;
       object-fit: cover;

@@ -4,6 +4,12 @@
     &--ppal {
         text-align: center;
         margin-bottom: 9px;
+
+        &-rojo {
+            @extend .titulos;
+            @extend .titulos--ppal;
+            color: $rojo;
+        }
     }
 
     &--sub {
@@ -20,6 +26,17 @@
 
     &--contacto {
         margin: 0 0 4px 0;
+    }
+
+    &__empresas {
+        &--icono {
+            margin: 0 0 24px;
+        }
+
+        &--sub {
+            @extend .titulos--sub;
+            margin: 46px 0;
+        }
     }
 }
 
