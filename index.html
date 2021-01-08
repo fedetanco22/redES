@@ -75,13 +75,13 @@
                         <li class="menu__item__img"> <a class="menu__link" href="index.html"> <img
                                     class="menu__item__img--logo" src="./assets/images/Logo RED ES BENEFICIO.png"
                                     alt="logo"> </a></li>
-                        <li class="menu__item"> <a class="menu__link" href="index.html"> Nosotros </a></li>
+                        <li class="menu__item"> <a class="menu__link" href="/#Nosotros"> Nosotros </a></li>
                         <li class="menu__item"> <a class="menu__link" href="#"> Beneficios </a></li>
                         <li class="menu__item"> <a class="menu__link" href="./pages/empresas.html"> Empresas </a>
                         </li>
                         <li class="menu__item"> <a class="menu__link" href="./pages/comercios.html"> Comercios </a></li>
                         <li class="menu__item"> <a class="menu__link" href="#"> Descuentos </a></li>
-                        <li class="menu__item"> <a class="menu__link" href="contacto.html"> Contacto </a></li>
+                        <li class="menu__item"> <a class="menu__link" href="#contacto"> Contacto </a></li>
                     </ul>
                 </nav>
             </div>
@@ -104,7 +104,8 @@
         <!--Fin Banner-->
 
         <main>
-            <section class="section">
+            <!-- NOSOTROS -->
+            <section id="Nosotros" class="section">
                 <div class="container">
                     <div class="titulos">
                         <h3 class="titulos--ppal">¿Qué es REB?</h3>
@@ -142,8 +143,10 @@
                     </article>
                 </div>
             </section>
+            <!-- NOSOTROS -->
 
-            <section class="section section-card">
+            <!-- PORQUE ELEGIRNOS -->
+            <section id="porqueElegirnos" class="section section-card">
                 <div class="container section__container">
                     <div class="titulos">
                         <h3 class="titulos--ppal">¿Por qué elegirnos?</h3>
@@ -206,11 +209,13 @@
                         </p>
                     </article>
                     <article>
-                        <h6 class="card__beneficios"><a href="#"> Ver Beneficios</a></h6>
+                        <h6 class="card__beneficios"><a href="#redDeComercios"> Ver Beneficios</a></h6>
                     </article>
                 </div>
             </section>
+            <!-- FIN PORQUE ELEGIRNOS -->
 
+            <!-- PLANES -->
             <section class="section section-plan">
                 <div class="container section__container">
                     <div class="titulos">
@@ -227,6 +232,7 @@
                         </div>
                     </article>
             </section>
+            <!-- FIN PLANES -->
 
             <!--  Empresas y Comercios -->
             <section class="section section-tabs ">
@@ -273,10 +279,10 @@
                         </div>
                         <div class="tab__btn">
                             <div class="tab__btn__container">
-                                <button type="submit" class="btn-rojo"><a href="#">Sé parte</a></button>
+                                <button type="submit" class="btn-rojo"><a href="#contacto">Sé parte</a></button>
                             </div>
                             <div class="tab__btn__container">
-                                <button type="submit" class="btn-blanco"><a href="#">+
+                                <button type="submit" class="btn-blanco"><a href="#porqueElegirnos">+
                                         Info</a></button>
                             </div>
                     </article>
@@ -317,10 +323,10 @@
                         </div>
                         <div class="tab__btn">
                             <div class="tab__btn__container">
-                                <button type="submit" class="btn-rojo"><a href="#">Sé parte</a></button>
+                                <button type="submit" class="btn-rojo"><a href="#contacto">Sé parte</a></button>
                             </div>
                             <div class="tab__btn__container">
-                                <button type="submit" class="btn-blanco"><a href="#">+ Info</a></button>
+                                <button type="submit" class="btn-blanco"><a href="#porqueElegirnos">+ Info</a></button>
                             </div>
                         </div>
                     </article>
@@ -329,7 +335,7 @@
             <!-- FIN EMPRESAS Y COMERCIOS -->
 
             <!-- RED DE COMERCIOS -->
-            <section class="section section-comercios">
+            <section id="redDeComercios" class="section section-comercios">
                 <div class=" section__container">
                     <div class="titulos container">
                         <h3 class="titulos--ppal comercios">Red de Comercios</h3>
@@ -346,8 +352,8 @@
                                     <div class="carousel__elemento">
                                         <article class="card__comercios">
                                             <div class="card__comercios__imagen">
-                                                <img class="carousel__img" src="./assets/images/iconos/checkroom-1.svg"
-                                                    alt="checkroom-1">
+                                                <img class="card__comercios__img"
+                                                    src="./assets/images/iconos/checkroom-1.svg" alt="checkroom-1">
                                             </div>
                                             <div class="card__comercios__header">
                                                 <h6 class="card__comercios__titulo">Indumentaria y Accesorios</h6>
@@ -549,44 +555,44 @@
                         </div>
                     </div>
                 </section>
-                <!-- FIN NUESTROS CLIENTES -->
+            </section>
+            <!-- FIN NUESTROS CLIENTES -->
 
-                <!-- CONTACTO -->
-                <section class="section section-contacto container">
-                    <div class="container section__container">
-                        <div class="titulos ">
-                            <h3 class="titulos--ppal titulos--contacto">Contacto</h3>
+            <!-- CONTACTO -->
+            <section id="contacto" class="section section-contacto container">
+                <div class="container section__container">
+                    <div class="titulos ">
+                        <h3 class="titulos--ppal titulos--contacto">Contacto</h3>
+                    </div>
+                    <p class="titulos--p">Si quieres formar parte de Red ES Beneficio, o pedir más información,
+                        déjanos
+                        tus datos y nos contactaremos a la brevedad.
+                    </p>
+                </div>
+                <div class="formulario">
+                    <form action="correo.php" method="POST">
+                        <div>
+                            <input class="formulario__input" type="text" name="user_name" id="user_name"
+                                placeholder="Nombre y Apellido:">
+
                         </div>
-                        <p class="titulos--p">Si quieres formar parte de Red ES Beneficio, o pedir más información,
-                            déjanos
-                            tus datos y nos contactaremos a la brevedad.
-                        </p>
-                    </div>
-                    <div class="formulario">
-                        <form action="correo.php" method="POST">
-                            <div>
-                                <input class="formulario__input" type="text" name="user_name" id="user_name"
-                                    placeholder="Nombre y Apellido:">
+                        <div>
+                            <input type="email" class="formulario__input" name="user_email" id="user_email"
+                                placeholder="Mail:">
+                        </div>
+                        <div>
+                            <textarea class="formulario__input formulario__input__text" type="text" name="user_message"
+                                id="user_message" placeholder="Mail:"></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" value="Enviar" class="btn-rojo btn-rojo--large">
+                        </div>
+                    </form>
 
-                            </div>
-                            <div>
-                                <input type="email" class="formulario__input" name="user_email" id="user_email"
-                                    placeholder="Mail:">
-                            </div>
-                            <div>
-                                <textarea class="formulario__input formulario__input__text" type="text"
-                                    name="user_message" id="user_message" placeholder="Mail:"></textarea>
-                            </div>
-                            <div>
-                                <input type="submit" value="Enviar" class="btn-rojo btn-rojo--large">
-                            </div>
-                        </form>
+                </div>
 
-                    </div>
-
-                </section>
-
-                <!-- FIN CONTACTO -->
+            </section>
+            <!-- FIN CONTACTO -->
         </main>
 
         <footer class="footer">
