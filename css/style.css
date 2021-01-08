@@ -644,11 +644,14 @@ body {
   margin-top: 53px;
   background: #555555;
   padding: 72px 26px 91px 32px; }
+  .footer__containers--rrss {
+    display: flex; }
   .footer__newsletter__suscribir {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    margin-bottom: 58px; }
   .footer__newsletter__titulo {
     font-family: "Poppins", sans-serif;
     font-size: 18px;
@@ -692,3 +695,63 @@ body {
       color: rgba(131, 131, 131, 0.9);
       color: #FE413F;
       text-align: center; }
+  .footer__logo__img {
+    height: 60px;
+    width: 110px; }
+  .footer__logo__txt {
+    margin-top: 14px; }
+    .footer__logo__txt--hashtag {
+      font-family: "Poppins", sans-serif;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0.5px;
+      color: rgba(131, 131, 131, 0.9);
+      color: #fff;
+      margin-bottom: 24px; }
+  .footer__contacto {
+    display: flex;
+    margin-bottom: 20px; }
+    .footer__contacto__txt {
+      font-family: "Poppins", sans-serif;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0.4000000059604645px;
+      color: #fff;
+      margin-left: 12px; }
+    .footer__contacto__icons {
+      width: 20px;
+      height: 20px;
+      text-align: center; }
+  .footer__rrss {
+    background-color: #fff;
+    color: rgba(131, 131, 131, 0.9);
+    border-radius: 50%;
+    height: 26.66667366027832px;
+    width: 26.666667938232422px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20.33px 22.67px 0; }
+  .footer__copyright {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.4000000059604645px;
+    color: #fff; }
+
+.fa-envelope,
+.fa-mobile-alt {
+  color: #fff;
+  font-size: 20px; }
+
+.fa-map-marker-alt {
+  color: #fff;
+  font-size: 15px;
+  margin-right: 6px;
+  margin-left: 3px; }
