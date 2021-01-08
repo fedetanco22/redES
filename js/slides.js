@@ -25,6 +25,7 @@ var slider = new Glider(document.querySelector(".carousel__lista"), {
     },
   ],
 });
+
 var slider2 = new Glider(document.querySelector(".carousel__lista--clientes"), {
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -52,7 +53,7 @@ var slider2 = new Glider(document.querySelector(".carousel__lista--clientes"), {
   ],
 });
 // });
-slideAutoPaly(slider, ".glider");
+// slideAutoPaly(slider, ".glider");
 slideAutoPaly(slider2, ".glider");
 
 function slideAutoPaly(glider, selector, delay = 3000, repeat = true) {

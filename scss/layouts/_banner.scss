@@ -1,8 +1,8 @@
 .banner {
+    margin-top: 53px;
+
 
     &__cont {
-        background-color: rgba(196, 196, 196, 0.2);
-        height: 420px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -13,11 +13,21 @@
         width: 254px;
         height: 293px;
 
-
-
         &__jerarquia {
             @include texto-1jerarquia-phone;
 
+        }
+    }
+
+    &__imagen {
+        height: 184px;
+        width: 294px;
+
+
+        &__img {
+            width: 100%;
+            object-fit: cover;
+            display: block;
         }
     }
 }

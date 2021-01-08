@@ -89,14 +89,16 @@
         </header>
 
         <!--Banner-->
-        <section class="banner">
-            <div class="banner__cont container ">
+        <section class="banner container">
+            <div class="banner__cont ">
                 <div class="banner__texto">
                     <p class="banner__texto__jerarquia">Somos una comunidad que vincula profesionales y comercios
                         con empresas y consumidores a través de la generación y consumo de beneficios sobre
                         productos y servicios de primera y segunda necesidad.
                     </p>
                 </div>
+                <div class="banner__imagen "><img src="./assets/ilustraciones/Frame 6191.svg" alt="Frame 6191.svg"
+                        class="banner__imagen__img"></div>
             </div>
         </section>
         <!--Fin Banner-->
@@ -549,7 +551,7 @@
                 <!-- FIN NUESTROS CLIENTES -->
 
                 <!-- CONTACTO -->
-                <section class="section section-contacto">
+                <section class="section section-contacto container">
                     <div class="container section__container">
                         <div class="titulos ">
                             <h3 class="titulos--ppal titulos--contacto">Contacto</h3>
@@ -559,25 +561,62 @@
                             tus datos y nos contactaremos a la brevedad.
                         </p>
                     </div>
-                    <form class="formulario" action="enviarMensaje" method="post">
-                        <input class="formulario__input" type="text" name="user_name" id="user_name"
-                            placeholder="Nombre y Apellido:"></input>
+                    <div class="formulario">
+                        <form action="correo.php" method="POST">
+                            <div>
+                                <input class="formulario__input" type="text" name="user_name" id="user_name"
+                                    placeholder="Nombre y Apellido:">
 
-                        <input type="email" class="formulario__input" name="user_email" id="user_email"
-                            placeholder="Mail:"></input>
-                        <textarea class="formulario__input formulario__input__text" type="text" name="user_message"
-                            id="user_message" placeholder="Mail:"></textarea>
+                            </div>
+                            <div>
+                                <input type="email" class="formulario__input" name="user_email" id="user_email"
+                                    placeholder="Mail:">
+                            </div>
+                            <div>
+                                <textarea class="formulario__input formulario__input__text" type="text"
+                                    name="user_message" id="user_message" placeholder="Mail:"></textarea>
+                            </div>
+                            <div>
+                                <input type="submit" value="Enviar" class="btn-rojo btn-rojo--large">
+                            </div>
+                        </form>
 
-                        <input class="btn-rojo btn-rojo--large " type="submit" value="Enviar"></input>
-                    </form>
+                    </div>
 
                 </section>
 
                 <!-- FIN CONTACTO -->
         </main>
 
+        <footer class="footer">
+            <div class="footer__containers ">
+                <div class="footer__newsletter">
+                    <p class="footer__newsletter__titulo">Suscribite a nuesto Newsletter</p>
+                    <p class="footer__newsletter__texto">Si quieres conocer nuestras ofertas y beneficios, suscríbite a
+                        nuestro newsletter.</p>
+                    <div class="footer__newsletter__suscribir">
+                        <div class="footer__newsletter__input">
+                            <img class="footer__newsletter__input--img" src="./assets/images/iconos/mail_outline-1.svg"
+                                alt="mail_outline-1.svg">
+                            <input class="footer__newsletter__input--text" type="text" value="Ingresa tu correo">
+                        </div>
+                        <button class="btn-rojo btn-rojo--suscription" type="submit">suscribir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__containers">
 
-        <footer>
+            </div>
+            <div class="footer__containers">
+
+            </div>
+            <div class="footer__containers">
+
+            </div>
+            <div class="footer__containers">
+
+            </div>
+
 
         </footer>
     </div>

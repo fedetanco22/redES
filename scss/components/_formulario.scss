@@ -4,8 +4,7 @@
     align-items: center;
     padding: 0px;
 
-    width: 257px;
-    height: 251px;
+    width: 100%;
 
     &__input {
         @include body2;
@@ -22,7 +21,5 @@
         &__text {
             height: 152px;
         }
-
-
     }
 }

@@ -167,10 +167,10 @@
 }
 
 @mixin btn-small {
+    @include button;
     height: 40px;
     width: 180px;
     border-radius: 20px;
-    @include button;
     font-size: 14px;
 }
 
