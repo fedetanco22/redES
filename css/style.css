@@ -312,9 +312,6 @@ body {
       width: 210px;
       height: 45px; }
 
-.cliente__img {
-  width: 100%; }
-
 .tabs {
   display: flex;
   flex-direction: column;
@@ -484,6 +481,20 @@ body {
     margin: 4px 0 12px; }
     .formulario__input__text {
       height: 152px; }
+
+.cliente {
+  display: flex;
+  align-items: center; }
+  .cliente__img {
+    width: 60%;
+    object-fit: cover;
+    -webkit-filter: grayscale(1);
+    filter: gray;
+    filter: grayscale(1); }
+    .cliente__img:hover {
+      -webkit-filter: grayscale(0);
+      filter: none;
+      filter: grayscale(0); }
 
 .header {
   text-align: left;

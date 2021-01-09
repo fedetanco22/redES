@@ -1,0 +1,19 @@
+.cliente {
+    display: flex;
+    align-items: center;
+
+    &__img {
+        width: 60%;
+        object-fit: cover;
+        -webkit-filter: grayscale(1);
+        filter: gray;
+        filter: grayscale(1);
+
+        &:hover {
+            -webkit-filter: grayscale(0);
+            filter: none;
+            filter: grayscale(0);
+        }
+
+    }
+}
