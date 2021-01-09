@@ -87,7 +87,7 @@
 
         </header>
         <main>
-            <section class="section section-card">
+            <section class="section section-planes">
                 <section class="container section__container">
                     <div class="titulos">
                         <div class="tab__img titulos__empresas--icono">
@@ -116,45 +116,45 @@
                                 <h6 class="card__titulo">10 Euros + IVA. </h6>
                             </div>
                         </div>
-
                     </article>
                 </section>
-                <!-- CONTACTO -->
-                <section class="section section-contacto container">
-                    <div class="container section__container">
-                        <div class="titulos ">
-                            <h3 class="titulos--ppal titulos--contacto">Contacto</h3>
+            </section>
+            <!-- CONTACTO -->
+            <section class="section section-contacto container">
+                <div class="container section__container">
+                    <div class="titulos ">
+                        <h3 class="titulos--ppal titulos--contacto">Contacto</h3>
+                    </div>
+                    <p class="titulos--p">Si quieres formar parte de Red ES Beneficio, o pedir más información,
+                        déjanos
+                        tus datos y nos contactaremos a la brevedad.
+                    </p>
+                </div>
+                <div class="formulario">
+                    <form action="correo.php" method="POST">
+                        <div>
+                            <input class="formulario__input" type="text" name="user_name" id="user_name"
+                                placeholder="Nombre y Apellido:">
+
                         </div>
-                        <p class="titulos--p">Si quieres formar parte de Red ES Beneficio, o pedir más información,
-                            déjanos
-                            tus datos y nos contactaremos a la brevedad.
-                        </p>
-                    </div>
-                    <div class="formulario">
-                        <form action="correo.php" method="POST">
-                            <div>
-                                <input class="formulario__input" type="text" name="user_name" id="user_name"
-                                    placeholder="Nombre y Apellido:">
+                        <div>
+                            <input type="email" class="formulario__input" name="user_email" id="user_email"
+                                placeholder="Mail:">
+                        </div>
+                        <div>
+                            <textarea class="formulario__input formulario__input__text" type="text" name="user_message"
+                                id="user_message" placeholder="Mail:"></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" value="Enviar" class="btn-rojo btn-rojo--large">
+                        </div>
+                    </form>
 
-                            </div>
-                            <div>
-                                <input type="email" class="formulario__input" name="user_email" id="user_email"
-                                    placeholder="Mail:">
-                            </div>
-                            <div>
-                                <textarea class="formulario__input formulario__input__text" type="text"
-                                    name="user_message" id="user_message" placeholder="Mail:"></textarea>
-                            </div>
-                            <div>
-                                <input type="submit" value="Enviar" class="btn-rojo btn-rojo--large">
-                            </div>
-                        </form>
+                </div>
 
-                    </div>
+            </section>
 
-                </section>
-
-                <!-- FIN CONTACTO -->
+            <!-- FIN CONTACTO -->
         </main>
 
         <footer class="footer">
