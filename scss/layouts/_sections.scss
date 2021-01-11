@@ -62,3 +62,58 @@
 .section-contacto {
     @include flex-col;
 }
+
+#mipanel {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .section {
+        &-nosotros {
+            padding: 113px 0 39.5px 0;
+            height: 100%;
+        }
+
+        &__canvas {
+            position: relative;
+            width: 100%;
+        }
+
+        &__abs {
+            position: absolute;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas:
+                "zona1 zona2 zona3"
+                "zona4 zona5 zona6";
+            transform: translate(-15px, -307px);
+
+        }
+
+        &__valores {
+            margin: 26px 0 0 0;
+
+            &--2 {
+                grid-area: zona2;
+            }
+
+            &--4 {
+                grid-area: zona4;
+            }
+
+            &--6 {
+                grid-area: zona6;
+            }
+
+        }
+    }
+
+
+
+    #mipanel {
+        display: inline-block;
+        position: relative;
+    }
+
+}

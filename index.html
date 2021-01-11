@@ -26,8 +26,6 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-
-
     <!-- FAVICONS -->
     <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicons/apple-icon-60x60.png">
@@ -51,12 +49,14 @@
     <script src="https://kit.fontawesome.com/8ee6cf5ee4.js" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
     <script defer src="js/slides.js"></script>
+    <script defer src="js/canva.js"></script>
     <script defer src="js/scrpits.js"></script>
 </head>
 
 <body>
 
     <div class="contenedor-general">
+        <!-- HEADER -->
         <header class="header container">
             <div class="header__contenedor d-flex align-items-center">
 
@@ -87,8 +87,9 @@
             </div>
 
         </header>
+        <!-- FIN HEADER -->
 
-        <!--Banner-->
+        <!--BANNER-->
         <section class="banner container">
             <div class="banner__cont ">
                 <div class="banner__texto">
@@ -101,46 +102,57 @@
                         class="banner__imagen__img"></div>
             </div>
         </section>
-        <!--Fin Banner-->
+        <!--FIN BANNER-->
 
         <main>
             <!-- NOSOTROS -->
-            <section id="Nosotros" class="section">
-                <div class="container">
+            <section id="Nosotros" class="section section-nosotros">
+                <div class="container section__container">
                     <div class="titulos">
                         <h3 class="titulos--ppal">¿Qué es REB?</h3>
                         <p class="titulos--sub">Red ES Beneficio.</p>
                     </div>
-                    <article class="section__valores">
-                        <div><img src="./assets/images/iconos/Group 6288.svg" alt="icon-6288"></div>
-                        <div class="section__txt">
-                            <p class="section__txt__p"><strong class="section__txt__p--Strong">Crecimiento
-                                    productivo</strong>
-                            </p>
-                            <p class="section__txt__p">
-                                de pequeñas y medianas economías locales de España.
-                            </p>
+                    <div class="section__canvas container">
+                        <div class="section__canvas--align">
+                            <canvas width="600" height="300" id="mipanel" class=" container"></canvas>
                         </div>
-                    </article>
-                    <article class="section__valores">
-                        <div><img src="./assets/images/iconos/Group 6289.svg" alt="">
+                        <div class="section__abs container">
+                            <article class=" section__valores section__valores--2">
+                                <div><img src="./assets/images/iconos/Group 6288.svg" alt="icon-6288"></div>
+                                <div class="section__txt">
+                                    <p class="section__txt__p"><strong class="section__txt__p--Strong">Crecimiento
+                                            productivo</strong>
+                                    </p>
+                                    <p class="section__txt__p">
+                                        de pequeñas y medianas economías locales de España.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="section__valores section__valores--4">
+                                <div><img src="./assets/images/iconos/Group 6289.svg" alt="">
+                                </div>
+                                <div class="section__txt">
+                                    <p class="section__txt__p"><strong class="section__txt__p--Strong">Nuestro
+                                            norte</strong>
+                                    </p>
+                                    <p class="section__txt__p">
+                                        Innovación, liderazgo y equipo.</p>
+                                </div>
+                            </article>
+                            <article class="section__valores section__valores--6">
+                                <div><img src="./assets/images/iconos/Group 6290.svg" alt=""></div>
+                                <div class="section__txt">
+                                    <p class="section__txt__p"><strong class="section__txt__p--Strong">Nuestros
+                                            valores</strong>
+                                    </p>
+                                    <p class="section__txt__p">
+                                        Equidad, diversidad e inclusión.</p>
+                                </div>
+                            </article>
+
                         </div>
-                        <div class="section__txt">
-                            <p class="section__txt__p"><strong class="section__txt__p--Strong">Nuestro norte</strong>
-                            </p>
-                            <p class="section__txt__p">
-                                Innovación, liderazgo y equipo.</p>
-                        </div>
-                    </article>
-                    <article class="section__valores">
-                        <div><img src="./assets/images/iconos/Group 6290.svg" alt=""></div>
-                        <div class="section__txt">
-                            <p class="section__txt__p"><strong class="section__txt__p--Strong">Nuestros valores</strong>
-                            </p>
-                            <p class="section__txt__p">
-                                Equidad, diversidad e inclusión.</p>
-                        </div>
-                    </article>
+                    </div>
                 </div>
             </section>
             <!-- NOSOTROS -->
@@ -642,16 +654,22 @@
             </div>
             <div class="footer__containers--rrss">
                 <div class="footer__rrss">
-                    <i class=" fab fa-instagram"></i>
+                    <a href="https://www.instagram.com/redesbeneficio/" target="blank">
+                        <i class=" fab fa-instagram"></i>
+                    </a>
                 </div>
-                <div class="footer__rrss">
+                <!-- <div class="footer__rrss">
                     <i class=" fab fa-twitter"></i>
+                </div> -->
+                <div class="footer__rrss">
+                    <a href="https://www.linkedin.com/company/red-es-beneficio/" target="blank">
+                        <i class=" fab fa-linkedin-in"></i>
+                    </a>
                 </div>
                 <div class="footer__rrss">
-                    <i class=" fab fa-linkedin-in"></i>
-                </div>
-                <div class="footer__rrss">
-                    <i class=" fab fa-facebook-f"></i>
+                    <a href="https://www.facebook.com/RedESBeneficio" target="blank">
+                        <i class=" fab fa-facebook-f"></i>
+                    </a>
                 </div>
             </div>
             <div class="footer__containers">

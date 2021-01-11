@@ -184,6 +184,25 @@ body {
     padding: 0 20px 0px 20px;
     margin-top: 0; }
 
+@media screen and (min-width: 768px) {
+  .titulos, .titulos--ppal-rojo {
+    font-family: "Nunito", sans-serif;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 52px;
+    letter-spacing: 0px; }
+    .titulos--ppal, .titulos--ppal-rojo {
+      margin-bottom: 25px; }
+    .titulos--sub, .titulos__empresas--sub {
+      font-family: "Poppins", sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 26px;
+      letter-spacing: 0px;
+      color: #555555; } }
+
 .btn-rojo {
   background-color: #FE413F;
   color: #fff;
@@ -196,6 +215,7 @@ body {
   letter-spacing: 0.20000000298023224px;
   text-align: center;
   text-transform: uppercase;
+  cursor: pointer;
   height: 40px;
   width: 180px;
   border-radius: 20px;
@@ -219,6 +239,7 @@ body {
   letter-spacing: 0.20000000298023224px;
   text-align: center;
   text-transform: uppercase;
+  cursor: pointer;
   height: 40px;
   width: 180px;
   border-radius: 20px;
@@ -585,7 +606,8 @@ body {
       font-weight: 400;
       line-height: 28px;
       letter-spacing: 0.15000000596046448px;
-      color: rgba(131, 131, 131, 0.8); }
+      color: rgba(131, 131, 131, 0.8);
+      color: #555555; }
   .banner__imagen {
     height: 184px;
     width: 294px; }
@@ -596,6 +618,21 @@ body {
       width: 100%;
       object-fit: cover;
       display: block; }
+
+@media screen and (min-width: 768px) {
+  .banner {
+    margin-top: 68px; }
+    .banner__texto {
+      height: 209px;
+      width: 522px;
+      border-radius: nullpx;
+      text-align: center; }
+      .banner__texto__jerarquia {
+        font-size: 22px;
+        line-height: 34px; }
+    .banner__imagen {
+      height: 385px;
+      width: 616.1778564453125px; } }
 
 .section {
   padding: 55px 0 39.5px 0;
@@ -660,6 +697,35 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+
+#mipanel {
+  display: none; }
+
+@media screen and (min-width: 768px) {
+  .section-nosotros {
+    padding: 113px 0 39.5px 0;
+    height: 100%; }
+  .section__canvas {
+    position: relative;
+    width: 100%; }
+  .section__abs {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "zona1 zona2 zona3" "zona4 zona5 zona6";
+    transform: translate(-15px, -307px); }
+  .section__valores {
+    margin: 26px 0 0 0; }
+    .section__valores--2 {
+      grid-area: zona2; }
+    .section__valores--4 {
+      grid-area: zona4; }
+    .section__valores--6 {
+      grid-area: zona6; }
+  #mipanel {
+    display: inline-block;
+    position: relative; } }
 
 .footer {
   width: 100%;
@@ -758,7 +824,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 20.33px 22.67px 0; }
+    margin: 0 20.33px 22.67px 0;
+    cursor: pointer; }
   .footer__copyright {
     font-family: "Poppins", sans-serif;
     font-size: 12px;

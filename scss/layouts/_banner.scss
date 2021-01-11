@@ -15,6 +15,7 @@
 
         &__jerarquia {
             @include texto-1jerarquia-phone;
+            color: #555555;
 
         }
     }
@@ -33,5 +34,31 @@
             object-fit: cover;
             display: block;
         }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .banner {
+        margin-top: 68px;
+
+        &__texto {
+            height: 209px;
+            width: 522px;
+            border-radius: nullpx;
+            text-align: center;
+
+            &__jerarquia {
+                font-size: 22px;
+                line-height: 34px;
+
+            }
+
+        }
+
+        &__imagen {
+            height: 385px;
+            width: 616.1778564453125px;
+        }
+
     }
 }

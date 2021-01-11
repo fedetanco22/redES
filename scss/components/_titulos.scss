@@ -49,3 +49,18 @@
         margin-top: 0;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .titulos {
+        @include h2-subtitulos-web;
+
+        &--ppal {
+            margin-bottom: 25px;
+        }
+
+        &--sub {
+            @include h6-phone;
+
+        }
+    }
+}
