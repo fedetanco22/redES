@@ -698,13 +698,12 @@ body {
   align-items: center;
   justify-content: center; }
 
-#mipanel {
+#circle {
   display: none; }
 
 @media screen and (min-width: 768px) {
   .section-nosotros {
-    padding: 113px 0 39.5px 0;
-    height: 100%; }
+    padding: 113px 0 39.5px 0; }
   .section__canvas {
     position: relative;
     width: 100%; }
@@ -712,20 +711,31 @@ body {
     position: absolute;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 220px);
     grid-template-areas: "zona1 zona2 zona3" "zona4 zona5 zona6";
     transform: translate(-15px, -307px); }
   .section__valores {
-    margin: 26px 0 0 0; }
+    margin: 6.5px 0 0 0; }
     .section__valores--2 {
       grid-area: zona2; }
     .section__valores--4 {
-      grid-area: zona4; }
+      grid-area: zona4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      justify-content: flex-start; }
     .section__valores--6 {
-      grid-area: zona6; }
-  #mipanel {
-    display: inline-block;
-    position: relative; } }
+      grid-area: zona6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      justify-content: flex-start; }
+  .section__txt {
+    padding: 0 5px; }
+  #circle {
+    display: inline-block; } }
 
 .footer {
   width: 100%;

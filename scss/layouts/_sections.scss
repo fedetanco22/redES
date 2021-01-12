@@ -63,7 +63,7 @@
     @include flex-col;
 }
 
-#mipanel {
+#circle {
     display: none;
 }
 
@@ -71,7 +71,6 @@
     .section {
         &-nosotros {
             padding: 113px 0 39.5px 0;
-            height: 100%;
         }
 
         &__canvas {
@@ -83,37 +82,46 @@
             position: absolute;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 220px);
             grid-template-areas:
                 "zona1 zona2 zona3"
                 "zona4 zona5 zona6";
             transform: translate(-15px, -307px);
-
         }
 
         &__valores {
-            margin: 26px 0 0 0;
+            margin: 6.5px 0 0 0;
 
             &--2 {
                 grid-area: zona2;
+                // padding: 10px 0 0 0;
             }
 
             &--4 {
                 grid-area: zona4;
+                @include flex-col;
+                justify-content: flex-start;
+
             }
 
             &--6 {
                 grid-area: zona6;
+                @include flex-col;
+                justify-content: flex-start;
             }
 
         }
+
+        &__txt {
+            padding: 0 5px;
+        }
+
+
     }
 
-
-
-    #mipanel {
+    #circle {
         display: inline-block;
-        position: relative;
+        // position: relative;
     }
 
 }

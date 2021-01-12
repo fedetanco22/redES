@@ -7,35 +7,24 @@ var x = 300,
   // 270deg - 1   * Pi
   angleStart = 1.538 * Math.PI,
   angleEnd = -2.055 * Math.PI;
-var canvas = document.getElementById("mipanel");
+
+var canvas = document.getElementById("circle");
 var context = canvas.getContext("2d");
+
+var gradient = context.createLinearGradient(350, 200, 20, 350, 100, 200);
+gradient.addColorStop(0, " #FE9153");
+gradient.addColorStop(0, "#FE413F");
+
 context.beginPath();
 context.arc(x, y, radius, angleStart, angleEnd);
-context.strokeStyle = "red";
-context.strokeStyle = "center";
+context.lineWidth = 2;
+context.strokeStyle = gradient;
 context.stroke();
 
-// var canvas = document.getElementById("circle");
-// var ctx = canvas.getContext("2d");
+var Start = 5.057 * Math.PI,
+  End = 1.462 * Math.PI;
 
-//
-
-// //Create gradient
-// var gradient = ctx.createLinearGradient(0, 500, 0, 0);
-// gradient.addColorStop(0, "#c0e674");
-// gradient.addColorStop(1, "#40d6a5");
-
-// //Draw circle
-// ctx.beginPath();
-// ctx.arc(x, x, radius, 0, 2 * Math.PI, false);
-// ctx.lineWidth = 30;
-// ctx.strokeStyle = "rgba(255,255,255, 0.2)";
-// ctx.stroke();
-
-// //Draw arc
-// ctx.beginPath();
-// ctx.arc(x, y, radius, angleStart, angleEnd);
-// ctx.strokeStyle = gradient;
-// ctx.lineWidth = 30;
-// ctx.lineCap = "round";
-// ctx.stroke();
+var contextLeft = canvas.getContext("2d");
+contextLeft.beginPath();
+contextLeft.arc(x, y, radius, Start, End);
+contextLeft.stroke();
