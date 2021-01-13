@@ -38,7 +38,7 @@ var slider2 = new Glider(document.querySelector(".carousel__lista--clientes"), {
     {
       breakpoint: 567,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 2,
         dots: ".carousel__indicadores",
       },
@@ -52,6 +52,7 @@ var slider2 = new Glider(document.querySelector(".carousel__lista--clientes"), {
     },
   ],
 });
+
 // });
 // slideAutoPaly(slider, ".glider");
 slideAutoPaly(slider2, ".glider");
@@ -100,3 +101,16 @@ function slideAutoPaly(glider, selector, delay = 3000, repeat = true) {
     300
   );
 }
+
+$(".slider").slick({
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  arrows: false,
+  autoplay: true,
+  mobileFirst: true,
+  infinite: true,
+  centerMode: true,
+  centerPadding: "0",
+  focusOnSelect: true,
+  swipeToSlide: true,
+});

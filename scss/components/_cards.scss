@@ -79,10 +79,83 @@
 
         &__body {
             @include body1;
-            margin: 20px 0;
+            margin: 20px 0 0 40px;
             width: 210px;
             height: 45px;
         }
 
     }
+}
+
+@media screen and (min-width: 768px) {
+
+    .slick-slide {
+        display: flex;
+        justify-content: space-between;
+        width: 290px !important;
+        height: 300px;
+        opacity: 0.3;
+        transition: all ease 0.5s;
+    }
+
+    .slick-slide:focus {
+        outline: none;
+    }
+
+    .slick-slide.slick-current {
+
+        opacity: (1);
+    }
+
+    .slick-track {
+        width: 6500px !important;
+    }
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 18px 20px 25px;
+        margin: 20px 20px 20px 0;
+        width: 290px;
+        height: 156px;
+
+        box-shadow: 0px 4px 6px -4px rgba(85, 85, 85, 0.12),
+            0px 8px 20px -4px rgba(85, 85, 85, 0.08);
+        border-radius: 20px;
+
+        &__header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            height: 42px;
+            margin-bottom: 15px;
+        }
+
+        &__titulo {
+            @include h6-phone;
+
+            &--min {
+                letter-spacing: -0.6px;
+            }
+        }
+
+        &__body {
+            @include body2;
+        }
+
+        &__imagen {
+            margin: 0 15px 0 0;
+
+            &--img {
+                width: 42px; //iconos chicos
+            }
+        }
+
+        ;
+    }
+
+
+
+
 }

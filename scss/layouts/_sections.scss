@@ -69,6 +69,10 @@
 
 @media screen and (min-width: 768px) {
     .section {
+        &-card {
+            padding: 150px 0 39.5px 0;
+        }
+
         &-nosotros {
             padding: 113px 0 39.5px 0;
         }
@@ -114,14 +118,22 @@
 
         &__txt {
             padding: 0 5px;
+
+            &__p {
+                @include body1;
+                margin: 8px 0 0 0;
+
+                &--Strong {
+                    @include h5-Subtitle-web;
+                }
+            }
         }
-
-
     }
 
-    #circle {
-        display: inline-block;
-        // position: relative;
-    }
 
+}
+
+#circle {
+    display: inline-block;
+    // position: relative;
 }

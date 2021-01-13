@@ -17,3 +17,18 @@
     @include btn-blanco;
     @include btn-small;
 }
+
+.btn-blanco-large {
+    @include btn-blanco;
+    @include btn-large;
+}
+
+.btn-blanco-large-tablet {
+    @include btn-blanco;
+    height: 38px;
+    width: 266px;
+    border-radius: 20px;
+    @include button;
+
+
+}
