@@ -375,7 +375,8 @@ body {
     transform: translateX(180px); }
   .slides {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    overflow: hidden; }
   .item {
     display: flex;
     flex-flow: row;
