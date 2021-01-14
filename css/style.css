@@ -383,9 +383,7 @@ body {
     box-shadow: 0px 4px 6px -4px rgba(85, 85, 85, 0.12), 0px 8px 20px -4px rgba(85, 85, 85, 0.08);
     border-radius: 20px;
     width: 350px;
-    height: 160px;
-    animation: slider2 ease-in-out infinite 30s;
-    opacity: 0.3; }
+    height: 160px; }
     .item__header {
       display: flex;
       flex-direction: column;

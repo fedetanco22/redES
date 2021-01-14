@@ -109,21 +109,28 @@ function slideAutoPaly(glider, selector, delay = 3000, repeat = true) {
   );
 }
 
-window.onload = function () {
-  handleOpacity();
+var styles = {
+  opacity: "1",
+  animation: " animation: slider2 ease-in-out infinite 30s;",
 };
 
-function handleOpacity() {
-  const opacity = document.querySelectorAll(".item");
+var slideIndex = 1;
+showSlides();
 
-  opacity.forEach((item) => {
-    item.addEventListener("onscroll", variationOpacity);
-  });
-}
-function variationOpacity() {
-  console.log("ahora");
-}
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("item");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.opacity = "0.3";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  Object.assign(slides[slideIndex - 1].style, styles);
 
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
 // $(".slider").slick({
 //   slidesToShow: 5,
 //   slidesToScroll: 1,
