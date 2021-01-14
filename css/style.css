@@ -367,12 +367,17 @@ body {
       width: 210px;
       height: 45px; }
 
+.slides-container {
+  display: none; }
+
 @media screen and (min-width: 768px) {
   .card-contenedor {
     display: none; }
   .slides-container {
     margin: 0 auto;
-    transform: translateX(180px); }
+    display: block;
+    transform: translateX(180px);
+    overflow: border-box; }
   .slides {
     display: flex;
     align-items: center;
