@@ -1,4 +1,5 @@
 // window.addEventListener("load", function () {
+
 var slider = new Glider(document.querySelector(".carousel__lista"), {
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -7,7 +8,16 @@ var slider = new Glider(document.querySelector(".carousel__lista"), {
     prev: ".carousel__anterior",
     next: ".carousel__siguiente",
   },
+
   responsive: [
+    {
+      breakpoint: 776,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: ".carousel__indicadores",
+      },
+    },
     {
       breakpoint: 567,
       settings: {
@@ -30,10 +40,7 @@ var slider2 = new Glider(document.querySelector(".carousel__lista--clientes"), {
   slidesToShow: 1,
   slidesToScroll: 1,
   rewind: true,
-  // arrows: {
-  //   prev: ".carousel__anterior-2",
-  //   next: ".carousel__siguient-2",
-  // },
+  arrows: false,
   responsive: [
     {
       breakpoint: 567,
@@ -102,15 +109,43 @@ function slideAutoPaly(glider, selector, delay = 3000, repeat = true) {
   );
 }
 
-$(".slider").slick({
-  slidesToShow: 2,
-  slidesToScroll: 1,
-  arrows: false,
-  autoplay: true,
-  mobileFirst: true,
-  infinite: true,
-  centerMode: true,
-  centerPadding: "0",
-  focusOnSelect: true,
-  swipeToSlide: true,
-});
+window.onload = function () {
+  handleOpacity();
+};
+
+function handleOpacity() {
+  const opacity = document.querySelectorAll(".item");
+
+  opacity.forEach((item) => {
+    item.addEventListener("onscroll", variationOpacity);
+  });
+}
+function variationOpacity() {
+  console.log("ahora");
+}
+
+// $(".slider").slick({
+//   slidesToShow: 5,
+//   slidesToScroll: 1,
+//   arrows: false,
+//   autoplay: true,
+//   mobileFirst: true,
+//   infinite: true,
+//   centerMode: true,
+//   centerPadding: "0px",
+//   focusOnSelect: true,
+//   swipeToSlide: true,
+
+//   responsive: [
+//     {
+//       breakpoint: 768,
+//       settings: {
+//         slidesToShow: 3,
+//         slidesToScroll: 1,
+
+//         centerMode: true,
+//         centerPadding: "0px",
+//       },
+//     },
+//   ],
+// });

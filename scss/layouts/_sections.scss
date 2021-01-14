@@ -68,6 +68,11 @@
 }
 
 @media screen and (min-width: 768px) {
+    #circle {
+        display: inline-block;
+
+    }
+
     .section {
         &-card {
             padding: 150px 0 39.5px 0;
@@ -131,9 +136,4 @@
     }
 
 
-}
-
-#circle {
-    display: inline-block;
-    // position: relative;
 }
