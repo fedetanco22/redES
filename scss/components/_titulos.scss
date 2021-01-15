@@ -53,14 +53,33 @@
 @media screen and (min-width: 768px) {
     .titulos {
         @include h2-subtitulos-web;
+        @include flex-col;
+
 
         &--ppal {
-            margin-bottom: 25px;
+            margin-bottom: 51px;
         }
 
         &--sub {
             @include h6-phone;
 
+        }
+
+        &--p {
+            height: 129px;
+            width: 630px;
+            padding: 0;
+
+        }
+    }
+
+    .comercios {
+        margin-bottom: 14px;
+
+        &--p {
+            @include h6-phone;
+            height: auto;
+            width: 100%;
         }
     }
 }

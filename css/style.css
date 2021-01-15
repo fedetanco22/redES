@@ -191,9 +191,13 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: 52px;
-    letter-spacing: 0px; }
+    letter-spacing: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
     .titulos--ppal, .titulos--ppal-rojo {
-      margin-bottom: 25px; }
+      margin-bottom: 51px; }
     .titulos--sub, .titulos__empresas--sub {
       font-family: "Poppins", sans-serif;
       font-size: 18px;
@@ -201,7 +205,23 @@ body {
       font-weight: 600;
       line-height: 26px;
       letter-spacing: 0px;
-      color: #555555; } }
+      color: #555555; }
+    .titulos--p {
+      height: 129px;
+      width: 630px;
+      padding: 0; }
+  .comercios {
+    margin-bottom: 14px; }
+    .comercios--p {
+      font-family: "Poppins", sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 26px;
+      letter-spacing: 0px;
+      color: #555555;
+      height: auto;
+      width: 100%; } }
 
 .btn-rojo {
   background-color: #FE413F;
@@ -461,6 +481,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around; }
+  .tabs__item img {
+    display: none; }
 
 #tab-1-content,
 #tab-2-content {
@@ -505,6 +527,8 @@ body {
       text-align: center; }
     .tab__content__items {
       display: flex;
+      flex-direction: row;
+      align-items: flex-start;
       font-family: "Poppins", sans-serif;
       font-size: 13px;
       font-style: normal;
@@ -519,6 +543,10 @@ body {
     margin-bottom: 19px;
     text-align: center; }
 
+.fa-check-circle {
+  font-size: 20px;
+  margin-top: 5px; }
+
 .tab-1-content-grid,
 .tab-2-content-grid {
   width: 292px;
@@ -526,6 +554,91 @@ body {
   background: #FFFFFF;
   box-shadow: 0px 8px 22px -6px rgba(85, 85, 85, 0.12), 0px 14px 64px -4px rgba(85, 85, 85, 0.12);
   border-radius: 20px; }
+
+@media screen and (min-width: 768px) {
+  .tabs__container {
+    height: 80px;
+    width: 537px; }
+  .tabs__item {
+    font-family: "Nunito", sans-serif;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.25px;
+    color: #555555;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+  .tabs__item--border {
+    height: 73px;
+    width: 264px;
+    color: #fff; }
+  .tabs__item p {
+    margin-left: 10px; }
+  .tabs__item--border p {
+    margin-left: 0;
+    margin-right: 10px; }
+  .tabs__item img {
+    display: inline-block; }
+  .tab {
+    padding: 61px 30px 39px 45px; }
+    .tab__img {
+      display: none; }
+    .tab__content {
+      margin: 19px 0; }
+      .tab__content--sub {
+        font-family: "Poppins", sans-serif;
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.20000000298023224px;
+        color: #555;
+        margin-bottom: 20px; }
+      .tab__content__titulo {
+        font-family: "Nunito", sans-serif;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0.25px;
+        color: #555555;
+        color: #FE413F;
+        margin-bottom: 32px;
+        text-align: center; }
+      .tab__content__txt {
+        font-family: "Poppins", sans-serif;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 34px;
+        letter-spacing: 0px;
+        margin-bottom: 56px;
+        width: 606px; }
+      .tab__content__items {
+        width: 525px; }
+        .tab__content__items--p {
+          font-family: "Poppins", sans-serif;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 22px;
+          letter-spacing: 0.5px;
+          color: rgba(131, 131, 131, 0.9); }
+      .tab__content--ctx {
+        margin-bottom: 32px; }
+    .tab__btn {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      .tab__btn__container {
+        margin-bottom: 0; }
+  .fa-check-circle {
+    font-size: 20px; }
+  .tab-1-content-grid,
+  .tab-2-content-grid {
+    width: 681px; } }
 
 .fa-check-circle {
   color: #FE413F;

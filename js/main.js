@@ -28,7 +28,8 @@ const startSlide = () => {
     index++;
     slide.style.transform = `translateX(${-slideWidth * index}px)`;
     slide.style.transition = `.7s`;
-    // moveToNextSlide();
+    slide.style.opacity = `1`;
+    moveToNextSlide();
   }, interval);
 };
 
@@ -51,15 +52,9 @@ slide.addEventListener("transitionend", () => {
 
 const moveToNextSlide = () => {
   slides = getSlides();
+
   if (index >= slides.length - 1) return;
   index++;
-  slide.style.transition = ".7s ease-out";
-  slide.style.transform = `translateX(${-slideWidth * index}px)`;
-};
-
-const moveToPreviousSlide = () => {
-  if (index <= 0) return;
-  index--;
   slide.style.transition = ".7s ease-out";
   slide.style.transform = `translateX(${-slideWidth * index}px)`;
 };

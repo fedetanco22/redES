@@ -33,6 +33,14 @@
         justify-content: space-around;
 
     }
+
+    // &__item p {
+    //     margin-left: 0px;
+    // }
+
+    &__item img {
+        display: none;
+    }
 }
 
 #tab-1-content,
@@ -81,6 +89,8 @@
 
         &__items {
             display: flex;
+            flex-direction: row;
+            align-items: flex-start;
             @include body2;
             margin-bottom: 20px;
 
@@ -88,7 +98,6 @@
                 margin-left: 12px;
             }
         }
-
     }
 
     &__btn {
@@ -99,6 +108,10 @@
     }
 }
 
+.fa-check-circle {
+    font-size: 20px;
+    margin-top: 5px;
+}
 
 .tab-1-content-grid,
 .tab-2-content-grid {
@@ -109,5 +122,111 @@
     box-shadow: 0px 8px 22px -6px rgba(85, 85, 85, 0.12),
         0px 14px 64px -4px rgba(85, 85, 85, 0.12);
     border-radius: 20px;
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .tabs {
+        &__container {
+            height: 80px;
+            width: 537px;
+        }
+
+        &__item {
+            @include h3-title-phone;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        &__item--border {
+            height: 73px;
+            width: 264px;
+            color: #fff;
+        }
+
+        &__item p {
+            margin-left: 10px;
+        }
+
+        &__item--border p {
+            margin-left: 0;
+            margin-right: 10px;
+        }
+
+        &__item img {
+            display: inline-block;
+        }
+    }
+
+    .tab {
+        padding: 61px 30px 39px 45px;
+
+        &__img {
+            display: none;
+        }
+
+        &__content {
+            margin: 19px 0;
+
+
+            &--sub {
+                @include h5-Subtitle-web;
+                margin-bottom: 20px;
+            }
+
+            &__titulo {
+                @include h3-title-phone;
+                color: $rojo;
+                margin-bottom: 32px;
+                text-align: center;
+            }
+
+            &__txt {
+                @include web-Texto-Destacado-2;
+                margin-bottom: 56px;
+                width: 606px;
+
+
+            }
+
+            &__items {
+                width: 525px;
+
+                &--p {
+                    @include body1;
+
+                }
+            }
+
+            &--ctx {
+                margin-bottom: 32px;
+            }
+
+
+        }
+
+        &__btn {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+
+            &__container {
+                margin-bottom: 0;
+
+            }
+        }
+    }
+
+    .fa-check-circle {
+        font-size: 20px;
+    }
+
+    .tab-1-content-grid,
+    .tab-2-content-grid {
+        width: 681px;
+    }
 
 }
