@@ -150,6 +150,26 @@ body {
     margin-bottom: 9px; }
     .titulos--ppal-rojo {
       color: #FE413F; }
+  .titulos__elegirnos {
+    text-align: center;
+    margin-bottom: 9px;
+    width: 252px; }
+    .titulos__elegirnos--container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px; }
+    .titulos__elegirnos--p {
+      font-family: "Poppins", sans-serif;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0.5px;
+      color: rgba(131, 131, 131, 0.9);
+      width: 256px;
+      text-align: center;
+      margin-top: 11px; }
   .titulos--sub, .titulos__empresas--sub {
     font-family: "Poppins", sans-serif;
     font-size: 18px;
@@ -171,7 +191,18 @@ body {
     padding: 20px;
     margin-top: 11px; }
   .titulos--contacto {
-    margin: 0 0 4px 0; }
+    margin: 0 0 15px 0; }
+    .titulos--contacto-p {
+      width: 252px;
+      font-family: "Poppins", sans-serif;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0.5px;
+      color: rgba(131, 131, 131, 0.9);
+      text-align: center;
+      margin-bottom: 46px; }
   .titulos__empresas--icono {
     margin: 0 0 24px; }
   .titulos__empresas--sub {
@@ -198,6 +229,17 @@ body {
     justify-content: center; }
     .titulos--ppal, .titulos--ppal-rojo {
       margin-bottom: 51px; }
+    .titulos__elegirnos {
+      font-family: "Nunito", sans-serif;
+      font-size: 44px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 52px;
+      letter-spacing: 0px;
+      width: auto;
+      margin-bottom: 40px; }
+      .titulos__elegirnos--p {
+        width: 630px; }
     .titulos--sub, .titulos__empresas--sub {
       font-family: "Poppins", sans-serif;
       font-size: 18px;
@@ -210,6 +252,19 @@ body {
       height: 129px;
       width: 630px;
       padding: 0; }
+    .titulos--contacto {
+      margin-bottom: 46px; }
+      .titulos--contacto-p {
+        width: 440px;
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0.5px;
+        color: rgba(131, 131, 131, 0.9);
+        text-align: center;
+        margin-bottom: 46px; }
   .comercios {
     margin-bottom: 14px; }
     .comercios--p {
@@ -298,6 +353,14 @@ body {
   text-align: center;
   text-transform: uppercase;
   cursor: pointer; }
+
+@media screen and (min-width: 768px) {
+  .btn-rojo--large {
+    width: 158px; }
+  .button-formulario-contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; } }
 
 .card, .card__comercios {
   display: flex;
@@ -442,7 +505,8 @@ body {
       width: 55px;
       margin-right: 20px; }
     .item__buttom {
-      margin-top: 80px; } }
+      margin-top: 60px;
+      color: #FE413F; } }
 
 .active {
   opacity: 1; }
@@ -616,18 +680,18 @@ body {
         letter-spacing: 0px;
         margin-bottom: 56px;
         width: 606px; }
-      .tab__content__items {
+      .tab__content__items--p {
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0.5px;
+        color: rgba(131, 131, 131, 0.9);
         width: 525px; }
-        .tab__content__items--p {
-          font-family: "Poppins", sans-serif;
-          font-size: 15px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 22px;
-          letter-spacing: 0.5px;
-          color: rgba(131, 131, 131, 0.9); }
       .tab__content--ctx {
-        margin-bottom: 32px; }
+        margin-bottom: 32px;
+        padding: 0 0 0 14px; }
     .tab__btn {
       display: flex;
       flex-direction: row;
@@ -709,6 +773,19 @@ body {
     margin: 4px 0 12px; }
     .formulario__input__text {
       height: 152px; }
+
+@media screen and (min-width: 768px) {
+  .formulario__input {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    color: rgba(131, 131, 131, 0.9);
+    width: 438px; }
+    .formulario__input__text {
+      height: 123px; } }
 
 .cliente {
   display: flex;
@@ -1081,3 +1158,14 @@ body {
   font-size: 15px;
   margin-right: 6px;
   margin-left: 3px; }
+
+@media screen and (min-width: 768px) {
+  .footer__newsletter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .footer__newsletter__suscribir {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 0; } }

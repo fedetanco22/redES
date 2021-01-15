@@ -12,6 +12,7 @@
     }
 
     &__newsletter {
+
         &__suscribir {
             @include flex-col;
             margin-bottom: 58px;
@@ -125,4 +126,37 @@
     font-size: 15px;
     margin-right: 6px;
     margin-left: 3px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        &__newsletter {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            &-container {}
+
+            &__suscribir {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 0;
+
+            }
+
+            &__titulo {}
+
+            &__texto {}
+
+
+            &__input {
+
+
+                &--img {}
+
+                &--text {}
+            }
+        }
+    }
 }

@@ -30,5 +30,18 @@
     border-radius: 20px;
     @include button;
 
+}
 
+@media screen and (min-width: 768px) {
+    .btn-rojo {
+        &--large {
+            width: 158px;
+        }
+    }
+
+    .button-formulario-contacto {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
 }

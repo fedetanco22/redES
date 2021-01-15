@@ -192,16 +192,18 @@
             }
 
             &__items {
-                width: 525px;
+
 
                 &--p {
                     @include body1;
+                    width: 525px;
 
                 }
             }
 
             &--ctx {
                 margin-bottom: 32px;
+                padding: 0 0 0 14px;
             }
 
 

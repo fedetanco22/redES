@@ -23,3 +23,22 @@
         }
     }
 }
+
+@media screen and (min-width: 768px) {
+    .formulario {
+
+        &__input {
+            @include body1;
+            width: 438px;
+
+            &__text {
+                height: 123px;
+                // width: 434px;
+
+
+            }
+        }
+    }
+
+
+}
