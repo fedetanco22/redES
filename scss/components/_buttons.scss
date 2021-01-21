@@ -1,47 +1,50 @@
 .btn-rojo {
-    @include btn-rojo;
-    @include btn-small;
+	@include btn-rojo;
+	@include btn-small;
 
-    &--large {
-        width: 250px;
-    }
+	&--large {
+		width: 250px;
+	}
 
-    &--suscription {
-        height: 54px;
-        width: 154px;
-        border-radius: 40px;
-    }
+	&--suscription {
+		height: 54px;
+		width: 154px;
+		border-radius: 40px;
+	}
 }
 
 .btn-blanco {
-    @include btn-blanco;
-    @include btn-small;
+	@include btn-blanco;
+	@include btn-small;
 }
 
 .btn-blanco-large {
-    @include btn-blanco;
-    @include btn-large;
+	@include btn-blanco;
+	@include btn-large;
 }
 
 .btn-blanco-large-tablet {
-    @include btn-blanco;
-    height: 38px;
-    width: 266px;
-    border-radius: 20px;
-    @include button;
-
+	@include btn-blanco;
+	height: 38px;
+	width: 266px;
+	border-radius: 20px;
+	@include button;
 }
 
 @media screen and (min-width: 768px) {
-    .btn-rojo {
-        &--large {
-            width: 158px;
-        }
-    }
+	.btn-rojo {
+		&--large {
+			width: 158px;
+		}
+		&--suscription {
+			height: 46.04210662841797px;
+			width: 131.30526733398438px;
+		}
+	}
 
-    .button-formulario-contacto {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
+	.button-formulario-contacto {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+	}
 }

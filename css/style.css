@@ -357,6 +357,9 @@ body {
 @media screen and (min-width: 768px) {
   .btn-rojo--large {
     width: 158px; }
+  .btn-rojo--suscription {
+    height: 46.04210662841797px;
+    width: 131.30526733398438px; }
   .button-formulario-contacto {
     display: flex;
     flex-direction: row;
@@ -1085,7 +1088,7 @@ body {
       width: 253px;
       height: 58px;
       border: none;
-      background: #FFFFFF;
+      background: #ffffff;
       /* Sombra 1 */
       box-shadow: 0px 4px 6px -4px rgba(85, 85, 85, 0.12), 0px 8px 20px -4px rgba(85, 85, 85, 0.08);
       border-radius: 40px;
@@ -1161,12 +1164,36 @@ body {
   margin-left: 3px; }
 
 @media screen and (min-width: 768px) {
-  .footer__newsletter {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; }
-    .footer__newsletter__suscribir {
+  .footer {
+    padding: 83px 45px 66px 76px; }
+    .footer__newsletter {
       display: flex;
       flex-direction: row;
-      margin-bottom: 0; } }
+      justify-content: space-between;
+      align-items: center; }
+      .footer__newsletter__suscribir {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0;
+        position: relative; }
+      .footer__newsletter__titulo {
+        font-family: "Poppins", sans-serif;
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.20000000298023224px;
+        color: #555;
+        color: #fff;
+        width: 276px; }
+      .footer__newsletter__texto {
+        width: 293px; }
+      .footer__newsletter__input {
+        margin-bottom: 0; }
+        .footer__newsletter__input--text {
+          height: 49.45262908935547px;
+          width: 324px; }
+      .footer__newsletter__btn {
+        position: absolute;
+        right: 0;
+        margin-right: 2px; } }
