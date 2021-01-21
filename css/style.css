@@ -1170,7 +1170,8 @@ body {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      align-items: center; }
+      align-items: center;
+      margin-bottom: 86px; }
       .footer__newsletter__suscribir {
         display: flex;
         flex-direction: row;
@@ -1196,4 +1197,16 @@ body {
       .footer__newsletter__btn {
         position: absolute;
         right: 0;
-        margin-right: 2px; } }
+        margin-right: 2px; }
+    .footer__logo__img {
+      height: 70px;
+      width: 120px; }
+    .footer__logo__txt--hashtag {
+      font-family: "Nunito", sans-serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 22px;
+      letter-spacing: 0.15000000596046448px; }
+  ::-webkit-input-placeholder {
+    text-align: left; } }
