@@ -659,7 +659,7 @@ body {
         line-height: 24px;
         letter-spacing: 0.20000000298023224px;
         color: #555;
-        margin-bottom: 20px; }
+        margin-bottom: 25px; }
       .tab__content__titulo {
         font-family: "Nunito", sans-serif;
         font-size: 34px;
@@ -679,7 +679,8 @@ body {
         line-height: 34px;
         letter-spacing: 0px;
         margin-bottom: 56px;
-        width: 606px; }
+        width: 606px;
+        color: rgba(131, 131, 131, 0.9); }
       .tab__content__items--p {
         font-family: "Poppins", sans-serif;
         font-size: 15px;
@@ -697,7 +698,7 @@ body {
       flex-direction: row;
       justify-content: center; }
       .tab__btn__container {
-        margin-bottom: 0; }
+        margin: 0 10px; }
   .fa-check-circle {
     font-size: 20px; }
   .tab-1-content-grid,

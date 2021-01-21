@@ -173,7 +173,7 @@
 
             &--sub {
                 @include h5-Subtitle-web;
-                margin-bottom: 20px;
+                margin-bottom: 25px;
             }
 
             &__titulo {
@@ -187,6 +187,7 @@
                 @include web-Texto-Destacado-2;
                 margin-bottom: 56px;
                 width: 606px;
+                color: rgba(131, 131, 131, 0.9);
 
 
             }
@@ -216,7 +217,7 @@
 
 
             &__container {
-                margin-bottom: 0;
+                margin: 0 10px;
 
             }
         }
