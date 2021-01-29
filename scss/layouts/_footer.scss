@@ -5,6 +5,7 @@
     padding: 72px 26px 91px 32px;
     margin-top: 3px;
 
+
     &__containers {
         &--rrss {
             display: flex;
@@ -123,6 +124,7 @@
 @media screen and (min-width: 768px) {
     .footer {
         padding: 83px 45px 66px 76px;
+        height: auto;
 
         &__newsletter {
             display: flex;
@@ -169,16 +171,21 @@
             }
         }
 
+        &__info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
         &__logo {
             &__img {
                 height: 70px;
                 width: 120px;
-
             }
 
             &__txt {
-                // margin-top: 14px;
 
+                // margin-top: 14px;
                 &--hashtag {
                     @include subtitle;
                     // color: #fff;
@@ -186,6 +193,28 @@
                 }
             }
         }
+
+        &__contacto {
+            justify-content: space-between;
+            align-items: center;
+            // margin-bottom: 13px;
+
+            &__txt {
+                @include body2;
+                color: #fff;
+                height: auto;
+                width: 240px;
+            }
+
+        }
+
+        &__containers {
+            &--address {
+                margin-right: 40px;
+                transform: translateY(30%);
+            }
+        }
+
     }
 
     ::-webkit-input-placeholder {
