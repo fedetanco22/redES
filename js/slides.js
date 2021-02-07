@@ -108,3 +108,27 @@ function slideAutoPaly(glider, selector, delay = 3000, repeat = true) {
     300
   );
 }
+
+$(document).ready(function () {
+  $("#autoWidth").lightSlider({
+    item: 1,
+    autoWidth: true,
+    auto: true,
+    loop: true,
+    pause: 3000,
+    focuscenter: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          item: 1,
+          slideMove: 1,
+          slideMargin: 6,
+        },
+      },
+    ],
+    onSliderLoad: function () {
+      $("#autoWidth").removeClass("cS-hidden");
+    },
+  });
+});

@@ -39,6 +39,9 @@
     border-radius: 60px;
     padding: 55px 0 5px;
     margin-bottom: 39.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
@@ -76,6 +79,7 @@
     .section {
         &-card {
             padding: 150px 0 39.5px 0;
+            // text-align: center;
         }
 
         &-nosotros {

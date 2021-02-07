@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Somos una comunidad que vincula profesionales y comercios con empresas y consumidores a través de la generación y consumo de beneficios sobre productos y servicios de primera y segunda necesidad.">
@@ -12,6 +13,7 @@
     <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    <link type="text/css" rel="stylesheet" href="css/lightslider.min.css" />
     <link rel="stylesheet" href="./css/style.css">
 
     <title>RedES | Beneficios</title>
@@ -46,8 +48,13 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- SCRIPTS -->
-    <script src="https://kit.fontawesome.com/8ee6cf5ee4.js" crossorigin="anonymous"></script>
+    <script defer src="https://kit.fontawesome.com/8ee6cf5ee4.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/bootstrap.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <script defer src="js/lightslider.js"></script>
 
     <script defer src="js/slides.js"></script>
     <script defer src="js/main.js"></script>
@@ -224,22 +231,27 @@
                             </p>
                         </article>
                     </div>
+                </div>
+                <!-- SLIDER -->
 
-                    <!-- SLIDER -->
-                    <div class="slides-container ">
-                        <div class="slides">
-                            <article class="item slide">
+                <div class="container-fluid">
+                    <ul id="autoWidth">
+                        <li class="item-a">
+                            <div class="item ">
                                 <img class="item__imagen--img" src="./assets/images/iconos/Visibilidad.svg"
                                     alt="foto-visibilidad">
                                 <div class="item__header">
                                     <h6 class="item__titulo">Visibilidad</h6>
-                                    <p class="item__body">De empresas y comercios a través de publicidad gratuita en
+                                    <p class="item__body">De empresas y comercios a través de publicidad
+                                        gratuita en
                                         nuestras
                                         redes.
                                     </p>
                                 </div>
-                            </article>
-                            <article class="item slide">
+                            </div>
+                        </li>
+                        <li class="item-b">
+                            <div class="item slide">
                                 <img class="item__imagen--img" src="./assets/images/iconos/Asesoramiento.svg"
                                     alt="foto-asesoramiento">
                                 <div class="item__header">
@@ -247,8 +259,10 @@
                                     <p class="item__body">A comercios para adecuar su oferta al mercado.
                                     </p>
                                 </div>
-                            </article>
-                            <article class="item slide">
+                            </div>
+                        </li>
+                        <li class="item-c">
+                            <div class="item slide">
                                 <img class="item__imagen--img" src="./assets/images/iconos/Escucha activa.svg"
                                     alt="Escucha activa.svg">
                                 <div class="item__header">
@@ -256,8 +270,10 @@
                                     <p class="item__body">Creamos lazos de confianza y trabajo co-participativo.
                                     </p>
                                 </div>
-                            </article>
-                            <article class="item slide">
+                            </div>
+                        </li>
+                        <li class="item-d">
+                            <div class="item slide">
                                 <img class="item__imagen--img" src="./assets/images/iconos/Crecimiento-1.svg"
                                     alt="Crecimiento.svg">
                                 <div class="item__header">
@@ -265,26 +281,31 @@
                                     <p class="item__body">De los negocios e individuos miembros de la comunidad.
                                     </p>
                                 </div>
-                            </article>
-                            <article class="item slide">
+                            </div>
+                        </li>
+                        <li class="item-e">
+                            <div class="item slide">
                                 <img class="item__imagen--img" src="./assets/images/iconos/Minimo costo.svg"
                                     alt="Minimo costo.svg">
                                 <div class="item__header">
                                     <h6 class="item__titulo">Mínima inversión</h6>
-                                    <p class="item__body">Grandes beneficios: Acceso a múltiples beneficios a un muy
+                                    <p class="item__body">Grandes beneficios: Acceso a múltiples beneficios a un
+                                        muy
                                         bajo
                                         costo.
                                     </p>
                                 </div>
-                            </article>
-
-                        </div>
-                    </div>
-                    <button class="btn-blanco-large-tablet item__buttom"><a href="#redDeComercios"> Ver
-                            Beneficios</a></button>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <!-- FIN SLIDER -->
+                <button class="btn-blanco-large-tablet item__buttom"><a href="#redDeComercios"> Ver
+                        Beneficios</a></button>
             </section>
+
+
+            <!-- FIN SLIDER -->
+
             <!-- FIN PORQUE ELEGIRNOS -->
 
             <!-- PLANES -->
@@ -750,10 +771,7 @@
 
         </footer>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-        crossorigin="anonymous"></script>
-    <script src="./js/bootstrap.min.js"></script>
+
     <!-- <script src="./js/bootstrap.bundle.min.js"></script> -->
 </body>
 
