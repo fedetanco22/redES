@@ -10,26 +10,13 @@
 
     &__elemento {
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
+        width: 254px !important;
 
     }
 
-    &__indicadores .glider-dot {
-        display: block;
-        width: 30px;
-        height: 4px;
-        background: #333;
-        opacity: .2;
-        border-radius: 0;
-
-        &:hover {
-            opacity: .5;
-        }
-
-        &.active {
-            opacity: .5;
-        }
-    }
 
     &__siguiente,
     &__anterior {

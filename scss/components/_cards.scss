@@ -87,13 +87,17 @@
     }
 }
 
-// .slides-container {
-//     display: none;
-// }
+.center {
+    display: none;
+}
 
 @media screen and (min-width: 768px) {
     .card-contenedor {
         display: none
+    }
+
+    .center {
+        display: block;
     }
 
     .item {
@@ -101,7 +105,7 @@
         flex-flow: row;
         align-items: flex-start;
         padding: 30px 17px 24px 19px;
-        margin: 20px 10px;
+        margin: 20px 30px;
         box-shadow: 0px 4px 6px -4px rgba(85, 85, 85, 0.12),
             0px 8px 20px -4px rgba(85, 85, 85, 0.08);
         border-radius: 20px;
