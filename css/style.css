@@ -430,9 +430,8 @@ body {
     padding: 25px 30px 20px;
     margin: 20px 20px;
     background: #FFFFFF;
-    box-shadow: 0px 4px 6px -4px rgba(85, 85, 85, 0.12), 0px 8px 20px -4px rgba(85, 85, 85, 0.08); }
-    .card__comercios:hover .card__comercios__img {
-      opacity: 50%; }
+    box-shadow: 0px 4px 6px -4px rgba(85, 85, 85, 0.12), 0px 8px 20px -4px rgba(85, 85, 85, 0.08);
+    opacity: 50%; }
     .card__comercios__titulo {
       font-family: "Poppins", sans-serif;
       font-size: 21px;
@@ -474,6 +473,8 @@ body {
     border-radius: 20px;
     width: 350px;
     height: 160px; }
+    .item-containers {
+      opacity: 50%; }
     .item__header {
       display: flex;
       flex-direction: column;
@@ -505,7 +506,9 @@ body {
       margin-right: 20px; }
     .item__buttom {
       margin-top: 60px;
-      color: #FE413F; } }
+      color: #FE413F; }
+  .slick-center {
+    opacity: 100%; } }
 
 .active {
   opacity: 1; }

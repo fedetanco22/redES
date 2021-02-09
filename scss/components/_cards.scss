@@ -64,11 +64,11 @@
         background: #FFFFFF;
         box-shadow: 0px 4px 6px -4px rgba(85, 85, 85, 0.12),
             0px 8px 20px -4px rgba(85, 85, 85, 0.08);
+        opacity: 50%;
 
-
-        &:hover &__img {
-            opacity: 50%
-        }
+        // &:hover &__img {
+        //     opacity: 50%
+        // }
 
         &__titulo {
             @include h5-Subtitle-web;
@@ -112,6 +112,9 @@
         width: 350px;
         height: 160px;
 
+        &-containers {
+            opacity: 50%;
+        }
 
         &__header {
             display: flex;
@@ -151,6 +154,9 @@
         ;
     }
 
+    .slick-center {
+        opacity: 100%;
+    }
 
 }
 

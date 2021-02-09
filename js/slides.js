@@ -5,6 +5,7 @@ $(document).ready(function () {
     arrows: false,
     mobileFirst: true,
     centerMode: true,
+    centerPadding: "50px",
     autoWidth: true,
     slidesToShow: 1,
     variableWidth: true,
@@ -20,14 +21,15 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".center2").slick({
-    autoplay: true,
+    // autoplay: true,
     arrows: true,
     mobileFirst: true,
     centerMode: true,
     centerPadding: "50px",
     slidesToShow: 1,
     slidesToScroll: 1,
-
+    // fade: true,
+    // focusOnSelect: true,
     // autoWidth: true,
     variableWidth: true,
     infinite: true,
