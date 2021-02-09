@@ -365,7 +365,7 @@ body {
     flex-direction: row;
     justify-content: flex-end; } }
 
-.card, .card__comercios {
+.card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -421,13 +421,16 @@ body {
     color: #555555;
     text-align: center; }
   .card__comercios {
+    display: flex;
+    flex-direction: column;
     justify-content: flex-start;
+    height: 243px;
+    width: 254px;
+    border-radius: 20px;
     padding: 25px 30px 20px;
-    width: 100%;
-    height: auto;
+    margin: 20px 20px;
     background: #FFFFFF;
-    /* sombra 5 */
-    margin: 20px 20px; }
+    box-shadow: 0px 4px 6px -4px rgba(85, 85, 85, 0.12), 0px 8px 20px -4px rgba(85, 85, 85, 0.08); }
     .card__comercios:hover .card__comercios__img {
       opacity: 50%; }
     .card__comercios__titulo {
@@ -449,7 +452,7 @@ body {
       line-height: 22px;
       letter-spacing: 0.5px;
       color: rgba(131, 131, 131, 0.9);
-      margin: 20px 0 0 40px;
+      margin-top: 20px;
       width: 210px;
       height: 45px; }
 
@@ -711,12 +714,9 @@ body {
   .carousel__contenedor {
     position: relative;
     margin: 20px 20px; }
-  .carousel__elemento {
+  .carousel__lista {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 254px !important; }
+    flex-direction: row; }
   .carousel__siguiente, .carousel__anterior {
     position: absolute;
     display: block;

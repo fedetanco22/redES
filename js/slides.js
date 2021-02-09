@@ -19,9 +19,18 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  $(".carousel__lista").slick({
+  $(".center2").slick({
+    autoplay: true,
+    arrows: true,
     mobileFirst: true,
     centerMode: true,
+    centerPadding: "50px",
+    slidesToShow: 1,
+    slidesToScroll: 1,
+
+    // autoWidth: true,
+    variableWidth: true,
+    infinite: true,
     prevArrow:
       '<span aria-label="Anterior" class="carousel__anterior"><i class="fas fa-chevron-left carousel__anterior--chevron"></i></span>',
     nextArrow:
