@@ -141,3 +141,22 @@
 
 
 }
+
+@media screen and (min-width: 992px) {
+    .section {
+        &__valores {
+
+
+            &--imagen img {
+                width: 82px
+            }
+
+            transform: translateY(-12%);
+
+            &--2 {
+                transform: translateY(-55%);
+                @include flex-col;
+            }
+        }
+    }
+}
