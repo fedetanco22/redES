@@ -1,8 +1,6 @@
 .header {
     text-align: left;
     width: 100%;
-
-
     z-index: 100;
 
     &__contenedor {
@@ -13,8 +11,15 @@
     }
 
     &__logo {
-        width: 25%;
-        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        &--img {
+            width: 25%;
+            margin-top: 10px;
+        }
     }
 }
 
@@ -36,7 +41,6 @@
 
 .menu {
 
-
     &__list {
         position: fixed;
         width: 100%;
@@ -54,6 +58,7 @@
         height: 48px;
         padding-left: 27px;
         display: flex;
+        flex-direction: row;
         align-items: center;
 
         &__img {
@@ -65,8 +70,17 @@
             &--logo {
                 height: 43px;
             }
+
         }
 
+        &:hover {
+            background-color: rgba(254, 65, 63, 0.31);
+            transition: ease-in .1s;
+        }
+
+        &--btn {
+            display: none;
+        }
     }
 
     &__link {
@@ -75,18 +89,79 @@
 
     }
 
-    &__item:hover {
-        background-color: rgba(254, 65, 63, 0.31);
-        transition: ease-in .1s;
-    }
 
-    &__sub-list {
-        display: none;
-    }
+
 }
 
 .hamb:checked~.menu .menu__list {
     left: 0;
+}
+
+
+@media screen and (min-width: 992px) {
+    .header {
+        padding-top: 70px;
+
+        &__contenedor {
+            justify-content: flex-start;
+        }
+
+        &__logo {
+
+            &--img {
+                height: 82px;
+                width: 145px;
+                left: 169px;
+                top: 69px;
+            }
+        }
+    }
+
+    .hamb__label {
+        display: none;
+    }
+
+    .menu {
+        width: 100%;
+
+        &__list {
+            position: static;
+            left: 0;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__item {
+            padding-right: 27px;
+
+            &__img {
+                display: none;
+            }
+
+            &:hover {
+                background-color: #fff;
+
+            }
+
+            &--nosotros {
+                display: none;
+            }
+
+            &--btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 16px;
+            }
+
+        }
+
+        &__link {
+            &:hover {
+                color: $rojo;
+            }
+        }
+    }
 }
 
 /* Small devices y horiz entre 576px y 768px*/
@@ -110,7 +185,7 @@
 //     }
 // }
 
-// @media screen and (min-width: $bp_tablets) {
+// @media screen and (min-width: 992px) {
 
 //     .header {
 //         display: flex;

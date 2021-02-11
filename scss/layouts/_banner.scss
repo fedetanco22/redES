@@ -16,6 +16,7 @@
         &__jerarquia {
             @include texto-1jerarquia-phone;
             color: #555555;
+            text-align: center;
 
         }
     }
@@ -42,17 +43,15 @@
         margin-top: 68px;
 
         &__texto {
-            height: 209px;
+            height: auto;
             width: 522px;
-            border-radius: nullpx;
             text-align: center;
 
             &__jerarquia {
+                width: 100%;
                 font-size: 22px;
                 line-height: 34px;
-
             }
-
         }
 
         &__imagen {
@@ -61,4 +60,39 @@
         }
 
     }
+}
+
+@media screen and (min-width: 992px) {
+    .banner {
+        &__cont {
+            display: flex;
+            flex-direction: row;
+        }
+
+        &__texto {
+
+
+            &__jerarquia {
+                // width: 522px;
+                font-size: 26px;
+                line-height: 38px;
+                text-align: left;
+
+            }
+
+        }
+
+        &__imagen {
+            &__img {
+                height: 100%;
+                width: 100%;
+                // left: 661px;
+                // top: 280px;
+
+
+            }
+        }
+    }
+
+
 }
