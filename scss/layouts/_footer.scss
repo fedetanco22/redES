@@ -156,11 +156,20 @@
             &__input {
                 margin-bottom: 0;
 
-                // &--img {}
+                &--img {
+                    transform: translateX(-20px);
+                }
 
                 &--text {
                     height: 49.45262908935547px;
                     width: 324px;
+
+                    // text-align: center;
+                    &::placeholder {
+                        text-align: center;
+                        transform: translateX(-50px);
+                        color: #FE413F;
+                    }
                 }
             }
 
@@ -207,11 +216,19 @@
             }
         }
 
+        &__rrss {
+            margin: 0 32px 22.67px 0;
+        }
+
         &__containers {
             &--address {
                 margin-right: 40px;
                 transform: translateY(30%);
             }
+        }
+
+        &__copyright {
+            font-size: 13px;
         }
     }
 
