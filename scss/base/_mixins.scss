@@ -1,196 +1,185 @@
 /* TITLES */
 
 @mixin h1-titulos-web {
-    //styleName: h1 -Titulos web;
-    font-family: $nunito;
-    font-size: 52px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 64px;
-    letter-spacing: 0px;
-    // text-align: left;
+	//styleName: h1 -Titulos web;
+	font-family: $nunito;
+	font-size: 52px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 64px;
+	letter-spacing: 0px;
+	// text-align: left;
 }
 
 @mixin h2-subtitulos-web {
-    //styleName: H2 -Subtitulos web;
-    font-family: $nunito;
-    font-size: 44px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 52px;
-    letter-spacing: 0px;
-    // text-align: left;
+	//styleName: H2 -Subtitulos web;
+	font-family: $nunito;
+	font-size: 44px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 52px;
+	letter-spacing: 0px;
+	// text-align: left;
 }
 
 @mixin h3-title-phone {
-    //styleName: h3 / Title phone;
-    font-family: $nunito;
-    font-size: 34px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: 0.25px;
-    color: rgba(85, 85, 85, 1);
+	//styleName: h3 / Title phone;
+	font-family: $nunito;
+	font-size: 34px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 40px;
+	letter-spacing: 0.25px;
+	color: rgba(85, 85, 85, 1);
 
-    // text-align: left;
+	// text-align: left;
 }
 
 @mixin h4-Texto-destacado {
-    //styleName: h4 - Texto destacado;
-    font-family: $poppins;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 38px;
-    letter-spacing: 0.20000000298023224px;
-    // text-align: left;
+	//styleName: h4 - Texto destacado;
+	font-family: $poppins;
+	font-size: 26px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 38px;
+	letter-spacing: 0.20000000298023224px;
+	// text-align: left;
 }
 
 @mixin web-Texto-Destacado-2 {
-    //styleName: web-Texto Destacado 2;
-    font-family: $poppins;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 34px;
-    letter-spacing: 0px;
-    // text-align: left;
-
+	//styleName: web-Texto Destacado 2;
+	font-family: $poppins;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 34px;
+	letter-spacing: 0px;
+	// text-align: left;
 }
 
 @mixin h5-Subtitle-web {
-    //styleName: h5 - Subtitle web;
-    font-family: $poppins;
-    font-size: 21px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: 0.20000000298023224px;
-    // text-align: left;
-    color: #555;
+	//styleName: h5 - Subtitle web;
+	font-family: $poppins;
+	font-size: 21px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 24px;
+	letter-spacing: 0.20000000298023224px;
+	// text-align: left;
+	color: #555;
 }
 
 @mixin h6-phone {
-    //styleName: h6 -phone;
-    font-family: $poppins;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 26px;
-    letter-spacing: 0px;
-    color: rgba(85, 85, 85, 1);
-
-    // text-align: left;
-
+	//styleName: h6 -phone;
+	font-family: $poppins;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 26px;
+	letter-spacing: 0px;
+	color: rgba(85, 85, 85, 1);
 }
 
 @mixin subtitle {
-    //styleName: subtitle;
-    font-family: $nunito;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 22px;
-    letter-spacing: 0.15000000596046448px;
-    // text-align: left;
-
+	//styleName: subtitle;
+	font-family: $nunito;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 22px;
+	letter-spacing: 0.15000000596046448px;
+	// text-align: left;
 }
 
 @mixin texto-1jerarquia-phone {
-    //styleName: texto-1jerarquia -phone;
-    font-family: $poppins;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0.15000000596046448px;
-    color: rgba(131, 131, 131, 0.8);
-
+	//styleName: texto-1jerarquia -phone;
+	font-family: $poppins;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 28px;
+	letter-spacing: 0.15000000596046448px;
+	color: rgba(131, 131, 131, 0.8);
 }
 
 @mixin body1 {
-    //styleName: body 1;
-    font-family: $poppins;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 22px;
-    letter-spacing: 0.5px;
-    color: rgba(131, 131, 131, 0.9);
+	//styleName: body 1;
+	font-family: $poppins;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px;
+	letter-spacing: 0.5px;
+	color: rgba(131, 131, 131, 0.9);
 
-
-    // text-align: left;
+	// text-align: left;
 }
 
 @mixin body2 {
-    //styleName: body2;
-    font-family: $poppins;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0.25px;
-    color: rgba(131, 131, 131, 0.9);
-
+	//styleName: body2;
+	font-family: $poppins;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 21px;
+	letter-spacing: 0.25px;
+	color: rgba(131, 131, 131, 0.9);
 }
 
 @mixin caption {
-    //styleName: caption;
-    font-family: $poppins;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0.4000000059604645px;
-    // text-align: left;
+	//styleName: caption;
+	font-family: $poppins;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 18px;
+	letter-spacing: 0.4000000059604645px;
+	// text-align: left;
 }
-
 
 /* BUTTONS */
 @mixin button {
-    //styleName: button;
-    font-family: $nunito;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 18px;
-    letter-spacing: 0.20000000298023224px;
-    text-align: center;
-    text-transform: uppercase;
-    cursor: pointer;
+	font-family: $nunito;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 18px;
+	letter-spacing: 0.20000000298023224px;
+	text-align: center;
+	text-transform: uppercase;
+	cursor: pointer;
 }
 
 @mixin btn-large {
-    height: 48px;
-    width: 336px;
-    border-radius: 20px;
-    @include button;
+	height: 48px;
+	width: 336px;
+	border-radius: 20px;
+	@include button;
 }
 
 @mixin btn-small {
-    @include button;
-    height: 40px;
-    width: 180px;
-    border-radius: 20px;
-    font-size: 14px;
+	@include button;
+	height: 40px;
+	width: 180px;
+	border-radius: 20px;
+	font-size: 14px;
 }
 
 @mixin btn-rojo {
-    background-color: $rojo;
-    color: #fff;
-    border: none;
+	background-color: $rojo;
+	color: #fff;
+	border: none;
 }
 
 @mixin btn-blanco {
-    background-color: rgba(255, 255, 255, 1);
-    border: 2px solid $rojo;
-    color: rgba(131, 131, 131, 0.9);
-
+	background-color: rgba(255, 255, 255, 1);
+	border: 2px solid $rojo;
+	color: rgba(131, 131, 131, 0.9);
 }
 
 @mixin flex-col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
