@@ -67,27 +67,24 @@
         &__cont {
             display: flex;
             flex-direction: row;
+            justify-content: flex-start;
         }
 
         &__texto {
-
-
             &__jerarquia {
-                // width: 522px;
+                width: 522px;
                 font-size: 26px;
                 line-height: 38px;
                 text-align: left;
+
             }
         }
 
         &__imagen {
             &__img {
-                height: 100%;
-                width: 100%;
-                // left: 661px;
-                // top: 280px;
-
-
+                height: auto;
+                width: 693px;
+                position: absolute;
             }
         }
     }

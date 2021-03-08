@@ -981,14 +981,17 @@ body {
 @media screen and (min-width: 992px) {
   .banner__cont {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    justify-content: flex-start; }
   .banner__texto__jerarquia {
+    width: 522px;
     font-size: 26px;
     line-height: 38px;
     text-align: left; }
   .banner__imagen__img {
-    height: 100%;
-    width: 100%; } }
+    height: auto;
+    width: 693px;
+    position: absolute; } }
 
 .section {
   padding: 55px 0 39.5px 0;
