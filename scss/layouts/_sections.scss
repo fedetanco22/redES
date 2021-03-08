@@ -99,7 +99,7 @@
             grid-template-areas:
                 "zona1 zona2 zona3"
                 "zona4 zona5 zona6";
-            transform: translate(-15px, -307px);
+            transform: translate(-15px, -305px);
         }
 
         &__valores {
@@ -144,18 +144,54 @@
 
 @media screen and (min-width: 992px) {
     .section {
+
         &__valores {
 
-
             &--imagen img {
-                width: 82px
+                width: 82px;
+                height: 82px
             }
 
-            transform: translateY(-12%);
+            &--2 {
+                transform: translateY(-56%);
+                @include flex-col;
+            }
+
+            &--4 {
+                transform: translateY(-16%);
+            }
+
+            &--6 {
+                transform: translateY(-15%);
+            }
+        }
+
+        //  &__abs {
+        //      transform: translate(-15px, -377px);
+        //  }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .section {
+        &__valores {
+
+            &--imagen img {
+                width: 82px;
+                height: 82px
+            }
 
             &--2 {
-                transform: translateY(-55%);
-                @include flex-col;
+                transform: translateY(-90%);
+
+            }
+
+            &--4 {
+                transform: translateY(-26%);
+            }
+
+            &--6 {
+                transform: translateY(-25%);
             }
         }
     }

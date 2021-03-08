@@ -280,6 +280,10 @@ body {
       width: 100%;
       margin-bottom: 34px; } }
 
+@media screen and (min-width: 1200px) {
+  .titulos--REB {
+    margin-bottom: 25px; } }
+
 .btn-rojo {
   background-color: #FE413F;
   color: #fff;
@@ -1058,7 +1062,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 220px);
     grid-template-areas: "zona1 zona2 zona3" "zona4 zona5 zona6";
-    transform: translate(-15px, -307px); }
+    transform: translate(-15px, -305px); }
   .section__valores {
     margin: 6.5px 0 0 0; }
     .section__valores--2 {
@@ -1098,16 +1102,30 @@ body {
         color: #555; } }
 
 @media screen and (min-width: 992px) {
-  .section__valores {
-    transform: translateY(-12%); }
-    .section__valores--imagen img {
-      width: 82px; }
-    .section__valores--2 {
-      transform: translateY(-55%);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center; } }
+  .section__valores--imagen img {
+    width: 82px;
+    height: 82px; }
+  .section__valores--2 {
+    transform: translateY(-56%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .section__valores--4 {
+    transform: translateY(-16%); }
+  .section__valores--6 {
+    transform: translateY(-15%); } }
+
+@media screen and (min-width: 1200px) {
+  .section__valores--imagen img {
+    width: 82px;
+    height: 82px; }
+  .section__valores--2 {
+    transform: translateY(-90%); }
+  .section__valores--4 {
+    transform: translateY(-26%); }
+  .section__valores--6 {
+    transform: translateY(-25%); } }
 
 .footer {
   width: 100%;
