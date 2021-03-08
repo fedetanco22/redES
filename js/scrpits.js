@@ -31,11 +31,18 @@ function removeShow() {
   tabContentItems.forEach((item) => item.classList.remove("show"));
 }
 
-const hambOpen = document.querySelector(".open");
+const hambOpen = document.querySelector(".hamb");
+hambOpen.addEventListener("click", openMenu);
 const hambClose = document.querySelector(".menu__close");
 hambClose.addEventListener("click", closeMenu);
 const menu = document.querySelector(".menu__list");
 
+function openMenu() {
+  menu.classList.remove("close");
+  menu.classList.add("open");
+}
+
 function closeMenu() {
+  menu.classList.remove("open");
   menu.classList.add("close");
 }
