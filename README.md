@@ -1,6 +1,6 @@
 # Web App for RedES
 
-## Tec used:
+## Tecnologies used:
 Html, CSS, JavaScript
 
 ## Deployed in Vercel
