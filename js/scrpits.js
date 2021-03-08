@@ -50,7 +50,7 @@ function closeMenu() {
 
 // ============= When click on NavLinks, close Navbar===============
 
-const linkMenus = document.querySelectorAll(".menu__link");
+const linkMenus = document.querySelectorAll(".menu__item");
 
 linkMenus.forEach((link) => {
   link.addEventListener("click", closeMenu);

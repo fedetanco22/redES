@@ -883,7 +883,8 @@ body {
   font-weight: 600;
   line-height: 26px;
   letter-spacing: 0px;
-  color: #555555; }
+  color: #555555;
+  width: 100%; }
 
 .open {
   left: 0; }
