@@ -31,6 +31,7 @@ function removeShow() {
   tabContentItems.forEach((item) => item.classList.remove("show"));
 }
 
+// ========Open Close NavBar=====================
 const hambOpen = document.querySelector(".hamb");
 hambOpen.addEventListener("click", openMenu);
 const hambClose = document.querySelector(".menu__close");
@@ -46,3 +47,11 @@ function closeMenu() {
   menu.classList.remove("open");
   menu.classList.add("close");
 }
+
+// ============= When click on NavLinks, close Navbar===============
+
+const linkMenus = document.querySelectorAll(".menu__link");
+
+linkMenus.forEach((link) => {
+  link.addEventListener("click", closeMenu);
+});
