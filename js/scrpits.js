@@ -30,3 +30,12 @@ function removeBorder() {
 function removeShow() {
   tabContentItems.forEach((item) => item.classList.remove("show"));
 }
+
+const hambOpen = document.querySelector(".open");
+const hambClose = document.querySelector(".menu__close");
+hambClose.addEventListener("click", closeMenu);
+const menu = document.querySelector(".menu__list");
+
+function closeMenu() {
+  menu.classList.add("close");
+}

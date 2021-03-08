@@ -36,10 +36,20 @@
 		margin-left: 20px;
 		display: flex;
 		align-items: center;
+		cursor: pointer;
 	}
+
 }
 
+
 .menu {
+	&__close {
+		color: #555;
+		position: absolute;
+		right: 20px;
+		top: 45px;
+	}
+
 	&__list {
 		position: fixed;
 		width: 100%;
@@ -87,9 +97,22 @@
 	}
 }
 
-.hamb:checked ~ .menu .menu__list {
-	left: 0;
+// .hamb:checked~.menu .menu__list {
+// 	left: 0;
+// }
+.open {
+	left: 0
 }
+
+.close {
+	left: -100%
+}
+
+.menu__close {
+	cursor: pointer;
+}
+
+
 
 @media screen and (min-width: 992px) {
 	.header {

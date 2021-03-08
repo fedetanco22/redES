@@ -836,7 +836,14 @@ body {
     color: #555;
     margin-left: 20px;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    cursor: pointer; }
+
+.menu__close {
+  color: #555;
+  position: absolute;
+  right: 20px;
+  top: 45px; }
 
 .menu__list {
   position: fixed;
@@ -879,8 +886,14 @@ body {
   letter-spacing: 0px;
   color: #555555; }
 
-.hamb:checked ~ .menu .menu__list {
+.open {
   left: 0; }
+
+.close {
+  left: -100%; }
+
+.menu__close {
+  cursor: pointer; }
 
 @media screen and (min-width: 992px) {
   .header {
