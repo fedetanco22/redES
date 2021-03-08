@@ -1,5 +1,5 @@
-# redES
+# Web App for RedES
 
-## Deployed Vercel
+## Deployed in Vercel
 
 https://red-es.vercel.app/
