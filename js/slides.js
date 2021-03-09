@@ -14,7 +14,7 @@ $(document).ready(function () {
     infinite: true,
     responsive: [
       {
-        breakpoint: 992,
+        breakpoint: 1200,
         settings: {},
       },
     ],

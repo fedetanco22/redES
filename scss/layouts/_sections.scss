@@ -78,7 +78,7 @@
 
     .section {
         &-card {
-            padding: 150px 0 39.5px 0;
+            padding: 107px 0 39.5px 0;
             // text-align: center;
         }
 
@@ -88,7 +88,7 @@
 
         &__canvas {
             position: relative;
-            width: 100%;
+            // width: 97%;
         }
 
         &__abs {
@@ -166,9 +166,6 @@
             }
         }
 
-        //  &__abs {
-        //      transform: translate(-15px, -377px);
-        //  }
     }
 }
 
