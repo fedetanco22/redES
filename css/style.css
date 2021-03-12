@@ -440,6 +440,8 @@ body {
     background: #FFFFFF;
     box-shadow: 0px 4px 6px -4px rgba(85, 85, 85, 0.12), 0px 8px 20px -4px rgba(85, 85, 85, 0.08);
     opacity: 100%; }
+    .card__comercios__img {
+      opacity: 50%; }
     .card__comercios__titulo {
       font-family: "Poppins", sans-serif;
       font-size: 21px;
@@ -468,8 +470,9 @@ body {
 
 @media screen and (min-width: 768px) {
   .card__comercios {
-    opacity: 50%;
     margin: 10px; }
+    .card__comercios:hover .card__comercios__img {
+      opacity: 100%; }
   .card-contenedor {
     display: none; }
   .center {
@@ -776,18 +779,14 @@ body {
     text-align: center;
     background: none;
     color: #FE413F; }
-    .carousel__siguiente:focus, .carousel__anterior:focus {
-      outline: none; }
     .carousel__siguiente--chevron, .carousel__anterior--chevron {
       font-size: 25px; }
-  .carousel__siguiente:hover, .carousel__anterior:hover {
-    opacity: 100%; }
   .carousel__anterior {
     left: -30px; }
   .carousel__siguiente {
     right: -30px; }
 
-@media screen and (min-width: 776px) {
+@media screen and (min-width: 768px) {
   .carousel__lista {
     display: none; }
     .carousel__lista--lg {
@@ -797,13 +796,21 @@ body {
     display: flex;
     flex-flow: row wrap;
     width: 650px; }
+  .carousel__siguiente, .carousel__anterior {
+    top: calc(100%); }
+    .carousel__siguiente--chevron, .carousel__anterior--chevron {
+      font-size: 34px; }
+  .carousel__anterior {
+    right: -75%; }
+  .carousel__siguiente {
+    right: 5%; }
   .slick-initialized .slick-slide {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center; } }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .carousel__contenedor {
     margin: 0; }
   .carousel__card--lg {
@@ -1130,6 +1137,8 @@ body {
     padding: 107px 0 39.5px 0; }
   .section-nosotros {
     padding: 113px 0 39.5px 0; }
+  .section-comercios {
+    margin-bottom: 90px; }
   .section__canvas {
     position: relative; }
   .section__abs {

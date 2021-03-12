@@ -29,19 +29,10 @@
         background: none;
         color: $rojo;
 
-        &:focus {
-            outline: none;
-        }
-
         &--chevron {
             font-size: 25px;
         }
 
-    }
-
-    &__siguiente:hover,
-    &__anterior:hover {
-        opacity: 100%;
     }
 
     &__anterior {
@@ -53,8 +44,10 @@
     }
 }
 
-@media screen and (min-width:776px) {
+
+@media screen and (min-width:768px) {
     .carousel {
+
 
         &__lista {
             display: none;
@@ -72,6 +65,24 @@
                 width: 650px;
             }
         }
+
+        &__siguiente,
+        &__anterior {
+            top: calc(100%);
+
+            &--chevron {
+                font-size: 34px;
+            }
+        }
+
+        &__anterior {
+            right: -75%;
+        }
+
+        &__siguiente {
+            right: 5%;
+
+        }
     }
 
     .slick-initialized .slick-slide {
@@ -82,8 +93,10 @@
     }
 }
 
-@media screen and (min-width:1200px) {
+
+@media screen and (min-width:992px) {
     .carousel {
+
         &__contenedor {
             margin: 0;
         }
