@@ -46,6 +46,32 @@ $(document).ready(function () {
     ],
   });
 });
+$(document).ready(function () {
+  $(".center2--lg").slick({
+    autoplay: true,
+    arrows: true,
+    dots: true,
+
+    centerMode: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    variableWidth: true,
+    infinite: true,
+    prevArrow:
+      '<span aria-label="Anterior" class="carousel__anterior"><i class="fas fa-chevron-left carousel__anterior--chevron"></i></span>',
+    nextArrow:
+      ' <span aria-label="Siguiente" class="carousel__siguiente"><i class="fas fa-chevron-right carousel__anterior--chevron"></i>',
+    responsive: [
+      {
+        breakpoint: 776,
+        settings: {
+          centerMode: true,
+          centerPadding: "50px",
+        },
+      },
+    ],
+  });
+});
 
 // TODO -- RESPONSIVE (PUT BREAKPOINTS)
 

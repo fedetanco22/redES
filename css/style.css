@@ -436,7 +436,7 @@ body {
     width: 254px;
     border-radius: 20px;
     padding: 25px 30px 20px;
-    margin: 20px 20px;
+    margin: 20px;
     background: #FFFFFF;
     box-shadow: 0px 4px 6px -4px rgba(85, 85, 85, 0.12), 0px 8px 20px -4px rgba(85, 85, 85, 0.08);
     opacity: 100%; }
@@ -468,7 +468,8 @@ body {
 
 @media screen and (min-width: 768px) {
   .card__comercios {
-    opacity: 50%; }
+    opacity: 50%;
+    margin: 10px; }
   .card-contenedor {
     display: none; }
   .center {
@@ -618,6 +619,8 @@ body {
   .tab__btn__container {
     margin-bottom: 19px;
     text-align: center; }
+    .tab__btn__container--ancla {
+      width: 100%; }
 
 .fa-check-circle {
   font-size: 20px;
@@ -761,6 +764,8 @@ body {
   .carousel__lista {
     display: flex;
     flex-direction: row; }
+    .carousel__lista--lg {
+      display: none; }
   .carousel__siguiente, .carousel__anterior {
     position: absolute;
     display: block;
@@ -781,6 +786,28 @@ body {
     left: -30px; }
   .carousel__siguiente {
     right: -30px; }
+
+@media screen and (min-width: 776px) {
+  .carousel__lista {
+    display: none; }
+    .carousel__lista--lg {
+      display: flex;
+      flex-flow: row wrap; }
+  .carousel__card--lg {
+    display: flex;
+    flex-flow: row wrap;
+    width: 650px; }
+  .slick-initialized .slick-slide {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center; } }
+
+@media screen and (min-width: 1200px) {
+  .carousel__contenedor {
+    margin: 0; }
+  .carousel__card--lg {
+    width: 550px; } }
 
 .formulario {
   display: flex;
