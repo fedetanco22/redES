@@ -1,93 +1,87 @@
 .banner {
-    margin-top: 53px;
+	margin-top: 53px;
 
+	&__cont {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 
-    &__cont {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+	&__texto {
+		width: 254px;
+		height: 293px;
 
-    &__texto {
-        width: 254px;
-        height: 293px;
+		&__jerarquia {
+			@include texto-1jerarquia-phone;
+			color: #555555;
+			text-align: center;
+		}
+	}
 
-        &__jerarquia {
-            @include texto-1jerarquia-phone;
-            color: #555555;
-            text-align: center;
+	&__imagen {
+		height: 184px;
+		width: 294px;
 
-        }
-    }
+		&--empresa {
+			width: auto;
+			height: auto;
+		}
 
-    &__imagen {
-        height: 184px;
-        width: 294px;
-
-        &--empresa {
-            width: auto;
-            height: auto;
-        }
-
-        &__img {
-            width: 100%;
-            object-fit: cover;
-            display: block;
-        }
-    }
+		&__img {
+			width: 100%;
+			object-fit: cover;
+			display: block;
+		}
+	}
 }
 
 @media screen and (min-width: 768px) {
-    .banner {
-        margin-top: 68px;
+	.banner {
+		margin-top: 68px;
 
-        &__texto {
-            height: auto;
-            width: 522px;
-            text-align: center;
+		&__texto {
+			height: auto;
+			width: 522px;
+			text-align: center;
 
-            &__jerarquia {
-                width: 100%;
-                font-size: 22px;
-                line-height: 34px;
-            }
-        }
+			&__jerarquia {
+				width: 100%;
+				font-size: 22px;
+				line-height: 34px;
+			}
+		}
 
-        &__imagen {
-            height: 385px;
-            width: 616.1778564453125px;
-        }
-
-    }
+		&__imagen {
+			height: 385px;
+			width: 616.1778564453125px;
+		}
+	}
 }
 
 @media screen and (min-width: 992px) {
-    .banner {
-        &__cont {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-        }
+	.banner {
+		&__cont {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+		}
 
-        &__texto {
-            &__jerarquia {
-                width: 522px;
-                font-size: 26px;
-                line-height: 38px;
-                text-align: left;
+		&__texto {
+			&__jerarquia {
+				width: 522px;
+				font-size: 26px;
+				line-height: 38px;
+				text-align: left;
+			}
+		}
 
-            }
-        }
-
-        &__imagen {
-            &__img {
-                height: auto;
-                width: 693px;
-                position: absolute;
-            }
-        }
-    }
-
-
+		&__imagen {
+			&__img {
+				height: auto;
+				width: 693px;
+				// position: absolute;
+			}
+		}
+	}
 }
