@@ -86,6 +86,9 @@ video {
   font: inherit;
   vertical-align: baseline; }
 
+html {
+  scroll-behavior: smooth; }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -301,7 +304,7 @@ body {
       text-align: left;
       margin-bottom: 34px; }
   .comercios {
-    margin-bottom: 45px; } }
+    margin-bottom: 20px; } }
 
 .btn-rojo {
   background-color: #FE413F;
@@ -1143,33 +1146,27 @@ body {
         color: #555555; }
   .section-planes {
     padding: 55px 0 0; }
-
-.section-card {
-  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%), rgba(131, 131, 131, 0.03);
-  border-radius: 60px;
-  padding: 55px 0 5px;
-  margin-bottom: 39.5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.section-tabs {
-  padding: 0 0 0 0; }
-
-.section-plan {
-  padding: 0 0 0 0; }
-
-.section-comercios {
-  padding: 57px 0 0 0; }
-
-.section-clientes {
-  padding: 27px 0 0 0; }
-
-.section-contacto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
+  .section-card {
+    background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%), rgba(131, 131, 131, 0.03);
+    border-radius: 60px;
+    padding: 55px 0 5px;
+    margin-bottom: 39.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .section-tabs {
+    padding: 0 0 0 0; }
+  .section-plan {
+    padding: 0 0 0 0; }
+  .section-comercios {
+    padding: 57px 0 0 0; }
+  .section-clientes {
+    padding: 27px 0 0 0; }
+  .section-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
 
 #circle {
   display: none; }
@@ -1258,6 +1255,10 @@ body {
     transform: translateY(-26%); }
   .section__valores--6 {
     transform: translateY(-25%); }
+  .section-card {
+    margin-bottom: 80px; }
+  .section-comercios {
+    margin-top: 93px; }
   .section-clientes {
     transform: translateY(20%); }
   .section-contacto {

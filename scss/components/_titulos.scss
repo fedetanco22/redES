@@ -140,11 +140,13 @@
 		&--ppal {
 			@include h1-titulos-web;
 		}
+
 		&__elegirnos {
 			&--p {
 				width: 930px;
 			}
 		}
+
 		&--contacto {
 			margin-bottom: 10px;
 
@@ -155,7 +157,8 @@
 			}
 		}
 	}
+
 	.comercios {
-		margin-bottom: 45px;
+		margin-bottom: 20px;
 	}
 }
