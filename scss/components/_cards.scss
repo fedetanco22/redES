@@ -60,15 +60,16 @@
         width: 254px;
         border-radius: 20px;
         padding: 25px 30px 20px;
-        margin: 20px 20px;
+        margin: 20px;
         background: #FFFFFF;
         box-shadow: 0px 4px 6px -4px rgba(85, 85, 85, 0.12),
             0px 8px 20px -4px rgba(85, 85, 85, 0.08);
         opacity: 100%;
 
-        // &:hover &__img {
-        //     opacity: 50%
-        // }
+        &__img {
+            opacity: 50%;
+        }
+
 
         &__titulo {
             @include h5-Subtitle-web;
@@ -96,8 +97,11 @@
 
 @media screen and (min-width: 768px) {
     .card__comercios {
-        opacity: 50%;
+        margin: 10px;
 
+        &:hover &__img {
+            opacity: 100%;
+        }
     }
 
     .card-contenedor {

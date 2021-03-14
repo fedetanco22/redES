@@ -14,7 +14,7 @@ $(document).ready(function () {
     infinite: true,
     responsive: [
       {
-        breakpoint: 992,
+        breakpoint: 1200,
         settings: {},
       },
     ],
@@ -44,6 +44,23 @@ $(document).ready(function () {
         settings: {},
       },
     ],
+  });
+});
+$(document).ready(function () {
+  $(".center2--lg").slick({
+    autoplay: true,
+    arrows: true,
+    // dots: true,
+
+    centerMode: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    variableWidth: true,
+    infinite: true,
+    prevArrow:
+      '<span aria-label="Anterior" class="carousel__anterior"><i class="fas fa-arrow-circle-left carousel__anterior--chevron"></i></span>',
+    nextArrow:
+      ' <span aria-label="Siguiente" class="carousel__siguiente"><i class="fas fa-arrow-circle-right carousel__anterior--chevron"></i>',
   });
 });
 

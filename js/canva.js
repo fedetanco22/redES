@@ -17,7 +17,7 @@ gradient.addColorStop(0, "#FE413F");
 
 context.beginPath();
 context.arc(x, y, radius, angleStart, angleEnd);
-context.lineWidth = 2;
+context.lineWidth = 1;
 context.strokeStyle = gradient;
 context.stroke();
 

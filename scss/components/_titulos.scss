@@ -99,11 +99,12 @@
             }
         }
 
-
+        &--REB {
+            margin-bottom: 25px;
+        }
 
         &--sub {
             @include h6-phone;
-
         }
 
         &--p {
@@ -135,6 +136,14 @@
             width: 100%;
             margin-bottom: 34px;
 
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .titulos__elegirnos {
+        &--p {
+            width: 930px;
         }
     }
 }

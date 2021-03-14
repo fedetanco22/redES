@@ -69,21 +69,22 @@
                 <a class="header__logo" href="/index.html"><img class="header__logo--img"
                         src="./assets/images/Logo RED ES BENEFICIO.png" alt="logo"> </a>
 
-                <input type="checkbox" id="hamb" class="hamb">
-                <label for="hamb" class="hamb__label">
-                    <span class="hamb__button">
-                        <i class="hamb__icon"><img src="/assets/images/iconos/mdi_dehaze.svg" alt=""></i>
-                    </span>
-                </label>
+                <span class="hamb">
+                    <i class="hamb__icon"><img src="/assets/images/iconos/mdi_dehaze.svg" alt=""></i>
+                </span>
+
 
                 <nav class="menu">
-                    <ul class="menu__list">
+                    <ul class="menu__list close">
+                        <span class="menu__close">
+                            <i class="menu__icon--close fas fa-times"></i>
+                        </span>
                         <li class="menu__item__img"> <a class="menu__link" href="index.html"> <img
                                     class="menu__item__img--logo" src="./assets/images/Logo RED ES BENEFICIO.png"
                                     alt="logo"> </a></li>
-                        <li class="menu__item menu__item--nosotros"> <a class="menu__link " href="/#Nosotros"> Nosotros
+                        <li class="menu__item menu__item--nosotros"> <a class="menu__link" href="#Nosotros"> Nosotros
                             </a></li>
-                        <li class="menu__item"> <a class="menu__link" href="#"> Beneficios </a></li>
+                        <li class="menu__item"> <a class="menu__link" href="#redDeComercios"> Beneficios </a></li>
                         <li class="menu__item"> <a class="menu__link" href="./pages/empresas.html"> Empresas </a>
                         </li>
                         <li class="menu__item"> <a class="menu__link" href="./pages/comercios.html"> Comercios </a></li>
@@ -119,8 +120,8 @@
             <section id="Nosotros" class="section section-nosotros">
                 <div class="container section__container">
                     <div class="titulos">
-                        <h3 class="titulos--ppal">¿Qué es REB?</h3>
-                        <p class="titulos--sub">Red ES Beneficio.</p>
+                        <h3 class="titulos--ppal titulos--REB">¿Qué es REB?</h3>
+                        <p class="titulos--sub ">Red ES Beneficio.</p>
                     </div>
 
                     <!-- ! Seccion CANVAS -->
@@ -376,10 +377,12 @@
                         </div>
                         <div class="tab__btn">
                             <div class="tab__btn__container">
-                                <button type="submit" class="btn-rojo"><a href="#contacto">Sé parte</a></button>
+                                <button type="submit" class="btn-rojo"><a class="tab__btn__container--ancla"
+                                        href="#contacto">Sé parte</a></button>
                             </div>
                             <div class="tab__btn__container">
-                                <button type="submit" class="btn-blanco"><a href="#porqueElegirnos">+
+                                <button type="submit" class="btn-blanco"><a class="tab__btn__container--ancla"
+                                        href="#porqueElegirnos">+
                                         Info</a></button>
                             </div>
                     </article>
@@ -420,10 +423,12 @@
                         </div>
                         <div class="tab__btn">
                             <div class="tab__btn__container">
-                                <button type="submit" class="btn-rojo"><a href="#contacto">Sé parte</a></button>
+                                <button type="submit" class="btn-rojo"><a class="tab__btn__container--ancla"
+                                        href="#contacto">Sé parte</a></button>
                             </div>
                             <div class="tab__btn__container">
-                                <button type="submit" class="btn-blanco"><a href="#porqueElegirnos">+ Info</a></button>
+                                <button type="submit" class="btn-blanco"><a class="tab__btn__container--ancla"
+                                        href="#porqueElegirnos">+ Info</a></button>
                             </div>
                         </div>
                     </article>
@@ -440,11 +445,10 @@
                             comercios.
                         </p>
                     </div>
-                    <section class="container">
+                    <section class="container carousel__container">
                         <div class="carousel ">
                             <div class="carousel__contenedor ">
                                 <div class="carousel__lista center2 ">
-
                                     <div class="card__comercios">
                                         <div class="card__comercios__imagen">
                                             <img class="card__comercios__img"
@@ -598,8 +602,184 @@
                                     </div>
 
                                 </div>
+
+                                <!--? COMERCIOS MD Y LG 4 Cards  -->
+
+                                <div class="carousel__contenedor  ">
+                                    <div class="carousel__lista--lg center2--lg">
+
+                                        <div class="carousel__card--lg">
+                                            <div class="card__comercios">
+                                                <div class="card__comercios__imagen">
+                                                    <img class="card__comercios__img"
+                                                        src="./assets/images/iconos/checkroom-1.svg" alt="checkroom-1">
+                                                </div>
+                                                <div class="card__comercios__header">
+                                                    <h6 class="card__comercios__titulo">Indumentaria y Accesorios</h6>
+                                                    <p class="card__comercios__body">Boutique, zapatos, carteras.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="card__comercios">
+                                                <div class="card__comercios__imagen">
+                                                    <img class="card__comercios__img"
+                                                        src="./assets/images/iconos/room_service-1.svg"
+                                                        alt="room_service-1.svg">
+                                                </div>
+                                                <div class="card__comercios__header">
+                                                    <h6 class="card__comercios__titulo">Eventos sociales</h6>
+                                                    <p class="card__comercios__body">Contador, abogado, terapeuta,
+                                                        diseñador.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="card__comercios">
+                                                <div class="card__comercios__imagen">
+                                                    <img class="card__comercios__img"
+                                                        src="./assets/images/iconos/icons8-hair-dryer-96 2.svg"
+                                                        alt="hair-dryer">
+                                                </div>
+                                                <div class="card__comercios__header">
+                                                    <h6 class="card__comercios__titulo">Belleza y bienestar</h6>
+                                                    <p class="card__comercios__body">Peluquería, manicuría,
+                                                        depilación,etc.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="card__comercios">
+                                                <div class="card__comercios__imagen">
+                                                    <img class="card__comercios__img"
+                                                        src="./assets/images/iconos/home_repair_service-1.svg"
+                                                        alt="home_repair_service-1.svg">
+                                                </div>
+                                                <div class="card__comercios__header">
+                                                    <h6 class="card__comercios__titulo">Servicios profesionales </h6>
+                                                    <p class="card__comercios__body">Contador, abogado, terapeuta,
+                                                        diseñador.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel__card--lg">
+
+                                            <div class="card__comercios">
+                                                <div class="card__comercios__imagen">
+                                                    <img class="card__comercios__img"
+                                                        src="./assets/images/iconos/local_dining-1.svg"
+                                                        alt="local_dining-1">
+                                                </div>
+                                                <div class="card__comercios__header">
+                                                    <h6 class="card__comercios__titulo">Gastronomía</h6>
+                                                    <p class="card__comercios__body">Resto, bar, tapeo, café.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="card__comercios">
+                                                <div class="card__comercios__imagen">
+                                                    <img class="card__comercios__img"
+                                                        src="./assets/images/iconos/Vector-1.svg" alt="Vector-1.svg">
+                                                </div>
+                                                <div class="card__comercios__header">
+                                                    <h6 class="card__comercios__titulo">Hogar y decoración</h6>
+                                                    <p class="card__comercios__body">Muebles y deco.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="card__comercios">
+                                                <div class="card__comercios__imagen">
+                                                    <img class="card__comercios__img"
+                                                        src="./assets/images/iconos/local_activity-1.svg"
+                                                        alt="local_activity-1">
+                                                </div>
+                                                <div class="card__comercios__header">
+                                                    <h6 class="card__comercios__titulo">Espectáculos</h6>
+                                                    <p class="card__comercios__body">Entretenimiento, teatro,
+                                                        conciertos.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="card__comercios">
+                                                <div class="card__comercios__imagen">
+                                                    <img class="card__comercios__img"
+                                                        src="./assets/images/iconos/Frame 6172.svg" alt="Frame 6172">
+                                                </div>
+                                                <div class="card__comercios__header">
+                                                    <h6 class="card__comercios__titulo">Tecnología
+                                                    </h6>
+                                                    <p class="card__comercios__body">Celulares, laptop, tabletas.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel__card--lg">
+                                            <div class="card__comercios">
+                                                <div class="card__comercios__imagen">
+                                                    <img class="card__comercios__img"
+                                                        src="./assets/images/iconos/local_airport-1.svg"
+                                                        alt="local_airport-1.svg">
+                                                </div>
+                                                <div class="card__comercios__header">
+                                                    <h6 class="card__comercios__titulo">Turismo</h6>
+                                                    <p class="card__comercios__body">Hotel, hostería, agencia, etc.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="card__comercios">
+                                                <div class="card__comercios__imagen">
+                                                    <img class="card__comercios__img"
+                                                        src="./assets/images/iconos/pets-1.svg" alt="pets-1.svg">
+                                                </div>
+                                                <div class="card__comercios__header">
+                                                    <h6 class="card__comercios__titulo">Mascotas</h6>
+                                                    <p class="card__comercios__body">Veterinaria, pet shop.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="card__comercios">
+                                                <div class="card__comercios__imagen">
+                                                    <img class="card__comercios__img"
+                                                        src="./assets/images/iconos/sports_tennis-1.svg"
+                                                        alt="sports_tennis-1">
+                                                </div>
+                                                <div class="card__comercios__header">
+                                                    <h6 class="card__comercios__titulo">Deportes</h6>
+                                                    <p class="card__comercios__body">Gimnasio, equipamiento deportivo.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="card__comercios">
+                                                <div class="card__comercios__imagen">
+                                                    <img class="card__comercios__img"
+                                                        src="./assets/images/iconos/storefront-1.svg"
+                                                        alt="storefront-1.svg">
+                                                </div>
+                                                <div class="card__comercios__header">
+                                                    <h6 class="card__comercios__titulo">Generales
+                                                    </h6>
+                                                    <p class="card__comercios__body">Vinotecas, librerías, jugueterías,
+                                                        etc.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <!--? FIN CARD 4 Comercios -->
+
+
+                                </div>
                             </div>
-                        </div>
                     </section>
                 </div>
             </section>
