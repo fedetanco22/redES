@@ -285,8 +285,23 @@ body {
       margin-bottom: 34px; } }
 
 @media screen and (min-width: 1200px) {
+  .titulos--ppal, .titulos--ppal-rojo {
+    font-family: "Nunito", sans-serif;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0px; }
   .titulos__elegirnos--p {
-    width: 930px; } }
+    width: 930px; }
+  .titulos--contacto {
+    margin-bottom: 10px; }
+    .titulos--contacto-p {
+      width: 378px;
+      text-align: left;
+      margin-bottom: 34px; }
+  .comercios {
+    margin-bottom: 45px; } }
 
 .btn-rojo {
   background-color: #FE413F;
@@ -374,6 +389,11 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-end; } }
+
+@media screen and (min-width: 1200px) {
+  .button-formulario-contacto {
+    justify-content: flex-start;
+    margin-top: 63px; } }
 
 .card {
   display: flex;
@@ -844,7 +864,7 @@ body {
     width: 255px;
     border: none;
     padding: 13px 16px;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 4px 6px -4px rgba(85, 85, 85, 0.12), 0px 8px 20px -4px rgba(85, 85, 85, 0.08);
     border-radius: 30px;
     margin: 4px 0 12px; }
@@ -863,6 +883,10 @@ body {
     width: 438px; }
     .formulario__input__text {
       height: 123px; } }
+
+@media screen and (min-width: 1200px) {
+  .formulario {
+    align-items: flex-start; } }
 
 .cliente__imagen {
   width: 100px;
@@ -883,6 +907,17 @@ body {
     -webkit-filter: grayscale(0);
     filter: none;
     filter: grayscale(0); }
+
+@media screen and (min-width: 992px) {
+  .cliente__imagen {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 30px; }
+  .cliente__img {
+    height: auto; } }
 
 .header {
   text-align: left;
@@ -1211,6 +1246,9 @@ body {
     transform: translateY(-15%); } }
 
 @media screen and (min-width: 1200px) {
+  .section__container--active {
+    justify-content: space-between;
+    align-items: flex-start; }
   .section__valores--imagen img {
     width: 82px;
     height: 82px; }
@@ -1219,7 +1257,16 @@ body {
   .section__valores--4 {
     transform: translateY(-26%); }
   .section__valores--6 {
-    transform: translateY(-25%); } }
+    transform: translateY(-25%); }
+  .section-clientes {
+    transform: translateY(20%); }
+  .section-contacto {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 922px;
+    margin-top: 150px;
+    margin-bottom: 102px; } }
 
 .footer {
   width: 100%;
@@ -1227,6 +1274,8 @@ body {
   background: #555555;
   padding: 72px 26px 91px 32px;
   margin-top: 3px; }
+  .footer--active {
+    display: none; }
   .footer__containers--rrss {
     display: flex; }
   .footer__newsletter__suscribir {
@@ -1377,7 +1426,7 @@ body {
           .footer__newsletter__input--text::placeholder {
             text-align: center;
             transform: translateX(-50px);
-            color: #FE413F; }
+            color: #fe413f; }
       .footer__newsletter__btn {
         position: absolute;
         right: 0;
@@ -1419,3 +1468,21 @@ body {
       font-size: 13px; }
   ::-webkit-input-placeholder {
     text-align: left; } }
+
+@media screen and (min-width: 1200px) {
+  .footer--active {
+    display: block;
+    margin-right: 0px;
+    transform: translateY(0%); }
+  .footer__contacto__txt--active {
+    color: #555;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.25px;
+    color: rgba(131, 131, 131, 0.9); }
+  .footer__contacto__icons--active {
+    color: #fe413f;
+    opacity: 31%; } }

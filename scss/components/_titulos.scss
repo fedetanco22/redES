@@ -1,149 +1,161 @@
 .titulos {
-    @include h3-title-phone;
+	@include h3-title-phone;
 
-    &--ppal {
-        text-align: center;
-        margin-bottom: 9px;
+	&--ppal {
+		text-align: center;
+		margin-bottom: 9px;
 
-        &-rojo {
-            @extend .titulos;
-            @extend .titulos--ppal;
-            color: $rojo;
-        }
-    }
+		&-rojo {
+			@extend .titulos;
+			@extend .titulos--ppal;
+			color: $rojo;
+		}
+	}
 
-    &__elegirnos {
-        text-align: center;
-        margin-bottom: 9px;
-        width: 252px;
+	&__elegirnos {
+		text-align: center;
+		margin-bottom: 9px;
+		width: 252px;
 
-        &--container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 40px;
-        }
+		&--container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-bottom: 40px;
+		}
 
-        &--p {
-            @include body1;
-            width: 256px;
-            text-align: center;
-            margin-top: 11px;
-        }
-    }
+		&--p {
+			@include body1;
+			width: 256px;
+			text-align: center;
+			margin-top: 11px;
+		}
+	}
 
-    &--sub {
-        @include texto-1jerarquia-phone;
-        text-align: center;
-    }
+	&--sub {
+		@include texto-1jerarquia-phone;
+		text-align: center;
+	}
 
-    &--p {
-        @include body1;
-        text-align: center;
-        padding: 20px;
-        margin-top: 11px;
-    }
+	&--p {
+		@include body1;
+		text-align: center;
+		padding: 20px;
+		margin-top: 11px;
+	}
 
-    &--contacto {
-        margin: 0 0 15px 0;
+	&--contacto {
+		margin: 0 0 15px 0;
 
-        &-p {
-            width: 252px;
-            @include body1;
-            text-align: center;
-            margin-bottom: 46px;
+		&-p {
+			width: 252px;
+			@include body1;
+			text-align: center;
+			margin-bottom: 46px;
+		}
+	}
 
-        }
-    }
+	&__empresas {
+		&--icono {
+			margin: 0 0 24px;
+		}
 
-    &__empresas {
-        &--icono {
-            margin: 0 0 24px;
-        }
-
-        &--sub {
-            @extend .titulos--sub;
-            margin: 46px 0;
-        }
-    }
+		&--sub {
+			@extend .titulos--sub;
+			margin: 46px 0;
+		}
+	}
 }
 
 .comercios {
-    padding: 0 5px 0 5px;
-    margin-bottom: 55px;
+	padding: 0 5px 0 5px;
+	margin-bottom: 55px;
 
-    &--p {
-        color: #555;
-        padding: 0 20px 0px 20px;
-        margin-top: 0;
-    }
+	&--p {
+		color: #555;
+		padding: 0 20px 0px 20px;
+		margin-top: 0;
+	}
 }
 
 @media screen and (min-width: 768px) {
-    .titulos {
-        @include h2-subtitulos-web;
-        @include flex-col;
+	.titulos {
+		@include h2-subtitulos-web;
+		@include flex-col;
 
+		&--ppal {
+			margin-bottom: 51px;
+		}
 
-        &--ppal {
-            margin-bottom: 51px;
-        }
+		&__elegirnos {
+			@include h2-subtitulos-web;
+			width: auto;
+			margin-bottom: 40px;
 
-        &__elegirnos {
-            @include h2-subtitulos-web;
-            width: auto;
-            margin-bottom: 40px;
+			&--p {
+				width: 630px;
+			}
+		}
 
-            &--p {
-                width: 630px;
-            }
-        }
+		&--REB {
+			margin-bottom: 25px;
+		}
 
-        &--REB {
-            margin-bottom: 25px;
-        }
+		&--sub {
+			@include h6-phone;
+		}
 
-        &--sub {
-            @include h6-phone;
-        }
+		&--p {
+			height: 129px;
+			width: 630px;
+			padding: 0;
+		}
 
-        &--p {
-            height: 129px;
-            width: 630px;
-            padding: 0;
+		&--contacto {
+			margin-bottom: 46px;
 
-        }
+			&-p {
+				width: 440px;
+				@include body1;
+				text-align: center;
+				margin-bottom: 46px;
+			}
+		}
+	}
 
-        &--contacto {
-            margin-bottom: 46px;
+	.comercios {
+		margin-bottom: 14px;
 
-            &-p {
-                width: 440px;
-                @include body1;
-                text-align: center;
-                margin-bottom: 46px;
-
-            }
-        }
-    }
-
-    .comercios {
-        margin-bottom: 14px;
-
-        &--p {
-            @include h6-phone;
-            height: auto;
-            width: 100%;
-            margin-bottom: 34px;
-
-        }
-    }
+		&--p {
+			@include h6-phone;
+			height: auto;
+			width: 100%;
+			margin-bottom: 34px;
+		}
+	}
 }
 
 @media screen and (min-width: 1200px) {
-    .titulos__elegirnos {
-        &--p {
-            width: 930px;
-        }
-    }
+	.titulos {
+		&--ppal {
+			@include h1-titulos-web;
+		}
+		&__elegirnos {
+			&--p {
+				width: 930px;
+			}
+		}
+		&--contacto {
+			margin-bottom: 10px;
+
+			&-p {
+				width: 378px;
+				text-align: left;
+				margin-bottom: 34px;
+			}
+		}
+	}
+	.comercios {
+		margin-bottom: 45px;
+	}
 }

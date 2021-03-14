@@ -1,199 +1,202 @@
 .section {
-    padding: 55px 0 39.5px 0;
-    width: 100%;
-    // border-radius: 100px; //Puede no ir
+	padding: 55px 0 39.5px 0;
+	width: 100%;
+	// border-radius: 100px; //Puede no ir
 
-    &__container {
-        @include flex-col;
-    }
+	&__container {
+		@include flex-col;
+	}
 
-    &__valores {
-        @include flex-col;
-        margin: 22px 0 0 0;
-    }
+	&__valores {
+		@include flex-col;
+		margin: 22px 0 0 0;
+	}
 
-    &__txt {
-        @include flex-col;
-        text-align: center;
+	&__txt {
+		@include flex-col;
+		text-align: center;
 
-        &__p {
-            @include body1;
-            margin: 8px 0 0 0;
+		&__p {
+			@include body1;
+			margin: 8px 0 0 0;
 
-            &--Strong {
-                @include h6-phone;
-            }
-        }
-    }
+			&--Strong {
+				@include h6-phone;
+			}
+		}
+	}
 
-    &-planes {
-        padding: 55px 0 0;
-        ;
-    }
-
+	&-planes {
+		padding: 55px 0 0;
+	}
 }
 
 .section-card {
-    background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%),
-        rgba(131, 131, 131, 0.030);
-    border-radius: 60px;
-    padding: 55px 0 5px;
-    margin-bottom: 39.5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+	background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%),
+		rgba(131, 131, 131, 0.03);
+	border-radius: 60px;
+	padding: 55px 0 5px;
+	margin-bottom: 39.5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .section-tabs {
-    padding: 0 0 0 0;
+	padding: 0 0 0 0;
 }
 
-
 .section-plan {
-    padding: 0 0 0 0;
+	padding: 0 0 0 0;
 }
 
 .section-comercios {
-    padding: 57px 0 0 0;
+	padding: 57px 0 0 0;
 }
 
 .section-clientes {
-    padding: 27px 0 0 0;
+	padding: 27px 0 0 0;
 }
 
 .section-contacto {
-    @include flex-col;
+	@include flex-col;
 }
 
 #circle {
-    display: none;
+	display: none;
 }
 
 @media screen and (min-width: 768px) {
-    #circle {
-        display: inline-block;
+	#circle {
+		display: inline-block;
+	}
 
-    }
+	.section {
+		&-card {
+			padding: 107px 0 39.5px 0;
+			// text-align: center;
+		}
 
-    .section {
-        &-card {
-            padding: 107px 0 39.5px 0;
-            // text-align: center;
-        }
+		&-nosotros {
+			padding: 113px 0 39.5px 0;
+		}
 
-        &-nosotros {
-            padding: 113px 0 39.5px 0;
-        }
+		&-comercios {
+			margin-bottom: 90px;
+		}
 
-        &-comercios {
-            margin-bottom: 90px;
-        }
+		&__canvas {
+			position: relative;
+			// width: 97%;
+		}
 
-        &__canvas {
-            position: relative;
-            // width: 97%;
-        }
+		&__abs {
+			position: absolute;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(2, 220px);
+			grid-template-areas:
+				"zona1 zona2 zona3"
+				"zona4 zona5 zona6";
+			transform: translate(-15px, -305px);
+		}
 
-        &__abs {
-            position: absolute;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(2, 220px);
-            grid-template-areas:
-                "zona1 zona2 zona3"
-                "zona4 zona5 zona6";
-            transform: translate(-15px, -305px);
-        }
+		&__valores {
+			margin: 6.5px 0 0 0;
 
-        &__valores {
-            margin: 6.5px 0 0 0;
+			&--2 {
+				grid-area: zona2;
+				// padding: 10px 0 0 0;
+			}
 
-            &--2 {
-                grid-area: zona2;
-                // padding: 10px 0 0 0;
-            }
+			&--4 {
+				grid-area: zona4;
+				@include flex-col;
+				justify-content: flex-start;
+			}
 
-            &--4 {
-                grid-area: zona4;
-                @include flex-col;
-                justify-content: flex-start;
+			&--6 {
+				grid-area: zona6;
+				@include flex-col;
+				justify-content: flex-start;
+			}
+		}
 
-            }
+		&__txt {
+			padding: 0 5px;
 
-            &--6 {
-                grid-area: zona6;
-                @include flex-col;
-                justify-content: flex-start;
-            }
+			&__p {
+				@include body1;
+				margin: 8px 0 0 0;
 
-        }
-
-        &__txt {
-            padding: 0 5px;
-
-            &__p {
-                @include body1;
-                margin: 8px 0 0 0;
-
-                &--Strong {
-                    @include h5-Subtitle-web;
-                }
-            }
-        }
-    }
-
-
+				&--Strong {
+					@include h5-Subtitle-web;
+				}
+			}
+		}
+	}
 }
 
 @media screen and (min-width: 992px) {
-    .section {
+	.section {
+		&__valores {
+			&--imagen img {
+				width: 82px;
+				height: 82px;
+			}
 
-        &__valores {
+			&--2 {
+				transform: translateY(-56%);
+				@include flex-col;
+			}
 
-            &--imagen img {
-                width: 82px;
-                height: 82px
-            }
+			&--4 {
+				transform: translateY(-16%);
+			}
 
-            &--2 {
-                transform: translateY(-56%);
-                @include flex-col;
-            }
-
-            &--4 {
-                transform: translateY(-16%);
-            }
-
-            &--6 {
-                transform: translateY(-15%);
-            }
-        }
-
-    }
+			&--6 {
+				transform: translateY(-15%);
+			}
+		}
+	}
 }
 
 @media screen and (min-width: 1200px) {
-    .section {
-        &__valores {
+	.section {
+		&__container {
+			&--active {
+				justify-content: space-between;
+				align-items: flex-start;
+			}
+		}
+		&__valores {
+			&--imagen img {
+				width: 82px;
+				height: 82px;
+			}
 
-            &--imagen img {
-                width: 82px;
-                height: 82px
-            }
+			&--2 {
+				transform: translateY(-90%);
+			}
 
-            &--2 {
-                transform: translateY(-90%);
+			&--4 {
+				transform: translateY(-26%);
+			}
 
-            }
-
-            &--4 {
-                transform: translateY(-26%);
-            }
-
-            &--6 {
-                transform: translateY(-25%);
-            }
-        }
-    }
+			&--6 {
+				transform: translateY(-25%);
+			}
+		}
+		&-clientes {
+			transform: translateY(20%);
+		}
+		&-contacto {
+			flex-direction: row;
+			align-items: flex-start;
+			justify-content: center;
+			width: 922px;
+			margin-top: 150px;
+			margin-bottom: 102px;
+		}
+	}
 }

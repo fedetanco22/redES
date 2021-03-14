@@ -177,7 +177,7 @@
             <section id="porqueElegirnos" class="section section-card">
                 <div class=" section__container">
                     <div class="titulos titulos__elegirnos--container container">
-                        <h3 class="titulos__elegirnos">¿Por qué elegirnos?</h3>
+                        <h3 class="titulos__elegirnos titulos--ppal">¿Por qué elegirnos?</h3>
                         <p class="titulos__elegirnos--p">Ofrecemos un método de desarrollo de empresas, profesionales,
                             comercios y
                             consumidores, que genera progreso económico, bienestar social, cultural y financiero de
@@ -821,8 +821,8 @@
             <!-- FIN NUESTROS CLIENTES -->
 
             <!-- CONTACTO -->
-            <section id="contacto" class="section section-contacto container">
-                <div class="container section__container">
+            <section  class="section section-contacto container">
+                <div class="container section__container section__container--active">
                     <div class="titulos ">
                         <h3 class="titulos--ppal titulos--contacto">Contacto</h3>
                     </div>
@@ -831,13 +831,35 @@
                         déjanos
                         tus datos y nos contactaremos a la brevedad.
                     </p>
+                    <!--? Only in Large Screens -->
+                    <div class="footer__containers footer__containers--address footer--active">
+                        <div class="footer__contacto">
+                            <div class="footer__contacto__icons">
+                                <i class="far fa-envelope footer__contacto__icons--active"></i>
+                            </div>
+                            <p class="footer__contacto__txt footer__contacto__txt--active">redesbeneficio@gmail.com</p>
+                        </div>
+                        <div class="footer__contacto">
+                            <div class="footer__contacto__icons">
+                                <i class="fas fa-mobile-alt footer__contacto__icons--active"></i>
+                            </div>
+                            <p class="footer__contacto__txt footer__contacto__txt--active">+34 280X XX XX XX</p>
+                        </div>
+                        <div class="footer__contacto">
+                            <div class="footer__contacto__icons">
+                                <i class="fas fa-map-marker-alt footer__contacto__icons--active"></i>
+                            </div>
+                            <p class="footer__contacto__txt footer__contacto__txt--active">Calle Príncipe de Vergara 132.
+                                Plantas 4 y 9, 28002 Madrid, España</p>
+                        </div>
+                    </div>
+                    <!--? Only in Large Screens FIN -->
                 </div>
                 <div class="formulario">
                     <form action="correo.php" method="POST">
                         <div>
                             <input class="formulario__input" type="text" name="user_name" id="user_name"
                                 placeholder="Nombre y Apellido:">
-
                         </div>
                         <div>
                             <input type="email" class="formulario__input" name="user_email" id="user_email"
