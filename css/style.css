@@ -859,7 +859,7 @@ body {
     margin-left: 33px; }
     .menu__item__img--logo {
       height: 43px; }
-  .menu__item:hover {
+  .menu__item:active {
     background-color: rgba(254, 65, 63, 0.31);
     transition: ease-in 0.1s; }
   .menu__item--btn {
