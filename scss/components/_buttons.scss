@@ -31,11 +31,17 @@
 	@include button;
 }
 
+.btn-rojo:active {
+	outline: none;
+}
+
+
 @media screen and (min-width: 768px) {
 	.btn-rojo {
 		&--large {
 			width: 158px;
 		}
+
 		&--suscription {
 			height: 46.04210662841797px;
 			width: 131.30526733398438px;
@@ -48,6 +54,7 @@
 		justify-content: flex-end;
 	}
 }
+
 @media screen and (min-width: 1200px) {
 	.button-formulario-contacto {
 		justify-content: flex-start;

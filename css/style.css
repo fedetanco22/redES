@@ -382,6 +382,9 @@ body {
   text-transform: uppercase;
   cursor: pointer; }
 
+.btn-rojo:active {
+  outline: none; }
+
 @media screen and (min-width: 768px) {
   .btn-rojo--large {
     width: 158px; }
@@ -648,7 +651,9 @@ body {
     margin-bottom: 19px;
     text-align: center; }
     .tab__btn__container--ancla {
-      width: 100%; }
+      width: 100px; }
+    .tab__btn__container--buton:active {
+      outline: none; }
 
 .fa-check-circle {
   font-size: 20px;
