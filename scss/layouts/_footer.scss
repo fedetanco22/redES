@@ -35,16 +35,17 @@
 		&__input {
 			position: relative;
 			margin-bottom: 20px;
+			text-align: center;
 
 			&--img {
 				position: absolute;
-				top: 30%;
-				left: 10%;
+				transform: translate(20px, 18px)
 			}
 
 			&--text {
 				width: 253px;
 				height: 58px;
+				margin-bottom: 20px;
 				border: none;
 				background: #ffffff;
 				/* Sombra 1 */
@@ -54,6 +55,11 @@
 				@include body1;
 				color: $rojo;
 				text-align: center;
+
+				&::placeholder {
+					text-align: center;
+					color: #fe413f;
+				}
 			}
 		}
 	}
@@ -140,9 +146,6 @@
 			align-items: center;
 			margin-bottom: 86px;
 
-			// &-container {
-			// }
-
 			&__suscribir {
 				display: flex;
 				flex-direction: row;
@@ -164,18 +167,16 @@
 				margin-bottom: 0;
 
 				&--img {
-					transform: translateX(-20px);
+					transform: translate(10px, 13px);
 				}
 
 				&--text {
-					height: 49.45262908935547px;
+					height: 49.45px;
 					width: 324px;
 
-					// text-align: center;
 					&::placeholder {
-						text-align: center;
 						transform: translateX(-50px);
-						color: #fe413f;
+
 					}
 				}
 			}
@@ -202,11 +203,9 @@
 
 			&__txt {
 
-				// margin-top: 14px;
 				&--hashtag {
 					@include subtitle;
-					// color: #fff;
-					// margin-bottom: 24px;
+
 				}
 			}
 		}
@@ -287,6 +286,9 @@
 
 			&__input {
 
+				&--img {
+					transform: translate(20px, 17px)
+				}
 
 				&--text {
 					height: 58px;

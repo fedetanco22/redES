@@ -1311,14 +1311,15 @@ body {
     margin-bottom: 29px; }
   .footer__newsletter__input {
     position: relative;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    text-align: center; }
     .footer__newsletter__input--img {
       position: absolute;
-      top: 30%;
-      left: 10%; }
+      transform: translate(20px, 18px); }
     .footer__newsletter__input--text {
       width: 253px;
       height: 58px;
+      margin-bottom: 20px;
       border: none;
       background: #ffffff;
       /* Sombra 1 */
@@ -1333,6 +1334,9 @@ body {
       color: rgba(131, 131, 131, 0.9);
       color: #FE413F;
       text-align: center; }
+      .footer__newsletter__input--text::placeholder {
+        text-align: center;
+        color: #fe413f; }
   .footer__logo__img {
     height: 60px;
     width: 110px; }
@@ -1427,14 +1431,12 @@ body {
       .footer__newsletter__input {
         margin-bottom: 0; }
         .footer__newsletter__input--img {
-          transform: translateX(-20px); }
+          transform: translate(10px, 13px); }
         .footer__newsletter__input--text {
-          height: 49.45262908935547px;
+          height: 49.45px;
           width: 324px; }
           .footer__newsletter__input--text::placeholder {
-            text-align: center;
-            transform: translateX(-50px);
-            color: #fe413f; }
+            transform: translateX(-50px); }
       .footer__newsletter__btn {
         position: absolute;
         right: 0;
@@ -1504,6 +1506,8 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start; }
+    .footer__newsletter__input--img {
+      transform: translate(20px, 17px); }
     .footer__newsletter__input--text {
       height: 58px;
       width: 380px;
