@@ -55,3 +55,7 @@ const linkMenus = document.querySelectorAll(".menu__item");
 linkMenus.forEach((link) => {
   link.addEventListener("click", closeMenu);
 });
+
+function suscribir(event) {
+  console.log(event.target);
+}

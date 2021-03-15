@@ -61,7 +61,7 @@
 
 <body>
 
-    <div class="contenedor-general">
+    <div class="contenedor-general ">
         <!-- HEADER -->
         <header class="header container">
             <div class="header__contenedor">
@@ -441,8 +441,7 @@
                 <div class=" section__container">
                     <div class="titulos container">
                         <h3 class="titulos--ppal comercios">Red de Comercios</h3>
-                        <p class="titulos--p titulos--p-comercios comercios--p">Rubros que integran nuestra red de
-                            comercios.
+                        <p class="titulos--p titulos--p-comercios comercios--p">Rubros que integran nuestra red.
                         </p>
                     </div>
                     <section class="container carousel__container">
@@ -821,7 +820,7 @@
             <!-- FIN NUESTROS CLIENTES -->
 
             <!-- CONTACTO -->
-            <section  class="section section-contacto container">
+            <section id="contacto" class="section section-contacto container">
                 <div class="container section__container section__container--active">
                     <div class="titulos ">
                         <h3 class="titulos--ppal titulos--contacto">Contacto</h3>
@@ -849,7 +848,8 @@
                             <div class="footer__contacto__icons">
                                 <i class="fas fa-map-marker-alt footer__contacto__icons--active"></i>
                             </div>
-                            <p class="footer__contacto__txt footer__contacto__txt--active">Calle Príncipe de Vergara 132.
+                            <p class="footer__contacto__txt footer__contacto__txt--active">Calle Príncipe de Vergara
+                                132.
                                 Plantas 4 y 9, 28002 Madrid, España</p>
                         </div>
                     </div>
@@ -881,80 +881,83 @@
         </main>
 
         <footer class="footer">
-            <div class="footer__containers ">
-                <div class="footer__newsletter">
-                    <div class="footer__newsletter-container">
-                        <p class="footer__newsletter__titulo">Suscribite a nuesto Newsletter</p>
-                        <p class="footer__newsletter__texto">Si quieres conocer nuestras ofertas y beneficios,
-                            suscríbite a
-                            nuestro newsletter.</p>
-                    </div>
-                    <div class="footer__newsletter__suscribir">
-                        <div class="footer__newsletter__input">
-                            <img class="footer__newsletter__input--img" src="./assets/images/iconos/mail_outline-1.svg"
-                                alt="mail_outline-1.svg">
-                            <input class="footer__newsletter__input--text" type="text" placeholder="Ingresa tu correo">
+            <div class="container footer__containerGral">
+                <div class="footer__containers ">
+                    <div class="footer__newsletter">
+                        <div class="footer__newsletter-container">
+                            <p class="footer__newsletter__titulo">Suscribite a nuesto Newsletter</p>
+                            <p class="footer__newsletter__texto">Si quieres conocer nuestras ofertas y beneficios,
+                                suscríbite a
+                                nuestro newsletter.</p>
                         </div>
-                        <button class="btn-rojo btn-rojo--suscription footer__newsletter__btn"
-                            type="submit">suscribir</button>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__info">
-                <div class="footer__containers">
-                    <div class="footer__logo">
-                        <img class="footer__logo__img" src="./assets/images/Logo-RED-ES-BENEFICIO-blanco.png"
-                            alt="Logo RedES" class="footer">
-                    </div>
-                    <div class="footer__logo__txt">
-                        <p class="footer__logo__txt--hashtag">#Crecemos Conectados</p>
-                    </div>
-                </div>
+                        <div class="footer__newsletter__suscribir">
+                            <form class="footer__newsletter__input" action="correo.php" method="POST">
+                                <img class="footer__newsletter__input--img"
+                                    src="./assets/images/iconos/mail_outline-1.svg" alt="mail_outline-1.svg">
+                                <input class="footer__newsletter__input--text" type="text"
+                                    placeholder="Ingresa tu correo" onfocus="this.placeholder = ''">
+                                <input class="btn-rojo btn-rojo--suscription footer__newsletter__btn" type="submit"
+                                    name='suscribir' value="Suscribir">
+                            </form>
 
-                <div class="footer__containers footer__containers--address">
-                    <div class="footer__contacto">
-                        <div class="footer__contacto__icons">
-                            <i class="far fa-envelope"></i>
                         </div>
-                        <p class="footer__contacto__txt">redesbeneficio@gmail.com</p>
-                    </div>
-                    <div class="footer__contacto">
-                        <div class="footer__contacto__icons">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <p class="footer__contacto__txt">+34 280X XX XX XX</p>
-                    </div>
-                    <div class="footer__contacto">
-                        <div class="footer__contacto__icons">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <p class="footer__contacto__txt">Calle Príncipe de Vergara 132.
-                            Plantas 4 y 9, 28002 Madrid, España</p>
                     </div>
                 </div>
-            </div>
-            <div class="footer__containers--rrss">
-                <div class="footer__rrss">
-                    <a href="https://www.instagram.com/redesbeneficio/" target="blank">
-                        <i class=" fab fa-instagram"></i>
-                    </a>
+                <div class="footer__info">
+                    <div class="footer__containers">
+                        <div class="footer__logo">
+                            <img class="footer__logo__img" src="./assets/images/Logo-RED-ES-BENEFICIO-blanco.png"
+                                alt="Logo RedES" class="footer">
+                        </div>
+                        <div class="footer__logo__txt">
+                            <p class="footer__logo__txt--hashtag">#Crecemos Conectados</p>
+                        </div>
+                    </div>
+
+                    <div class="footer__containers footer__containers--address footer__containers--add-disable">
+                        <div class="footer__contacto">
+                            <div class="footer__contacto__icons">
+                                <i class="far fa-envelope"></i>
+                            </div>
+                            <p class="footer__contacto__txt">redesbeneficio@gmail.com</p>
+                        </div>
+                        <div class="footer__contacto">
+                            <div class="footer__contacto__icons">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <p class="footer__contacto__txt">+34 280X XX XX XX</p>
+                        </div>
+                        <div class="footer__contacto">
+                            <div class="footer__contacto__icons">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <p class="footer__contacto__txt">Calle Príncipe de Vergara 132.
+                                Plantas 4 y 9, 28002 Madrid, España</p>
+                        </div>
+                    </div>
                 </div>
-                <!-- <div class="footer__rrss">
-                    <i class=" fab fa-twitter"></i>
-                </div> -->
-                <div class="footer__rrss">
-                    <a href="https://www.linkedin.com/company/red-es-beneficio/" target="blank">
-                        <i class=" fab fa-linkedin-in"></i>
-                    </a>
+                <div class="footer__containers--rrss">
+                    <div class="footer__rrss">
+                        <a href="https://www.instagram.com/redesbeneficio/" target="blank">
+                            <i class=" fab fa-instagram"></i>
+                        </a>
+                    </div>
+
+                    <!--? TWITTER <div class="footer__rrss"> <i class=" fab fa-twitter"></i> </div> TWITTER-->
+                    <div class="footer__rrss">
+                        <a href="https://www.linkedin.com/company/red-es-beneficio/" target="blank">
+                            <i class=" fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <div class="footer__rrss">
+                        <a href="https://www.facebook.com/RedESBeneficio" target="blank">
+                            <i class=" fab fa-facebook-f"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="footer__rrss">
-                    <a href="https://www.facebook.com/RedESBeneficio" target="blank">
-                        <i class=" fab fa-facebook-f"></i>
-                    </a>
+                <div class="footer__containers">
+                    <p class="footer__copyright">©2020RedES</p>
                 </div>
-            </div>
-            <div class="footer__containers">
-                <p class="footer__copyright">©2020RedES</p>
             </div>
 
         </footer>
