@@ -55,16 +55,7 @@
 		}
 	}
 
-	&__empresas {
-		&--icono {
-			margin: 0 0 24px;
-		}
 
-		&--sub {
-			@extend .titulos--sub;
-			margin: 46px 0;
-		}
-	}
 }
 
 .comercios {
@@ -121,17 +112,32 @@
 				margin-bottom: 46px;
 			}
 		}
+
+		.comercios {
+			margin-bottom: 14px;
+
+			&--p {
+				@include h6-phone;
+				height: auto;
+				width: 100%;
+				margin-bottom: 34px;
+			}
+		}
 	}
+}
 
-	.comercios {
-		margin-bottom: 14px;
+@media screen and (min-width: 992px) {
+	.titulos {
+		&__empresas {
+			&--icono {
+				margin: 0 0 24px;
+			}
 
-		&--p {
-			@include h6-phone;
-			height: auto;
-			width: 100%;
-			margin-bottom: 34px;
-
+			&--sub {
+				@include texto-1jerarquia-phone;
+				text-align: center;
+				margin: 46px 0;
+			}
 		}
 	}
 }
@@ -140,6 +146,10 @@
 	.titulos {
 		&--ppal {
 			@include h1-titulos-web;
+
+			&-rojo {
+				margin-bottom: 0;
+			}
 		}
 
 		&__elegirnos {

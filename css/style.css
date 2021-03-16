@@ -175,7 +175,7 @@ body {
       width: 256px;
       text-align: center;
       margin-top: 11px; }
-  .titulos--sub, .titulos__empresas--sub {
+  .titulos--sub {
     font-family: "Poppins", sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -208,10 +208,6 @@ body {
       color: rgba(131, 131, 131, 0.9);
       text-align: center;
       margin-bottom: 46px; }
-  .titulos__empresas--icono {
-    margin: 0 0 24px; }
-  .titulos__empresas--sub {
-    margin: 46px 0; }
 
 .comercios {
   padding: 0 5px 0 5px;
@@ -248,7 +244,7 @@ body {
         width: 630px; }
     .titulos--REB {
       margin-bottom: 25px; }
-    .titulos--sub, .titulos__empresas--sub {
+    .titulos--sub {
       font-family: "Poppins", sans-serif;
       font-size: 18px;
       font-style: normal;
@@ -273,19 +269,33 @@ body {
         color: rgba(131, 131, 131, 0.9);
         text-align: center;
         margin-bottom: 46px; }
-  .comercios {
-    margin-bottom: 14px; }
-    .comercios--p {
-      font-family: "Poppins", sans-serif;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 26px;
-      letter-spacing: 0px;
-      color: #555555;
-      height: auto;
-      width: 100%;
-      margin-bottom: 34px; } }
+    .titulos .comercios, .titulos--ppal-rojo .comercios {
+      margin-bottom: 14px; }
+      .titulos .comercios--p, .titulos--ppal-rojo .comercios--p {
+        font-family: "Poppins", sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 26px;
+        letter-spacing: 0px;
+        color: #555555;
+        height: auto;
+        width: 100%;
+        margin-bottom: 34px; } }
+
+@media screen and (min-width: 992px) {
+  .titulos__empresas--icono {
+    margin: 0 0 24px; }
+  .titulos__empresas--sub {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.15000000596046448px;
+    color: rgba(131, 131, 131, 0.8);
+    text-align: center;
+    margin: 46px 0; } }
 
 @media screen and (min-width: 1200px) {
   .titulos--ppal, .titulos--ppal-rojo {
@@ -295,6 +305,8 @@ body {
     font-weight: 700;
     line-height: 64px;
     letter-spacing: 0px; }
+    .titulos--ppal-rojo {
+      margin-bottom: 0; }
   .titulos__elegirnos--p {
     width: 930px; }
   .titulos--contacto {
@@ -1106,16 +1118,33 @@ body {
       color: rgba(131, 131, 131, 0.8);
       color: #555555;
       text-align: center; }
-  .banner__imagen {
-    height: 184px;
-    width: 294px; }
-    .banner__imagen--empresa {
-      width: auto;
-      height: auto; }
-    .banner__imagen__img {
+  .banner__empresas {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center; }
+    .banner__empresas--icono {
+      margin: 0 0 24px; }
+    .banner__empresas__titulos--sub {
+      width: 267px;
+      height: auto;
+      font-family: "Poppins", sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0.15000000596046448px;
+      color: rgba(131, 131, 131, 0.8);
+      text-align: center;
+      margin: 46px 0;
+      padding: 0; }
+    .banner__empresas__imagen__img {
       width: 100%;
       object-fit: cover;
       display: block; }
+  .banner__imagen__img {
+    width: 100%;
+    object-fit: cover;
+    display: block; }
 
 @media screen and (min-width: 768px) {
   .banner {
@@ -1128,23 +1157,41 @@ body {
         width: 100%;
         font-size: 22px;
         line-height: 34px; }
-    .banner__imagen {
-      height: 385px;
-      width: 616.1778564453125px; } }
+    .banner__empresas__imagen {
+      height: auto;
+      width: 616.1778564453125px; }
+    .banner__empresas__titulos--sub {
+      width: 100%;
+      font-size: 22px;
+      line-height: 34px; } }
 
 @media screen and (min-width: 992px) {
   .banner__cont {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start; }
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    width: auto; }
   .banner__texto__jerarquia {
     width: 522px;
     font-size: 26px;
     line-height: 38px;
     text-align: left; }
+  .banner__empresas__titulos--sub {
+    width: 552px; } }
+
+@media screen and (min-width: 1200px) {
   .banner__imagen__img {
-    height: auto;
-    width: 693px; } }
+    width: 693px; }
+  .banner__empresas {
+    flex-flow: row wrap;
+    align-items: center;
+    width: 100%; }
+    .banner__empresas__imagen {
+      order: 3; }
+    .banner__empresas__titulos--sub {
+      text-align: left; }
+    .banner__empresas--icono {
+      margin: 0 10px 0 0; } }
 
 .section {
   padding: 55px 0 39.5px 0;
@@ -1184,7 +1231,7 @@ body {
         letter-spacing: 0px;
         color: #555555; }
   .section-planes {
-    padding: 55px 0 0; }
+    padding: 21px 0 0; }
   .section-card {
     background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%), rgba(131, 131, 131, 0.03);
     border-radius: 60px;

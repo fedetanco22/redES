@@ -19,14 +19,40 @@
 		}
 	}
 
-	&__imagen {
-		height: 184px;
-		width: 294px;
 
-		&--empresa {
-			width: auto;
-			height: auto;
+	&__empresas {
+		display: flex;
+		flex-flow: column wrap;
+		align-items: center;
+
+		&--icono {
+			margin: 0 0 24px;
 		}
+
+		&__titulos {
+
+			&--sub {
+				width: 267px;
+				height: auto;
+				@include texto-1jerarquia-phone;
+				text-align: center;
+				margin: 46px 0;
+				padding: 0;
+
+			}
+		}
+
+		&__imagen {
+
+			&__img {
+				width: 100%;
+				object-fit: cover;
+				display: block;
+			}
+		}
+	}
+
+	&__imagen {
 
 		&__img {
 			width: 100%;
@@ -52,19 +78,33 @@
 			}
 		}
 
-		&__imagen {
-			height: 385px;
-			width: 616.1778564453125px;
+		&__empresas {
+			&__imagen {
+				height: auto;
+				width: 616.1778564453125px;
+			}
+
+			&__titulos {
+
+				&--sub {
+					width: 100%;
+					font-size: 22px;
+					line-height: 34px;
+
+				}
+			}
 		}
 	}
 }
 
 @media screen and (min-width: 992px) {
 	.banner {
+
 		&__cont {
 			display: flex;
-			flex-direction: row;
+			flex-flow: row nowrap;
 			justify-content: flex-start;
+			width: auto;
 		}
 
 		&__texto {
@@ -76,11 +116,44 @@
 			}
 		}
 
+		&__empresas {
+
+			&__titulos {
+				&--sub {
+					width: 552px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.banner {
 		&__imagen {
 			&__img {
-				height: auto;
 				width: 693px;
-				// position: absolute;
+			}
+		}
+
+		&__empresas {
+			flex-flow: row wrap;
+			align-items: center;
+			width: 100%;
+
+
+			&__imagen {
+				order: 3;
+
+			}
+
+			&__titulos {
+				&--sub {
+					text-align: left;
+				}
+			}
+
+			&--icono {
+				margin: 0 10px 0 0;
 			}
 		}
 	}
