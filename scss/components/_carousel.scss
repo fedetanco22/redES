@@ -67,15 +67,30 @@
 
 			&--chevron {
 				font-size: 34px;
+				margin-top: 10px;
+
 			}
 		}
 
 		&__anterior {
 			right: -75%;
+
+			&--chevron {
+				background-color: $rojo;
+				border-radius: 50%;
+				border: 1px solid $rojo;
+				color: #fff;
+				opacity: 30%;
+			}
 		}
 
 		&__siguiente {
 			right: 5%;
+
+			&--chevron {
+				font-size: 36px; // para equiparar tamaño por border de ANTERIOR
+
+			}
 		}
 	}
 
@@ -85,14 +100,45 @@
 		justify-content: center;
 		align-items: center;
 	}
+
+	.slick-dots {
+		position: absolute;
+		top: 100%;
+		left: 12%;
+		margin-top: 10px;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.slick-dots button {
+		color: #999;
+		background-color: #999;
+		border: none;
+		border-radius: 50%;
+		margin-left: 5px;
+		width: 12px;
+		height: 12px;
+		font-size: 0;
+	}
+
+	.slick-active button {
+		border-radius: 40px;
+		width: 30px;
+		height: 12px;
+		background-color: $rojo;
+		color: $rojo;
+	}
+
 }
 
 @media screen and (min-width: 992px) {
 	.carousel {
+
 		&__siguiente,
 		&__anterior {
 			margin-top: 40px;
 		}
+
 		&__contenedor {
 			margin: 0;
 		}
@@ -102,6 +148,12 @@
 				width: 550px;
 			}
 		}
+	}
+
+	.slick-dots {
+		left: 2%;
+		margin-top: 40px;
+
 	}
 }
 

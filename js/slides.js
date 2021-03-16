@@ -48,9 +48,9 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
   $(".center2--lg").slick({
+    dots: true,
     autoplay: true,
     arrows: true,
-    // dots: true,
 
     centerMode: false,
     slidesToShow: 1,
@@ -60,7 +60,7 @@ $(document).ready(function () {
     prevArrow:
       '<span aria-label="Anterior" class="carousel__anterior"><i class="fas fa-arrow-circle-left carousel__anterior--chevron"></i></span>',
     nextArrow:
-      ' <span aria-label="Siguiente" class="carousel__siguiente"><i class="fas fa-arrow-circle-right carousel__anterior--chevron"></i>',
+      ' <span aria-label="Siguiente" class="carousel__siguiente"><i class="fas fa-arrow-circle-right carousel__siguiente--chevron"></i>',
   });
 });
 
