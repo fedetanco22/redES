@@ -208,17 +208,23 @@
 			width: 922px;
 			margin-top: 150px;
 			margin-bottom: 102px;
+
+			&--empresas {
+				margin-top: 121px;
+				margin-bottom: 52px;
+			}
+		}
+		&-planes {
+			margin-top: 50px;
+			padding: 90px 0 124px 0;
+			box-shadow: 0px 10px 40px rgba(85, 85, 85, 0.05);
+			-webkit-box-shadow: 0px 10px 40px rgba(85, 85, 85, 0.05);
+			-moz-box-shadow: 0px 10px 40px rgba(85, 85, 85, 0.05);
 		}
 	}
-}
-
-@media screen and (min-width: 1200px) {
-	.section {
-		&-planes {
-			margin-top: 100px;
-		}
-		&-contacto--empresas {
-			margin-top: 150px;
-		}
+	.center__shadow {
+		box-shadow: 0px 10px 40px rgba(85, 85, 85, 0.05);
+		-webkit-box-shadow: 0px 10px 40px rgba(85, 85, 85, 0.05);
+		-moz-box-shadow: 0px 10px 40px rgba(85, 85, 85, 0.05);
 	}
 }

@@ -68,7 +68,6 @@
 			&--chevron {
 				font-size: 34px;
 				margin-top: 10px;
-
 			}
 		}
 
@@ -89,7 +88,6 @@
 
 			&--chevron {
 				font-size: 36px; // para equiparar tamaño por border de ANTERIOR
-
 			}
 		}
 	}
@@ -128,12 +126,10 @@
 		background-color: $rojo;
 		color: $rojo;
 	}
-
 }
 
 @media screen and (min-width: 992px) {
 	.carousel {
-
 		&__siguiente,
 		&__anterior {
 			margin-top: 40px;
@@ -153,7 +149,6 @@
 	.slick-dots {
 		left: 2%;
 		margin-top: 40px;
-
 	}
 }
 

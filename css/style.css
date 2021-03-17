@@ -1367,13 +1367,20 @@ body {
     justify-content: center;
     width: 922px;
     margin-top: 150px;
-    margin-bottom: 102px; } }
-
-@media screen and (min-width: 1200px) {
+    margin-bottom: 102px; }
+    .section-contacto--empresas {
+      margin-top: 121px;
+      margin-bottom: 52px; }
   .section-planes {
-    margin-top: 100px; }
-  .section-contacto--empresas {
-    margin-top: 150px; } }
+    margin-top: 50px;
+    padding: 90px 0 124px 0;
+    box-shadow: 0px 10px 40px rgba(85, 85, 85, 0.05);
+    -webkit-box-shadow: 0px 10px 40px rgba(85, 85, 85, 0.05);
+    -moz-box-shadow: 0px 10px 40px rgba(85, 85, 85, 0.05); }
+  .center__shadow {
+    box-shadow: 0px 10px 40px rgba(85, 85, 85, 0.05);
+    -webkit-box-shadow: 0px 10px 40px rgba(85, 85, 85, 0.05);
+    -moz-box-shadow: 0px 10px 40px rgba(85, 85, 85, 0.05); } }
 
 .footer {
   width: 100%;
