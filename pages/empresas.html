@@ -1,276 +1,445 @@
 <!DOCTYPE html>
 <html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Somos una comunidad que vincula profesionales y comercios con empresas y consumidores a través de la generación y consumo de beneficios sobre productos y servicios de primera y segunda necesidad."
+		/>
+		<meta
+			name="keywords"
+			content="Beneficios, red de beneficios, comercios , indumentaria "
+		/>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Somos una comunidad que vincula profesionales y comercios con empresas y consumidores a través de la generación y consumo de beneficios sobre productos y servicios de primera y segunda necesidad.">
-    <meta name="keywords" content="Beneficios, red de beneficios, comercios , indumentaria ">
+		<!-- STYLE SHEETS -->
+		<link rel="stylesheet" type="text/css" href="../css/slick.css" />
+		<link rel="stylesheet" href="../css/bootstrap-grid.min.css" />
+		<link rel="stylesheet" href="../css/style.css" />
 
+		<title>RedES | Empresas</title>
 
-    <!-- STYLE SHEETS -->
-    <link rel="stylesheet" type="text/css" href="../css/slick.css" />
-    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+		<!-- FONTS -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
 
-    <title>RedES | Empresas</title>
+		<!-- FAVICONS -->
+		<link
+			rel="apple-touch-icon"
+			sizes="57x57"
+			href="../assets/favicons/apple-icon-57x57.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="60x60"
+			href="../assets/favicons/apple-icon-60x60.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="72x72"
+			href="../assets/favicons/apple-icon-72x72.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="76x76"
+			href="../assets/favicons/apple-icon-76x76.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="114x114"
+			href="../assets/favicons/apple-icon-114x114.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="120x120"
+			href="../assets/favicons/apple-icon-120x120.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="144x144"
+			href="../assets/favicons/apple-icon-144x144.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="152x152"
+			href="../assets/favicons/apple-icon-152x152.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="../assets/favicons/apple-icon-180x180.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="192x192"
+			href="../assets/favicons/android-icon-192x192.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="../assets/favicons/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="96x96"
+			href="../assets/favicons/favicon-96x96.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="../assets/favicons/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="./assets/favicons/manifest.json" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta
+			name="msapplication-TileImage"
+			content="./assets/favicons/ms-icon-144x144.png"
+		/>
+		<meta name="theme-color" content="#ffffff" />
 
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+		<!-- SCRIPTS -->
+		<script
+			defer
+			src="https://kit.fontawesome.com/8ee6cf5ee4.js"
+			crossorigin="anonymous"
+		></script>
+		<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+			integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+			crossorigin="anonymous"
+		></script>
+		<script defer src="../js/bootstrap.min.js"></script>
+		<script defer src="../js/scrpits.js"></script>
+	</head>
 
-    <!-- FAVICONS -->
-    <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="../assets/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../assets/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="../assets/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../assets/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="../assets/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="../assets/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="../assets/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="../assets/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../assets/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png">
-    <link rel="manifest" href="./assets/favicons/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="./assets/favicons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+	<body>
+		<div class="contenedor-general">
+			<header class="header container">
+				<div class="header__contenedor">
+					<a class="header__logo" href="../index.html"
+						><img
+							class="header__logo--img"
+							src="../assets/images/Logo RED ES BENEFICIO.png"
+							alt="logo"
+						/>
+					</a>
 
-    <!-- SCRIPTS -->
-    <script defer src="https://kit.fontawesome.com/8ee6cf5ee4.js" crossorigin="anonymous"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-        crossorigin="anonymous"></script>
-    <script defer src="../js/bootstrap.min.js"></script>
-    <script defer src="../js/slick.min.js"></script>
-    <script defer src="../js/slides.js"></script>
-    <!-- <script defer src="../js/canva.js"></script> -->
-    <script defer src="../js/scrpits.js"></script>
-</head>
+					<span class="hamb">
+						<i class="hamb__icon"
+							><img src="../assets/images/iconos/mdi_dehaze.svg" alt=""
+						/></i>
+					</span>
 
-<body>
-    <div class="contenedor-general">
-        <header class="header container">
-            <div class="header__contenedor">
+					<nav class="menu">
+						<ul class="menu__list close">
+							<span class="menu__close">
+								<i class="menu__icon--close fas fa-times"></i>
+							</span>
+							<li class="menu__item__img">
+								<a class="menu__link" href="../index.html">
+									<img
+										class="menu__item__img--logo"
+										src="../assets/images/Logo RED ES BENEFICIO.png"
+										alt="logo"
+									/>
+								</a>
+							</li>
+							<li class="menu__item menu__item--nosotros">
+								<a class="menu__link" href="#Nosotros"> Nosotros </a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#redDeComercios"> Beneficios </a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="./pages/empresas.html">
+									Empresas
+								</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="./comercios.html"> Comercios </a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#"> Descuentos </a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#contacto"> Contacto </a>
+							</li>
+							<button class="menu__item--btn btn-rojo">
+								<a class="menu__link--btn" href="#contacto"> Ingresar </a>
+							</button>
+						</ul>
+					</nav>
+				</div>
+			</header>
 
-                <a class="header__logo" href="../index.html"><img class="header__logo--img"
-                        src="../assets/images/Logo RED ES BENEFICIO.png" alt="logo"> </a>
+			<main>
+				<section class="section section-planes">
+					<section
+						class="container section__container section__container--empresas"
+					>
+						<div class="banner__empresas">
+							<div class="banner__empresas__contenedor">
+								<div class="banner__empresas--icono">
+									<img
+										src="../assets/images/iconos/Group 6299.svg"
+										alt="Group 6299.svg"
+									/>
+								</div>
+								<h3 class="titulos--ppal-rojo">Plan Empresas</h3>
+							</div>
 
-                <span class="hamb">
-                    <i class="hamb__icon"><img src="../assets/images/iconos/mdi_dehaze.svg" alt=""></i>
-                </span>
+							<p class="banner__empresas__titulos--sub">
+								Siendo parte de la comunidad, tus empleados recibirán una
+								tarjeta personalizada que los identificará como miembros de Red
+								ES Beneficio y con la que accederán a las promociones,
+								presentándola en el comercio adherido. Todas las empresas pueden
+								adherirse, sin importar su tamaño o rubro, por un máximo de 10
+								euros por empleado.
+							</p>
 
-                <nav class="menu">
-                    <ul class="menu__list close">
-                        <span class="menu__close">
-                            <i class="menu__icon--close fas fa-times"></i>
-                        </span>
-                        <li class="menu__item__img"> <a class="menu__link" href="../index.html"> <img
-                                    class="menu__item__img--logo" src="../assets/images/Logo RED ES BENEFICIO.png"
-                                    alt="logo"> </a></li>
-                        <li class="menu__item menu__item--nosotros"> <a class="menu__link" href="#Nosotros"> Nosotros
-                            </a></li>
-                        <li class="menu__item"> <a class="menu__link" href="#redDeComercios"> Beneficios </a></li>
-                        <li class="menu__item"> <a class="menu__link" href="./pages/empresas.html"> Empresas </a>
-                        </li>
-                        <li class="menu__item"> <a class="menu__link" href="./pages/comercios.html"> Comercios </a></li>
-                        <li class="menu__item"> <a class="menu__link" href="#"> Descuentos </a></li>
-                        <li class="menu__item"> <a class="menu__link" href="#contacto"> Contacto </a></li>
-                        <button class=" menu__item--btn btn-rojo"> <a class=" menu__link--btn" href="#contacto">
-                                Ingresar </a>
-                        </button>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+							<div class="banner__empresas__imagen">
+								<img
+									class="banner__empresas__imagen__img"
+									src="../assets/ilustraciones/Frame 6192.svg"
+									alt="Frame 6192.svg"
+								/>
+							</div>
+						</div>
 
+						<article class="banner__empresas__inversion">
+							<div class="card__header">
+								<div class="card__imagen">
+									<img
+										src="../assets/images/iconos/Minimo costo.svg"
+										alt="Minimo costo.svg"
+									/>
+								</div>
+								<div>
+									<h6 class="card__titulo">Mínima inversión</h6>
+									<h6 class="card__titulo">10 Euros + IVA.</h6>
+								</div>
+							</div>
+						</article>
+					</section>
+				</section>
+				<!-- CONTACTO -->
+				<section
+					id="contacto"
+					class="section section-contacto section-contacto--empresas container"
+				>
+					<div class="container section__container section__container--active">
+						<div class="titulos">
+							<h3 class="titulos--ppal titulos--contacto">Contacto</h3>
+						</div>
+						<p class="titulos--contacto-p">
+							Si quieres formar parte de Red ES Beneficio, o pedir más
+							información, déjanos tus datos y nos contactaremos a la brevedad.
+						</p>
+						<!--? Only in Large Screens -->
+						<div
+							class="footer__containers footer__containers--address footer--active"
+						>
+							<div class="footer__contacto">
+								<div class="footer__contacto__icons">
+									<i
+										class="far fa-envelope footer__contacto__icons--active"
+									></i>
+								</div>
+								<p class="footer__contacto__txt footer__contacto__txt--active">
+									redesbeneficio@gmail.com
+								</p>
+							</div>
+							<div class="footer__contacto">
+								<div class="footer__contacto__icons">
+									<i
+										class="fas fa-mobile-alt footer__contacto__icons--active"
+									></i>
+								</div>
+								<p class="footer__contacto__txt footer__contacto__txt--active">
+									+34 280X XX XX XX
+								</p>
+							</div>
+							<div class="footer__contacto">
+								<div class="footer__contacto__icons">
+									<i
+										class="fas fa-map-marker-alt footer__contacto__icons--active"
+									></i>
+								</div>
+								<p class="footer__contacto__txt footer__contacto__txt--active">
+									Calle Príncipe de Vergara 132. Plantas 4 y 9, 28002 Madrid,
+									España
+								</p>
+							</div>
+						</div>
+						<!--? Only in Large Screens FIN -->
+					</div>
+					<div class="formulario">
+						<form action="correo.php" method="POST">
+							<div>
+								<input
+									class="formulario__input"
+									type="text"
+									name="user_name"
+									id="user_name"
+									placeholder="Nombre y Apellido:"
+								/>
+							</div>
+							<div>
+								<input
+									type="email"
+									class="formulario__input"
+									name="user_email"
+									id="user_email"
+									placeholder="Mail:"
+								/>
+							</div>
+							<div>
+								<textarea
+									class="formulario__input formulario__input__text"
+									type="text"
+									name="user_message"
+									id="user_message"
+									placeholder="Mensaje:"
+								></textarea>
+							</div>
+							<div class="button-formulario-contacto">
+								<input
+									type="submit"
+									value="Enviar"
+									class="btn-rojo btn-rojo--large"
+								/>
+							</div>
+						</form>
+					</div>
+				</section>
+				<!-- FIN CONTACTO -->
+			</main>
 
-        <main>
-            <section class="section section-planes">
-                <section class="container section__container section__container--empresas">
-                    <div class="banner__empresas">
-                        <div class="banner__empresas--icono">
-                            <img src="../assets/images/iconos/Group 6299.svg" alt="Group 6299.svg">
-                        </div>
-                        <h3 class="titulos--ppal-rojo">Plan Empresas</h3>
-                        <div class="banner__empresas__imagen "><img class="banner__empresas__imagen__img"
-                                src="../assets/ilustraciones/Frame 6192.svg" alt="Frame 6192.svg"></div>
-                        <p class="banner__empresas__titulos--sub">Siendo parte de la comunidad, tus empleados
-                            recibirán una
-                            tarjeta
-                            personalizada que los identificará como miembros de Red ES Beneficio y con la que accederán
-                            a las promociones, presentándola en el comercio adherido.
-                            Todas las empresas pueden adherirse, sin importar su tamaño o rubro, por un máximo de 10
-                            euros por empleado.
-                        </p>
-                    </div>
+			<footer class="footer">
+				<div class="container footer__containerGral">
+					<div class="footer__containers footer__containerGral--newsletter">
+						<div class="footer__newsletter">
+							<div class="footer__newsletter-container">
+								<p class="footer__newsletter__titulo">
+									Suscribite a nuesto Newsletter
+								</p>
+								<p class="footer__newsletter__texto">
+									Si quieres conocer nuestras ofertas y beneficios, suscríbite a
+									nuestro newsletter.
+								</p>
+							</div>
+							<div class="footer__newsletter__suscribir">
+								<form
+									class="footer__newsletter__input"
+									action="correo.php"
+									method="POST"
+								>
+									<img
+										class="footer__newsletter__input--img"
+										src="../assets/images/iconos/mail_outline-1.svg"
+										alt="mail_outline-1.svg"
+									/>
+									<input
+										class="footer__newsletter__input--text"
+										type="text"
+										placeholder="Ingresa tu correo"
+										onfocus="this.placeholder = ''"
+									/>
+									<input
+										class="btn-rojo btn-rojo--suscription footer__newsletter__btn"
+										type="submit"
+										name="suscribir"
+										value="Suscribir"
+									/>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="footer__info">
+						<div class="footer__containers">
+							<div class="footer__logo">
+								<img
+									class="footer__logo__img"
+									src="../assets/images/Logo-RED-ES-BENEFICIO-blanco.png"
+									alt="Logo RedES"
+									class="footer"
+								/>
+							</div>
+							<div class="footer__logo__txt">
+								<p class="footer__logo__txt--hashtag">#Crecemos Conectados</p>
+							</div>
+						</div>
 
-                    <article>
-                        <div class="card__header">
-                            <div class="card__imagen">
-                                <img src="../assets/images/iconos/Minimo costo.svg" alt="Minimo costo.svg">
-                            </div>
-                            <div>
-                                <h6 class="card__titulo">Mínima inversión</h6>
-                                <h6 class="card__titulo">10 Euros + IVA. </h6>
-                            </div>
-                        </div>
-                    </article>
-                </section>
-            </section>
-            <!-- CONTACTO -->
-            <section id="contacto" class="section section-contacto container">
-                <div class="container section__container section__container--active">
-                    <div class="titulos ">
-                        <h3 class="titulos--ppal titulos--contacto">Contacto</h3>
-                    </div>
-                    <p class="titulos--contacto-p">Si quieres formar parte de Red ES Beneficio, o pedir más
-                        información,
-                        déjanos
-                        tus datos y nos contactaremos a la brevedad.
-                    </p>
-                    <!--? Only in Large Screens -->
-                    <div class="footer__containers footer__containers--address footer--active">
-                        <div class="footer__contacto">
-                            <div class="footer__contacto__icons">
-                                <i class="far fa-envelope footer__contacto__icons--active"></i>
-                            </div>
-                            <p class="footer__contacto__txt footer__contacto__txt--active">redesbeneficio@gmail.com</p>
-                        </div>
-                        <div class="footer__contacto">
-                            <div class="footer__contacto__icons">
-                                <i class="fas fa-mobile-alt footer__contacto__icons--active"></i>
-                            </div>
-                            <p class="footer__contacto__txt footer__contacto__txt--active">+34 280X XX XX XX</p>
-                        </div>
-                        <div class="footer__contacto">
-                            <div class="footer__contacto__icons">
-                                <i class="fas fa-map-marker-alt footer__contacto__icons--active"></i>
-                            </div>
-                            <p class="footer__contacto__txt footer__contacto__txt--active">Calle Príncipe de Vergara
-                                132.
-                                Plantas 4 y 9, 28002 Madrid, España</p>
-                        </div>
-                    </div>
-                    <!--? Only in Large Screens FIN -->
-                </div>
-                <div class="formulario">
-                    <form action="correo.php" method="POST">
-                        <div>
-                            <input class="formulario__input" type="text" name="user_name" id="user_name"
-                                placeholder="Nombre y Apellido:">
-                        </div>
-                        <div>
-                            <input type="email" class="formulario__input" name="user_email" id="user_email"
-                                placeholder="Mail:">
-                        </div>
-                        <div>
-                            <textarea class="formulario__input formulario__input__text" type="text" name="user_message"
-                                id="user_message" placeholder="Mensaje:"></textarea>
-                        </div>
-                        <div class="button-formulario-contacto">
-                            <input type="submit" value="Enviar" class="btn-rojo btn-rojo--large">
-                        </div>
-                    </form>
+						<div
+							class="footer__containers footer__containers--address footer__containers--add-disable"
+						>
+							<div class="footer__contacto">
+								<div class="footer__contacto__icons">
+									<i class="far fa-envelope"></i>
+								</div>
+								<p class="footer__contacto__txt">redesbeneficio@gmail.com</p>
+							</div>
+							<div class="footer__contacto">
+								<div class="footer__contacto__icons">
+									<i class="fas fa-mobile-alt"></i>
+								</div>
+								<p class="footer__contacto__txt">+34 280X XX XX XX</p>
+							</div>
+							<div class="footer__contacto">
+								<div class="footer__contacto__icons">
+									<i class="fas fa-map-marker-alt"></i>
+								</div>
+								<p class="footer__contacto__txt">
+									Calle Príncipe de Vergara 132. Plantas 4 y 9, 28002 Madrid,
+									España
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="footer__containers--rrss">
+						<div class="footer__rrss">
+							<a
+								href="https://www.instagram.com/redesbeneficio/"
+								target="blank"
+							>
+								<i class="fab fa-instagram"></i>
+							</a>
+						</div>
 
-                </div>
+						<!--? TWITTER <div class="footer__rrss"> <i class=" fab fa-twitter"></i> </div> TWITTER-->
 
-            </section>
-            <!-- FIN CONTACTO -->
-        </main>
-
-        <footer class="footer">
-            <div class="container footer__containerGral">
-                <div class="footer__containers footer__containerGral--newsletter  ">
-                    <div class="footer__newsletter">
-                        <div class="footer__newsletter-container">
-                            <p class="footer__newsletter__titulo">Suscribite a nuesto Newsletter</p>
-                            <p class="footer__newsletter__texto">Si quieres conocer nuestras ofertas y beneficios,
-                                suscríbite a
-                                nuestro newsletter.</p>
-                        </div>
-                        <div class="footer__newsletter__suscribir">
-                            <form class="footer__newsletter__input" action="correo.php" method="POST">
-                                <img class="footer__newsletter__input--img"
-                                    src="../assets/images/iconos/mail_outline-1.svg" alt="mail_outline-1.svg">
-                                <input class="footer__newsletter__input--text" type="text"
-                                    placeholder="Ingresa tu correo" onfocus="this.placeholder = ''">
-                                <input class="btn-rojo btn-rojo--suscription footer__newsletter__btn" type="submit"
-                                    name='suscribir' value="Suscribir">
-                            </form>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="footer__info">
-                    <div class="footer__containers">
-                        <div class="footer__logo">
-                            <img class="footer__logo__img" src="../assets/images/Logo-RED-ES-BENEFICIO-blanco.png"
-                                alt="Logo RedES" class="footer">
-                        </div>
-                        <div class="footer__logo__txt">
-                            <p class="footer__logo__txt--hashtag">#Crecemos Conectados</p>
-                        </div>
-                    </div>
-
-                    <div class="footer__containers footer__containers--address footer__containers--add-disable">
-                        <div class="footer__contacto">
-                            <div class="footer__contacto__icons">
-                                <i class="far fa-envelope"></i>
-                            </div>
-                            <p class="footer__contacto__txt">redesbeneficio@gmail.com</p>
-                        </div>
-                        <div class="footer__contacto">
-                            <div class="footer__contacto__icons">
-                                <i class="fas fa-mobile-alt"></i>
-                            </div>
-                            <p class="footer__contacto__txt">+34 280X XX XX XX</p>
-                        </div>
-                        <div class="footer__contacto">
-                            <div class="footer__contacto__icons">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <p class="footer__contacto__txt">Calle Príncipe de Vergara 132.
-                                Plantas 4 y 9, 28002 Madrid, España</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer__containers--rrss">
-                    <div class="footer__rrss">
-                        <a href="https://www.instagram.com/redesbeneficio/" target="blank">
-                            <i class=" fab fa-instagram"></i>
-                        </a>
-                    </div>
-
-                    <!--? TWITTER <div class="footer__rrss"> <i class=" fab fa-twitter"></i> </div> TWITTER-->
-
-                    <div class="footer__rrss">
-                        <a href="https://www.linkedin.com/company/red-es-beneficio/" target="blank">
-                            <i class=" fab fa-linkedin-in"></i>
-                        </a>
-                    </div>
-                    <div class="footer__rrss">
-                        <a href="https://www.facebook.com/RedESBeneficio" target="blank">
-                            <i class=" fab fa-facebook-f"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="footer__containers">
-                    <p class="footer__copyright">©2020RedES</p>
-                </div>
-            </div>
-
-        </footer>
-    </div>
-</body>
-
+						<div class="footer__rrss">
+							<a
+								href="https://www.linkedin.com/company/red-es-beneficio/"
+								target="blank"
+							>
+								<i class="fab fa-linkedin-in"></i>
+							</a>
+						</div>
+						<div class="footer__rrss">
+							<a href="https://www.facebook.com/RedESBeneficio" target="blank">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+						</div>
+					</div>
+					<div class="footer__containers">
+						<p class="footer__copyright">©2020RedES</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
 </html>
