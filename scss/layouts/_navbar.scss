@@ -94,6 +94,10 @@
 		@include h6-phone;
 		width: 100%;
 	}
+
+	&__footer {
+		display: none;
+	}
 }
 
 .open {
@@ -168,11 +172,47 @@
 				color: $rojo;
 			}
 		}
+
+
 	}
 }
 
 @media screen and (min-width: 1200px) {
-	.menu__item {
-		padding-left: 27px;
+	.menu {
+		&__item {
+			padding-left: 27px;
+		}
+
+		&__footer {
+			display: block;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+
+			&__list {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: flex-start;
+			}
+
+
+			&__item {
+				padding: 0 0 24px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+
+			}
+
+			&__link {
+				text-decoration: none;
+				@include h6-phone;
+				width: 100%;
+				color: #fff;
+			}
+		}
 	}
+
 }
