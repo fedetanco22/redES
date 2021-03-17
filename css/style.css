@@ -210,10 +210,8 @@ body {
       margin-bottom: 46px; }
 
 .comercios {
-  padding: 0 5px 0 5px;
-  margin-bottom: 55px; }
+  padding: 0 5px 0 5px; }
   .comercios--p {
-    color: #555;
     padding: 0 20px 0px 20px;
     margin-top: 0; }
 
@@ -480,8 +478,6 @@ body {
     background: #FFFFFF;
     box-shadow: 0px 4px 6px -4px rgba(85, 85, 85, 0.12), 0px 8px 20px -4px rgba(85, 85, 85, 0.08);
     opacity: 100%; }
-    .card__comercios__img {
-      opacity: 50%; }
     .card__comercios__titulo {
       font-family: "Poppins", sans-serif;
       font-size: 21px;
@@ -566,6 +562,10 @@ body {
 
 .active {
   opacity: 1; }
+
+@media screen and (min-width: 992px) {
+  .card__comercios__img {
+    opacity: 50%; } }
 
 .tabs {
   display: flex;
@@ -876,12 +876,16 @@ body {
     width: 12px;
     height: 12px;
     font-size: 0; }
+    .slick-dots button:focus {
+      outline: none; }
   .slick-active button {
     border-radius: 40px;
     width: 30px;
     height: 12px;
     background-color: #FE413F;
-    color: #FE413F; } }
+    color: #FE413F; }
+    .slick-active button:focus {
+      outline: none; } }
 
 @media screen and (min-width: 992px) {
   .carousel__siguiente, .carousel__anterior {
@@ -1090,7 +1094,8 @@ body {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        font-size: 16px; }
+        font-size: 16px;
+        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2); }
     .menu__link:hover {
       color: #FE413F; } }
 

@@ -66,11 +66,6 @@
             0px 8px 20px -4px rgba(85, 85, 85, 0.08);
         opacity: 100%;
 
-        &__img {
-            opacity: 50%;
-        }
-
-
         &__titulo {
             @include h5-Subtitle-web;
             margin-top: 26.67px;
@@ -176,6 +171,14 @@
     opacity: 1;
 }
 
-// @media screen and (min-width: 992px) {}
+@media screen and (min-width: 992px) {
+    .card {
+        &__comercios {
+            &__img {
+                opacity: 50%;
+            }
+        }
+    }
+}
 
 // @media screen and (min-width: 1200px) {}
